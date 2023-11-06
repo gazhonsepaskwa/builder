@@ -1,0 +1,54 @@
+<mxfile host="Electron" modified="2023-11-06T08:44:40.339Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="_h8g9dmojXds2VhwxvQi" version="22.0.2" type="device">
+  <diagram name="Page-1" id="bxNONvTWKdA4XL9HC_S2">
+    <mxGraphModel dx="1050" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="250" y="180" width="690" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BAmfd-i1aofXb4B-2ibq-1" target="BAmfd-i1aofXb4B-2ibq-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BAmfd-i1aofXb4B-2ibq-1" target="BAmfd-i1aofXb4B-2ibq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BAmfd-i1aofXb4B-2ibq-1" target="BAmfd-i1aofXb4B-2ibq-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-1" value="Joueur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-2" value="Banquier" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-4" value="&amp;nbsp;Arbitre" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="525" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-6" value="monopoly Builder" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="522.5" y="200" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-7" value="lancer les dés" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="BAmfd-i1aofXb4B-2ibq-8" target="BAmfd-i1aofXb4B-2ibq-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-10" value="&amp;lt;&amp;lt; include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BAmfd-i1aofXb4B-2ibq-9">
+          <mxGeometry x="0.0062" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-8" value="se déplacer&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-11" value="acheter une propriétée" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="310" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BAmfd-i1aofXb4B-2ibq-14" value="payer un loyer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
