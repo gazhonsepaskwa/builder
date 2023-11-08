@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2023-11-08T10:03:26.531Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="GpnIvoxwvFwbcqpoDRfJ" version="22.0.8" type="github">
+  <diagram name="Page-1" id="IK2JDKXquVPDH0jNA9R-">
+    <mxGraphModel dx="989" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-14" value="Conditions de victoire, défaite et égalité" style="shape=table;childLayout=tableLayout;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="118" y="80" width="592" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-15" value="Victoire" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-14">
+          <mxGeometry y="40" width="592" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-17" value="Points*" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-15">
+          <mxGeometry x="40" width="184" height="120" as="geometry">
+            <mxRectangle width="184" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-53" value="&lt;div&gt;Le joueur avec le plus de&amp;nbsp;&lt;/div&gt;&lt;div&gt;points remporte la partie&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-17">
+          <mxGeometry x="12" y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-18" value="Argent" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-15">
+          <mxGeometry x="224" width="184" height="120" as="geometry">
+            <mxRectangle width="184" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-54" value="&lt;div&gt;En cas d&#39;égalité des points des&lt;/div&gt;&lt;div&gt;joueurs, celui avec le plus&lt;/div&gt;&lt;div&gt;d&#39;argent, gagne la partie&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-18">
+          <mxGeometry x="-8" y="50" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-31" value="Forfait" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-15">
+          <mxGeometry x="408" width="184" height="120" as="geometry">
+            <mxRectangle width="184" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-60" value="&lt;div&gt;Si jamais le/les joueur(s)&lt;/div&gt;&lt;div&gt;adverse déclare&amp;nbsp;&lt;/div&gt;&lt;div&gt;forfait, le joueur restant gagne&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-31">
+          <mxGeometry x="-3" y="50" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-19" value="Défaite" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-14">
+          <mxGeometry y="160" width="592" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-21" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-19">
+          <mxGeometry x="40" width="184" height="90" as="geometry">
+            <mxRectangle width="184" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-55" value="&lt;div&gt;Celui ou ceux qui ont moins de&lt;/div&gt;&lt;div&gt;points que celui&amp;nbsp; qui a le plus de&lt;/div&gt;&lt;div&gt;points, perd(ent)&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-21">
+          <mxGeometry x="-8" y="15" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-22" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-19">
+          <mxGeometry x="224" width="184" height="90" as="geometry">
+            <mxRectangle width="184" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-61" value="&lt;div&gt;Si en cas d&#39;égalité pour les&lt;/div&gt;&lt;div&gt;points, le/les joueur(s) à&lt;/div&gt;&lt;div&gt;départager qui a/ont le moins&lt;/div&gt;&lt;div&gt;d&#39;argent perd(ent)&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-22">
+          <mxGeometry x="2" y="10" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-32" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-19">
+          <mxGeometry x="408" width="184" height="90" as="geometry">
+            <mxRectangle width="184" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-62" value="&lt;div&gt;Si un joueur déclare forfait, ce&lt;/div&gt;&lt;div&gt;joueur perd automatiquement&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-32">
+          <mxGeometry x="-3" y="25" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-23" value="Égalité" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-14">
+          <mxGeometry y="250" width="592" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-25" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-23">
+          <mxGeometry x="40" width="184" height="120" as="geometry">
+            <mxRectangle width="184" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-63" value="&lt;div&gt;Si les joueurs ont le même&lt;/div&gt;&lt;div&gt;nombre de points, il y a égalité.&lt;/div&gt;&lt;div&gt;Ils devront alors voir leur argent&lt;/div&gt;&lt;div&gt;pour savoir qui aura gagné&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-25">
+          <mxGeometry x="-3" y="25" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-26" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-23">
+          <mxGeometry x="224" width="184" height="120" as="geometry">
+            <mxRectangle width="184" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-64" value="&lt;div&gt;En cas d&#39;égalité au niveau de&lt;/div&gt;&lt;div&gt;l&#39;argent, les joueurs devront se&lt;/div&gt;&lt;div&gt;départager au pierre, feuille,&amp;nbsp;&lt;/div&gt;&lt;div&gt;ciseau dans la vraie vie&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-26">
+          <mxGeometry x="-3" y="25" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-33" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-23">
+          <mxGeometry x="408" width="184" height="120" as="geometry">
+            <mxRectangle width="184" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-65" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;/&lt;font style=&quot;font-size: 40px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="10Jpn9wMV9JApb_h9Yhb-33">
+          <mxGeometry x="77" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10Jpn9wMV9JApb_h9Yhb-66" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;*&lt;/font&gt;&lt;/b&gt;Les points se comptabilisent grâce aux nombres d&#39;étages construit (par exemple, si un bâtiment a 3 étages, cela lui&lt;/div&gt;&lt;div&gt;rapporte 6 points.) Autre façon de gagner des points, c&#39;est en obtenant, 2 propriétés de même couleur. Et les 2 dernière façons de&lt;/div&gt;&lt;div&gt;gagner des points, c&#39;est en étant le joueur le plus riche de la partie et avoir le plus grand quartier (donc en construisant plusieurs bâtiments&amp;nbsp;&lt;/div&gt;&lt;div&gt;côte à côté)&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="19" y="463" width="790" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
