@@ -26,5 +26,5 @@ si carte voler une recource:
 
 
 construir ?
-	coisir lieu de construction dans les prorio 
+	choisir lieu de construction dans les prorio 
 	payer en jetons	
