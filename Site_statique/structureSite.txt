@@ -1,0 +1,36 @@
+(Note : ce plan n'est que provisoire)
+(Autre note : J'ai mis la structure final du site, donc il n'y a pas que du statique)
+
+Le site sera constitué de ... pages
+
+La page 1 sera celle de l'accueil avec une image illustrant le jeu + le nom du groupe
+
+Ce qu'elle contient :   - Onglets menant aux autres pages
+                        - Titre du jeu en dessous des onglets
+                        - Image illustrative du groupe avec le jeu (à trouver comment faire)
+                        - Brève description du jeu juste en dessous de l'image
+                        - Bas de page comme à peu près tout les sites où il y a nos noms tout ça
+
+La page 2 sera une expliquant ce en quoi le jeu consiste (donc expliquer le jeu, ses spécificités, etc...)
+
+Ce qu'elle contient :   - Onglets menant aux autres pages
+                        - Le titre du jeu en dessous des onglets
+                        - Texte expliquant le jeu avec des images illustrées (des images de notre jeu ?)
+                        Rajouter des explications et des spécificités rajoutée/modifé par nous en + du jeu de base
+                        (À voir comment organiser)
+                        - Bas de page comme à peu près tout les sites où il y a nos noms tout ça
+
+La page 3 sera celle qui explique notre groupe, donc qui en sont les membres, pourquoi sa constitution, le parcours (qui sera à la fin), etc...
+
+Ce qu'elle contient :   - Onglets menant aux autres pages
+                        - Le titre du jeu en dessous des onglets
+                        - Le texte expliquant notre groupe tout ça, tout ça (à voir pour la structure)
+                        - (Pourquoi pas voir pour mettre une photo de nous 2)
+                        - Bas de page comme à peu près tout les sites où il y a nos noms tout ça
+
+La page 4 sera la partie descriptive de notre projet (ce qu'on aurait aimé ajouter ou les problèmes que l'on a eu)
+
+Ce qu'elle contient :   - Onglets menant aux autres pages
+                        - Le titre du jeu en dessous des onglets
+                        - Le texte qui explique notre projet
+                        - Bas de page comme à peu près tout les sites où il y a nos noms tout ça
