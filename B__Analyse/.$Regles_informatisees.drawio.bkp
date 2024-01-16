@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-01-11T11:37:42.165Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="lHM2aSMbquJsDEQAnW40" version="22.1.16" type="device" pages="2">
+<mxfile host="Electron" modified="2024-01-11T11:38:06.236Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="T0c6QQPT7kKMXaQ0DwRO" version="22.1.16" type="device" pages="2">
   <diagram name="DIAGRAM" id="bxNONvTWKdA4XL9HC_S2">
-    <mxGraphModel dx="4674" dy="1897" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8088" dy="3716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,7 +40,7 @@
         <mxCell id="gywn9AA3mlb3rCUnusvg-62" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-2918.2200000000003" y="-290" width="1096.97" height="900" as="geometry" />
         </mxCell>
-        <mxCell id="gywn9AA3mlb3rCUnusvg-58" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="gywn9AA3mlb3rCUnusvg-58" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-1321.78" y="-550" width="490" height="740" as="geometry" />
         </mxCell>
         <mxCell id="gywn9AA3mlb3rCUnusvg-57" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -751,9 +751,6 @@
         </mxCell>
         <mxCell id="gywn9AA3mlb3rCUnusvg-49" value="Diagram &lt;br style=&quot;font-size: 24px;&quot;&gt;Principal" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" parent="1" vertex="1">
           <mxGeometry x="-191.77999999999997" y="-900" width="120" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="gywn9AA3mlb3rCUnusvg-60" value="POUR MR LORIE&lt;br&gt;&lt;br&gt;est ce qu&#39;on grade ? est ce utie ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="-1238.2" y="-150" width="108.2" height="90" as="geometry" />
         </mxCell>
         <mxCell id="M_Z6mFilWkLScB1Hqa6Q-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="M_Z6mFilWkLScB1Hqa6Q-1" target="M_Z6mFilWkLScB1Hqa6Q-28" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1872,7 +1869,7 @@
         <mxCell id="Ozmm_VvvbrrvaCaHDA8e-37" value="Jeu.fini ← True" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="947.7600000000001" y="810.9000000000001" width="164.02" height="43.05" as="geometry" />
         </mxCell>
-        <mxCell id="Ozmm_VvvbrrvaCaHDA8e-43" value="&lt;div&gt;Nathan&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;08/01/24 21h38&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+        <mxCell id="Ozmm_VvvbrrvaCaHDA8e-43" value="&lt;div&gt;Nathan&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;11/01/24 12h10&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
           <mxGeometry x="1049.77" y="216.2000000000001" width="100" height="54.05" as="geometry" />
         </mxCell>
       </root>
