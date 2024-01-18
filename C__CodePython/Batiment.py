@@ -42,7 +42,7 @@ class Batiment():
     """
     @property
     def construisible(self):
-        pass
+        return self.__construisible
     @construisible.setter
     def construisible(self, val):
         self.__construisible = val
@@ -53,7 +53,7 @@ class Batiment():
     """
     @property
     def nombreEtage(self):
-        pass
+        return self.__nombreEtage
     @construisible.setter
     def nombreEtage(self, val):
         self.__nombreEtage = val
@@ -64,5 +64,8 @@ class Batiment():
     # methodes #
     ############
     
+    """
+    Verifie si le joueur a assez de pions pour construir un etage
+    """
     def VerifQuantiteePion():
         pass
