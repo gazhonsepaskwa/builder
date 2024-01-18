@@ -44,12 +44,16 @@ class Joueur():
     # accesseurs et mutateurs #
     ###########################
         
+    #Permet au joueur de s'identifier avec un pseudonyme
+
     @property
     def ID(self):
         return self.__ID
     @ID.setter
     def ID(self, val):
         self.__ID = val
+
+    #Argent qui permet d'acheter les diverses propriétés du jeu
 
     @property
     def argent(self):
@@ -58,12 +62,16 @@ class Joueur():
     def argent(self, val):
         self.__argent = val
 
+    #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
+
     @property
     def jetonsTractopelle(self):
         return self.__jetonsTractopelle
     @jetonsTractopelle.setter
     def jetonsTractopelle(self, val):
         self.__jetonsTractopelle = val
+
+    #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
     @property
     def jetonsBateau(self):
@@ -72,12 +80,16 @@ class Joueur():
     def jetonsBateau(self, val):
         self.__jetonsBateau = val
 
+    #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
+
     @property
     def jetonsCamion(self):
         return self.__jetonsCamion
     @jetonsCamion.setter
     def jetonsCamion(self, val):
         self.__jetonsCamion = val
+
+    #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
     @property
     def jetonsGrue(self):
@@ -86,6 +98,8 @@ class Joueur():
     def jetonsGrue(self, val):
         self.__jetonsGrue = val
 
+    #Propriétés obtenues par le/les joueur(s)
+
     @property
     def proprietes(self):
         return self.__proprietes
@@ -93,12 +107,7 @@ class Joueur():
     def proprietes(self, val):
         self.__proprietes = val
 
-    @property
-    def etagesRestants(self):
-        return self.__etagesRestants
-    @etagesRestants.setter
-    def etagesRestants(self, val):
-        self.__etagesRestants = val
+    #La valeur du premier lancé ?
 
     @property
     def valeurPremierLance(self):
@@ -107,12 +116,16 @@ class Joueur():
     def valeurPremierLance(self, val):
         self.__valeurPremierLance = val
 
+    #Case sur laquelle le joueur est actuellement
+
     @property
     def caseActuelle(self):
         return self.__caseActuelle
     @caseActuelle.setter
     def caseActuelle(self, val):
         self.__caseActuelle = val
+
+    #Liste de cases disponible sur le plateau
 
     @property
     def caseListe(self):
@@ -121,12 +134,16 @@ class Joueur():
     def caseListe(self, val):
         self.__caseListe = val
 
+    #Dernière somme retenu après le lancé de dé
+
     @property
     def derniereSommeDE(self):
         return self.__derniereSommeDE
     @derniereSommeDE.setter
     def derniereSommeDE(self, val):
         self.__derniereSommeDE = val
+
+    #Envoi le joueur en prison
 
     @property
     def enPrison(self):
@@ -135,12 +152,16 @@ class Joueur():
     def enPrison(self, val):
         self.__enPrison = val
 
+    #???
+
     @property
     def tourEditionFini(self):
         return self.__tourEditionFini
     @tourEditionFini.setter
     def tourEditionFini(self, val):
         self.__tourEditionFini = val
+
+    #L'apparence du joueur
 
     @property
     def pion(self):
@@ -153,8 +174,12 @@ class Joueur():
     # methodes #
     ############
     
+    #Les dés se font lancer
+
     def lancerDE(self):
         pass
+
+    #Le joueur avance par rapport à la somme des dés lancés
 
     def avancer(self):
         pass

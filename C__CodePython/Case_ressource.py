@@ -44,13 +44,11 @@ class Case_ressource():
     def nom(self, val):
         self.__nom = val
 
-
-
     ############
     # methodes #
     ############
     
-    
+    #Donne le type de ressource que la case propose quand on tombe dessus
 
     def donnerRessource(self):
         pass

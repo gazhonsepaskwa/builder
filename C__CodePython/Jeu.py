@@ -76,14 +76,20 @@ class Jeu():
     # methodes #
     ############
     
+    #Permet de préparer le plateau de jeu
+
     def preparer(self):
         pass
 
     def jouerUnTour(self):
         pass
 
+    #Choix qui permet de déterminer le nombre de joueur au début de la partie (maximum 4)
+
     def choixNbrJoueur(self):
         pass
+
+    #À la fin du tour d'un joueur, on passe au joueur suivant
 
     def changerJoueurActif(self):
         pass

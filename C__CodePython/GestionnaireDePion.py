@@ -32,5 +32,7 @@ class GestionnaireDePion():
     # methodes #
     ############
     
+    #La possibilité de choisir l'apparence que le joueur aura
+
     def choisir(self):
         pass
