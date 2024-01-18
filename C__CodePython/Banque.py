@@ -1,7 +1,8 @@
 """
-Qui: Nathan Amory
-Quand: 2021-05-23
-Description: 
+Qui: Nathan
+Quand: 
+- 18/01/2024
+Description: Objet qui permet de gérer les transfert entre les joueurs
 
 """
 
@@ -10,6 +11,7 @@ Description:
 # import #
 ##########
 
+from Joueur.py import Joueur
 
 class Banque():
 
@@ -17,8 +19,9 @@ class Banque():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+        self.__envoyeur:Joueur = None
+        self.__receveur:Joueur = None
 
 
 
@@ -37,14 +40,25 @@ class Banque():
         
 
     """
-    comentaire de l'attribut
+    joueur qui envoie l'argent
     """
     @property
-    def nom(self):
+    def envoyeur(self):
         pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
+    @envoyeur.setter
+    def envoyeur(self, nom):
+        self.__envoyeur = nom
+
+
+    """
+    joueur qui reçois l'argent
+    """
+    @property
+    def receveur(self):
+        pass
+    @envoyeur.setter
+    def receveur(self, nom):
+        self.__receveur = nom
 
 
 
@@ -52,5 +66,15 @@ class Banque():
     # methodes #
     ############
     
-    def methode(self):
+    """
+    méthode qui permet de transférer une somme d'argent à un joueur
+    """
+    def tranferer(self, somme):
+        pass
+
+
+    """
+    méthode qui permet de modifier la balance d'un joueur
+    """
+    def modifierBalance(self, joueur, somme):
         pass
