@@ -2,7 +2,7 @@
 Qui: Nathan
 Quand: 
 - 18/01/2024
-Description: Objet qui permet de gérer les transfert entre les joueurs
+Description: Objet qui permet de gérer les transfert d'argent entre les joueurs
 
 """
 
