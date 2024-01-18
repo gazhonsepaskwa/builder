@@ -11,7 +11,7 @@ Description: Objet qui permet de gérer les transfert entre les joueurs
 # import #
 ##########
 
-from Joueur.py import Joueur
+from Joueur import *
 
 class Banque():
 
@@ -46,8 +46,8 @@ class Banque():
     def envoyeur(self):
         pass
     @envoyeur.setter
-    def envoyeur(self, nom):
-        self.__envoyeur = nom
+    def envoyeur(self, val):
+        self.__envoyeur = val
 
 
     """
@@ -57,8 +57,8 @@ class Banque():
     def receveur(self):
         pass
     @envoyeur.setter
-    def receveur(self, nom):
-        self.__receveur = nom
+    def receveur(self, val):
+        self.__receveur = val
 
 
 

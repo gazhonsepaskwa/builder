@@ -1,13 +1,15 @@
 """
-Qui: Nathan Amory
+Qui: Nathan
 Quand: 2021-05-23
-Description: 
-
+Description: Classe Batiment, gere un batiment, ses etages et cetera.
 """
 
 ##########
 # import #
 ##########
+
+from Quartier import *
+
 
 
 class Batiment():
@@ -16,9 +18,10 @@ class Batiment():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
-
+    def __init__(self, quartier):
+        self.__construisible: bool = False
+        self.__nombreEtage: int = 0
+        self.__quartier: Quartier = quartier
 
 
     #############
@@ -35,14 +38,25 @@ class Batiment():
     ###########################
     
     """
-    comentaire de l'attribut
+    definit si un batiment est construisible ou non 
     """
     @property
-    def nom(self):
+    def construisible(self):
         pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
+    @construisible.setter
+    def construisible(self, val):
+        self.__construisible = val
+
+
+    """
+    Le nombre d'etage d'un batiment
+    """
+    @property
+    def nombreEtage(self):
+        pass
+    @construisible.setter
+    def nombreEtage(self, val):
+        self.__nombreEtage = val
 
 
 
@@ -50,5 +64,5 @@ class Batiment():
     # methodes #
     ############
     
-    def methode(self):
+    def VerifQuantiteePion():
         pass
