@@ -1,8 +1,8 @@
 """
-Qui: Nathan Amory
+Qui: Nathan 
 Quand: 2021-05-23
-Description: 
-
+Description: case sur laquelle se trouve la police,
+quand on tombe dessu on est envoyé en prison
 """
 
 ##########
@@ -17,7 +17,7 @@ class Case_police():
     ################
 
     def __init__(self, nom):
-        self.__nom = nom
+        pass
 
 
 
@@ -33,22 +33,12 @@ class Case_police():
     ###########################
     # accesseurs et mutateurs #
     ###########################
-    
-    """
-    comentaire de l'attribut
-    """
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
-
+   
 
 
     ############
     # methodes #
     ############
     
-    def methode(self):
+    def emprisonner(self):
         pass

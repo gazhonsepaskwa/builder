@@ -1,8 +1,8 @@
 """
-Qui: Nathan Amory
+Qui: Nathan
 Quand: 2021-05-23
-Description: 
-
+Description: case pouvant etre acheté et qui permet de construire 
+les batiments quand le hamaux sont complet
 """
 
 ##########
@@ -16,8 +16,10 @@ class Case_propriete():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+        self.__appartenu:Joueur = None
+        self.__prix:int = 0
+        self.__loyer:int = 0
 
 
 
@@ -35,14 +37,14 @@ class Case_propriete():
     ###########################
 
     """
-    comentaire de l'attribut
+    Joueur à qui appartient la case
     """  
     @property
-    def nom(self):
+    def appartenu(self):
         pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
+    @appartenu.setter
+    def appartenu(self, val):
+        self.__appartenu = val
 
 
 
@@ -50,5 +52,5 @@ class Case_propriete():
     # methodes #
     ############
     
-    def methode(self):
+    def achat(self):
         pass
