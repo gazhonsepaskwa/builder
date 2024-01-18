@@ -39,31 +39,31 @@ class Jeu():
         
     @property
     def nbrDeJoueurs(self):
-        pass
+        return self.__nbrDeJoueurs
     @nbrDeJoueurs.setter
-    def nbrDeJoueurs(self):
-        pass
+    def nbrDeJoueurs(self, val):
+        self.__val = 
 
     @property
     def listeJoueurs(self):
-        pass
+        return self.__listeJoueurs
     @listeJoueurs.setter
-    def listeJoueurs(self):
-        pass
+    def listeJoueurs(self, val):
+        self.__val
 
     @property
     def joueurActif(self):
-        pass
+        return self.__joueurActif
     @joueurActif.setter
-    def joueurActif(self):
-        pass
+    def joueurActif(self, val):
+        self.__val
 
     @property
     def fini(self):
-        pass
+        return self.__fini
     @fini.setter
-    def fini(self):
-        pass
+    def fini(self, val):
+        self.__val
 
     ############
     # methodes #

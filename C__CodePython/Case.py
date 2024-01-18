@@ -18,7 +18,7 @@ class Case():
     ################
 
     def __init__(self):
-        self.__numero:int = 
+        self.__numero:int = 0
 
     #############
     # affichage #
