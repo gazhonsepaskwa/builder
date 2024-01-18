@@ -10,6 +10,7 @@ les batiments quand le hamaux sont complet
 # import #
 ##########
 
+from Joueur import *
 
 class Case_propriete():
 
