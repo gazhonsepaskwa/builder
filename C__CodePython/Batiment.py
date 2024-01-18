@@ -60,6 +60,17 @@ class Batiment():
         self.__nombreEtage = val
 
 
+    """
+    Le quartier auquel appartienst le batiment
+    """
+    @property
+    def quartier(self):
+        return self.__quartier
+    @quartier.setter
+    def nombreEtage(self, val):
+        self.__quartier = val
+
+
 
     ############
     # methodes #

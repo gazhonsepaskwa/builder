@@ -2,7 +2,7 @@
 Qui: Nathan
 Quand: 
 - 18/01/2024
-Description: Carte qui quand tirée fait une action "choisie au hasard"
+Description: Carte qui quand tirée fait une action
 
 """
 
