@@ -33,7 +33,10 @@ class Batiment():
     ###########################
     # accesseurs et mutateurs #
     ###########################
-        
+    
+    """
+    comentaire de l'attribut
+    """
     @property
     def nom(self):
         pass

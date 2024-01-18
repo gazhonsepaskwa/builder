@@ -33,7 +33,10 @@ class Case_depart():
     ###########################
     # accesseurs et mutateurs #
     ###########################
-        
+    
+    """
+    comentaire de l'attribut
+    """
     @property
     def nom(self):
         pass
