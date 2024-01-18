@@ -1,6 +1,6 @@
 """
-Qui: Nathan Amory
-Quand: 2021-05-23
+Qui: Amory
+Quand: 18/01/2023
 Description: 
 
 """
@@ -17,10 +17,8 @@ class Quartier():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
-
-
+    def __init__(self):
+        pass
 
     #############
     # affichage #
@@ -29,24 +27,13 @@ class Quartier():
     def __str__(self):
         print("")
         
-    
-
     ###########################
     # accesseurs et mutateurs #
     ###########################
         
     @property
-    def nom(self):
+    def proprietaire(self):
         pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
-
-
-
-    ############
-    # methodes #
-    ############
-    
-    def methode(self):
-        pass
+    @proprietaire.setter
+    def proprietaire(self, val):
+        self.__val
