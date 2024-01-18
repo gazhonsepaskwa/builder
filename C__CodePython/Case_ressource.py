@@ -35,6 +35,8 @@ class Case_ressource():
     # accesseurs et mutateurs #
     ###########################
         
+    #Ressources donné par la case même
+
     @property
     def ressource_contenue(self):
         return self.__ressource_contenue
@@ -48,5 +50,7 @@ class Case_ressource():
     # methodes #
     ############
     
+    
+
     def donnerRessource(self):
         pass

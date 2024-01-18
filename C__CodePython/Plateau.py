@@ -2,8 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
-
+Description: Le plateau de jeu sur lesquels les joueurs vont pouvoir
+se déplacer lors de la partie
 """
 
 ##########

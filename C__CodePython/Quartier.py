@@ -2,8 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
-
+Description: Zone où les joueurs peuvent construire leurs bâtiments
+s'ils ont les matériaux suffisant pour ajouter leurs bâtiments
 """
 
 ##########

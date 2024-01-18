@@ -2,8 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
-
+Description: Ressources qui permettent de construire les étages des
+bâtiments
 """
 
 ##########

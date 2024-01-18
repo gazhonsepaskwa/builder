@@ -2,7 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
+Description: Le gestionnaire de pion sert à dire si un pion est déjà prit
+ou non
 """
 
 ##########

@@ -2,7 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
+Description: Case où les joueurs peuvent acheter des propriétés
+pour ensuite construire des bâtiments dans des quartiers
 """
 
 ##########

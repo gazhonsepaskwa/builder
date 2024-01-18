@@ -2,7 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
+Description: Case du plateau avec ou sans spécificité ou influence
+sur la partie
 """
 
 ##########

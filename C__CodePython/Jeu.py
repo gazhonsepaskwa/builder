@@ -2,7 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
+Description: Le jeu Monopoly en lui même qui va pouvoir
+être joué par les joueurs qui veulent bien y jouer
 """
 
 ##########
@@ -31,18 +32,20 @@ class Jeu():
     def __str__(self):
         print("")
         
-    
-
     ###########################
     # accesseurs et mutateurs #
     ###########################
         
+    #Le nombre joueur dans la partie
+    
     @property
     def nbrDeJoueurs(self):
         return self.__nbrDeJoueurs
     @nbrDeJoueurs.setter
     def nbrDeJoueurs(self, val):
         self.__nbrDeJoueurs = val 
+
+    #La liste des joueurs qui sont dans la partie
 
     @property
     def listeJoueurs(self):
@@ -51,12 +54,16 @@ class Jeu():
     def listeJoueurs(self, val):
         self.__listeJoueurs = val
 
+    #Le joueur qui joue son tour sur le moment
+
     @property
     def joueurActif(self):
         return self.__joueurActif
     @joueurActif.setter
     def joueurActif(self, val):
         self.__joueurActif = val
+
+    #La fin de la partie quand l'une des conditions est faite
 
     @property
     def fini(self):

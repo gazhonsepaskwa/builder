@@ -2,8 +2,8 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
-
+Description: Les joueurs/adversaires qui disputent une partie
+(matérialisés par des pions.)
 """
 
 ##########
@@ -40,7 +40,6 @@ class Joueur():
     def __str__(self):
         print("")
         
-    
     ###########################
     # accesseurs et mutateurs #
     ###########################
