@@ -1,7 +1,9 @@
 """
-Qui: Nathan Amory
-Quand: 2021-05-23
-Description: 
+Qui: Amory
+Quand: 18-01-2024
+Description: La case ressource est une case qui permet de donner au
+joueur qui tombe dessus, de choisir entre l'une des 4 ressources pour
+en recevoir une
 
 """
 
@@ -9,6 +11,7 @@ Description:
 # import #
 ##########
 
+from Joueur import *
 
 class Case_ressource():
 
@@ -16,8 +19,9 @@ class Case_ressource():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+
+        self.__ressource_contenue = ""
 
 
 
@@ -34,6 +38,10 @@ class Case_ressource():
     # accesseurs et mutateurs #
     ###########################
         
+    '''
+
+    '''
+
     @property
     def nom(self):
         pass
@@ -47,5 +55,5 @@ class Case_ressource():
     # methodes #
     ############
     
-    def methode(self):
+    def donnerRessource(self):
         pass

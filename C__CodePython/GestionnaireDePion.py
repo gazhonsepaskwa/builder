@@ -9,6 +9,7 @@ Description:
 # import #
 ##########
 
+from Joueur import *
 
 class GestionnaireDePion():
 

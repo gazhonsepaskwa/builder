@@ -1,7 +1,8 @@
 """
-Qui: Nathan Amory
-Quand: 2021-05-23
-Description: 
+Qui: Amory
+Quand: 18/01/2024
+Description: La case vol, est une case qui permet à un joueur de voler
+l'une des ressources d'un autre joueur.
 
 """
 
@@ -9,6 +10,7 @@ Description:
 # import #
 ##########
 
+from Joueur import *
 
 class Case_vol():
 
@@ -16,8 +18,10 @@ class Case_vol():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+
+        self.__voleur:Joueur = None
+        self.__victime:Joueur = None
 
 
 
@@ -47,5 +51,5 @@ class Case_vol():
     # methodes #
     ############
     
-    def methode(self):
+    def (self):
         pass
