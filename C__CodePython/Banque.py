@@ -56,9 +56,15 @@ class Banque():
     @property
     def receveur(self):
         pass
+<<<<<<< Updated upstream
     @envoyeur.setter
     def receveur(self, val):
         self.__receveur = val
+=======
+    @receveur.setter
+    def receveur(self, nom):
+        self.__receveur = nom
+>>>>>>> Stashed changes
 
 
 

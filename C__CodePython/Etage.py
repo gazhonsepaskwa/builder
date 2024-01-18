@@ -17,8 +17,8 @@ class Etage():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+        return
 
 
 

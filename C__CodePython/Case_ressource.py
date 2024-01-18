@@ -21,7 +21,7 @@ class Case_ressource():
 
     def __init__(self):
 
-        self.__ressource_contenue = ""
+        self.__ressource_contenue:str = ""
 
 
 
@@ -43,11 +43,11 @@ class Case_ressource():
     '''
 
     @property
-    def nom(self):
+    def ressource_contenue(self):
         pass
-    @nom.setter
+    @ressource_contenue.setter
     def nom(self, nom):
-        self.__nom = nom
+        self.__ressource_contenue = nom
 
 
 
@@ -55,5 +55,5 @@ class Case_ressource():
     # methodes #
     ############
     
-    def donnerRessource(self):
+    def donnerRessource(self, None):
         pass

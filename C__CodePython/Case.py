@@ -17,8 +17,8 @@ class Case():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__numero = 
+    def __init__(self):
+        self.__numero:str = 
 
 
 

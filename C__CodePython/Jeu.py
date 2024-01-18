@@ -17,9 +17,10 @@ class Jeu():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
-
+    def __init__(self):
+        self.__nbrDeJoueurs:int = 0
+        self.__listeJoueurs = []
+        self.__joueurActif
 
 
     #############
