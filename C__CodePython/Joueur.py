@@ -49,105 +49,105 @@ class Joueur():
         return self.__ID
     @ID.setter
     def ID(self, val):
-        self.__val
+        self.__ID = val
 
     @property
     def argent(self):
         return self.__argent
     @argent.setter
     def argent(self, val):
-        self.__val
+        self.__argent = val
 
     @property
     def jetonsTractopelle(self):
         return self.__jetonsTractopelle
     @jetonsTractopelle.setter
     def jetonsTractopelle(self, val):
-        self.__val
+        self.__jetonsTractopelle = val
 
     @property
     def jetonsBateau(self):
         return self.__jetonsBateau
     @jetonsBateau.setter
     def jetonsBateau(self, val):
-        self.__val
+        self.__jetonsBateau = val
 
     @property
     def jetonsCamion(self):
         return self.__jetonsCamion
     @jetonsCamion.setter
     def jetonsCamion(self, val):
-        self.__val
+        self.__jetonsCamion = val
 
     @property
     def jetonsGrue(self):
         return self.__jetonsGrue
     @jetonsGrue.setter
     def jetonsGrue(self, val):
-        self.__val
+        self.__jetonsGrue = val
 
     @property
     def proprietes(self):
         return self.__proprietes
     @proprietes.setter
     def proprietes(self, val):
-        self.__val
+        self.__proprietes = val
 
     @property
     def etagesRestants(self):
         return self.__etagesRestants
     @etagesRestants.setter
     def etagesRestants(self, val):
-        self.__val
+        self.__etagesRestants = val
 
     @property
     def valeurPremierLance(self):
         return self.__valeurPremierLance
     @valeurPremierLance.setter
     def valeurPremierLance(self, val):
-        self.__val
+        self.__valeurPremierLance = val
 
     @property
     def caseActuelle(self):
         return self.__caseActuelle
     @caseActuelle.setter
     def caseActuelle(self, val):
-        self.__val
+        self.__caseActuelle = val
 
     @property
     def caseListe(self):
         return self.__caseListe
     @caseListe.setter
     def caseListe(self, val):
-        self.__val
+        self.__caseListe = val
 
     @property
     def derniereSommeDE(self):
         return self.__derniereSommeDE
     @derniereSommeDE.setter
     def derniereSommeDE(self, val):
-        self.__val
+        self.__derniereSommeDE = val
 
     @property
     def enPrison(self):
         return self.__enPrison
     @enPrison.setter
     def enPrison(self, val):
-        self.__val
+        self.__enPrison = val
 
     @property
     def tourEditionFini(self):
         return self.__tourEditionFini
     @tourEditionFini.setter
     def tourEditionFini(self, val):
-        self.__val
+        self.__tourEditionFini = val
 
     @property
     def pion(self):
         return self.__pion
     @pion.setter
     def pion(self, val):
-        self.__val
+        self.__pion = val
 
     ############
     # methodes #

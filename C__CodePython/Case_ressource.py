@@ -39,7 +39,7 @@ class Case_ressource():
         return self.__ressource_contenue
     @ressource_contenue.setter
     def nom(self, val):
-        self.__val
+        self.__nom = val
 
 
 

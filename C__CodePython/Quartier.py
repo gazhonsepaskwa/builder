@@ -36,4 +36,4 @@ class Quartier():
         pass
     @proprietaire.setter
     def proprietaire(self, val):
-        self.__val
+        self.__proprietes = val

@@ -42,28 +42,28 @@ class Jeu():
         return self.__nbrDeJoueurs
     @nbrDeJoueurs.setter
     def nbrDeJoueurs(self, val):
-        self.__val = 
+        self.__nbrDeJoueurs = val 
 
     @property
     def listeJoueurs(self):
         return self.__listeJoueurs
     @listeJoueurs.setter
     def listeJoueurs(self, val):
-        self.__val
+        self.__listeJoueurs = val
 
     @property
     def joueurActif(self):
         return self.__joueurActif
     @joueurActif.setter
     def joueurActif(self, val):
-        self.__val
+        self.__joueurActif = val
 
     @property
     def fini(self):
         return self.__fini
     @fini.setter
     def fini(self, val):
-        self.__val
+        self.__fini = val
 
     ############
     # methodes #
