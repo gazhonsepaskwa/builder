@@ -1,7 +1,9 @@
 """
-Qui: Nathan Amory
-Quand: 2021-05-23
-Description: Case qui permet de tirer une carte chance et faire l'action inscrite dessus via chance()
+Qui: Nathan
+Quand: 
+- 18/01/2024
+Description: Case qui permet de tirer une carte
+chance et faire l'action inscrite dessus via chance()
 
 """
 

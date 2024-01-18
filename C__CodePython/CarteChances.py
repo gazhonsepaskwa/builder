@@ -1,6 +1,7 @@
 """
 Qui: Nathan
-Quand: 2021-05-23
+Quand: 
+- 18/01/2024
 Description: Carte qui quand tirée fait une action "choisie au hasard"
 
 """

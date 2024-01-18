@@ -1,6 +1,7 @@
 """
 Qui: Amory
-Quand: 18-01-2024
+Quand: 
+- 18/01/2024
 Description: La case ressource est une case qui permet de donner au
 joueur qui tombe dessus, de choisir entre l'une des 4 ressources pour
 en recevoir une

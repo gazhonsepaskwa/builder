@@ -1,6 +1,7 @@
 """
 Qui: Nathan
-Quand: 2021-05-23
+Quand: 
+- 18/01/2024
 Description: Carte associée a un case propriété, 
 permet de voir les informations sur la propriété achetée 
 """

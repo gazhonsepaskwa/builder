@@ -1,6 +1,7 @@
 """
-Qui: Nathan Amory
-Quand: 2021-05-23
+Qui: Nathan
+Quand: 
+- 18/01/2024
 Description: case sur laquel tout les joueurs commance et qui signifie le passage 
 a un nouveau tour de plateau
 """
