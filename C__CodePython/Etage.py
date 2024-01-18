@@ -18,9 +18,7 @@ class Etage():
     ################
 
     def __init__(self):
-        return
-
-
+        pass
 
     #############
     # affichage #
@@ -28,25 +26,3 @@ class Etage():
         
     def __str__(self):
         print("")
-        
-    
-
-    ###########################
-    # accesseurs et mutateurs #
-    ###########################
-        
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
-
-
-
-    ############
-    # methodes #
-    ############
-    
-    def methode(self):
-        pass

@@ -23,8 +23,6 @@ class Case_ressource():
 
         self.__ressource_contenue:str = ""
 
-
-
     #############
     # affichage #
     #############
@@ -32,16 +30,10 @@ class Case_ressource():
     def __str__(self):
         print("")
         
-    
-
     ###########################
     # accesseurs et mutateurs #
     ###########################
         
-    '''
-
-    '''
-
     @property
     def ressource_contenue(self):
         pass

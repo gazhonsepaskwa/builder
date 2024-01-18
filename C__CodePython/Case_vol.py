@@ -23,33 +23,9 @@ class Case_vol():
         self.__voleur:Joueur = None
         self.__victime:Joueur = None
 
-
-
     #############
     # affichage #
     #############
         
     def __str__(self):
         print("")
-        
-    
-
-    ###########################
-    # accesseurs et mutateurs #
-    ###########################
-        
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
-
-
-
-    ############
-    # methodes #
-    ############
-    
-    def (self):
-        pass

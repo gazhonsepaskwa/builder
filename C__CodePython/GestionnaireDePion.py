@@ -18,9 +18,7 @@ class GestionnaireDePion():
     ################
 
     def __init__(self):
-        return
-
-
+        pass
 
     #############
     # affichage #
@@ -28,25 +26,10 @@ class GestionnaireDePion():
         
     def __str__(self):
         print("")
-        
-    
-
-    ###########################
-    # accesseurs et mutateurs #
-    ###########################
-        
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
-
-
 
     ############
     # methodes #
     ############
     
-    def methode(self):
+    def choisir(self):
         pass
