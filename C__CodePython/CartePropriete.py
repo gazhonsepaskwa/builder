@@ -1,8 +1,8 @@
 """
-Qui: Nathan Amory
+Qui: Nathan
 Quand: 2021-05-23
-Description: 
-
+Description: Carte associée a un case propriété, 
+permet de voir les informations sur la propriété achetée 
 """
 
 ##########
@@ -16,8 +16,8 @@ class CartePropriete():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+        pass
 
 
 
@@ -33,16 +33,6 @@ class CartePropriete():
     ###########################
     # accesseurs et mutateurs #
     ###########################
-    
-    """
-    comentaire de l'attribut
-    """
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
 
 
 
@@ -50,5 +40,3 @@ class CartePropriete():
     # methodes #
     ############
     
-    def methode(self):
-        pass
