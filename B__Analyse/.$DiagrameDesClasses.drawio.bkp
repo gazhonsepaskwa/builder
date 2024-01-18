@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-01-18T14:26:57.108Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="Cbt8c8jLJ2wg3HgqSNpr" version="22.1.18" type="device" pages="4">
+<mxfile host="Electron" modified="2024-01-18T14:34:12.799Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="5ndDh5IaC0W3xK3Q-U0T" version="22.1.18" type="device" pages="4">
   <diagram id="gW4KWFH_ABjafCwhLisA" name="liste des classes">
     <mxGraphModel dx="714" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1570,25 +1570,25 @@
         <mxCell id="95OnLKZL09F_TmGp8ZkL-77" value="+ choisir()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="95OnLKZL09F_TmGp8ZkL-74">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="95OnLKZL09F_TmGp8ZkL-78" value="CarteChances" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="628" y="1190" width="160" height="138" as="geometry">
+        <mxCell id="95OnLKZL09F_TmGp8ZkL-78" value="CarteChances&lt;br&gt;|| Carte qui quand tirée fait une action ||" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="628" y="1190" width="160" height="172" as="geometry">
             <mxRectangle x="220" y="910" width="110" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="95OnLKZL09F_TmGp8ZkL-79" value="+ titre: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="95OnLKZL09F_TmGp8ZkL-78">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="95OnLKZL09F_TmGp8ZkL-80" value="+ contenu: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="95OnLKZL09F_TmGp8ZkL-78">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+          <mxGeometry y="86" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="95OnLKZL09F_TmGp8ZkL-81" value="+ identifiant: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="95OnLKZL09F_TmGp8ZkL-78">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
+          <mxGeometry y="112" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="95OnLKZL09F_TmGp8ZkL-82" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="95OnLKZL09F_TmGp8ZkL-78">
-          <mxGeometry y="104" width="160" height="8" as="geometry" />
+          <mxGeometry y="138" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="95OnLKZL09F_TmGp8ZkL-83" value="+ action(): None" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="95OnLKZL09F_TmGp8ZkL-78">
-          <mxGeometry y="112" width="160" height="26" as="geometry" />
+          <mxGeometry y="146" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="95OnLKZL09F_TmGp8ZkL-84" value="Case_propriete" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="1830" width="160" height="138" as="geometry">
@@ -1780,40 +1780,40 @@
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="41ZDFVf17SXsZCPUASM5-2" value="&lt;b&gt;- envoyeur: Joueur&lt;/b&gt;&lt;br&gt;||&amp;nbsp;joueur qui envoie l&#39;argent ||" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
+        <mxCell id="41ZDFVf17SXsZCPUASM5-2" value="&lt;b&gt;- envoyeur: Joueur&lt;/b&gt;&lt;br&gt;joueur qui envoie l&#39;argent" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
           <mxGeometry y="70" width="240" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="41ZDFVf17SXsZCPUASM5-3" value="&lt;b&gt;- receveur: Joueur&lt;/b&gt;&lt;br&gt;|| joueur qui reçois l&#39;argent&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;||&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
+        <mxCell id="41ZDFVf17SXsZCPUASM5-3" value="&lt;b&gt;- receveur: Joueur&lt;/b&gt;&lt;br&gt;joueur qui reçois l&#39;argent&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
           <mxGeometry y="120" width="240" height="50" as="geometry" />
         </mxCell>
         <mxCell id="41ZDFVf17SXsZCPUASM5-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
           <mxGeometry y="170" width="240" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="41ZDFVf17SXsZCPUASM5-5" value="&lt;b&gt;+ transferer(somme:int )&lt;/b&gt;&lt;br&gt;||méthode qui permet de transférer une somme d&#39;argent à un joueur ||" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
+        <mxCell id="41ZDFVf17SXsZCPUASM5-5" value="&lt;b&gt;+ transferer(somme:int )&lt;/b&gt;&lt;br&gt;méthode qui permet de transférer une somme d&#39;argent à un joueur" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
           <mxGeometry y="178" width="240" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="41ZDFVf17SXsZCPUASM5-6" value="&lt;b&gt;+ modifierBalance(joueur, somme:int )&lt;/b&gt;&lt;br&gt;||&amp;nbsp;méthode qui permet de modifier la balance d&#39;un joueur ||" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
+        <mxCell id="41ZDFVf17SXsZCPUASM5-6" value="&lt;b&gt;+ modifierBalance(joueur, somme:int )&lt;/b&gt;&lt;br&gt;méthode qui permet de modifier la balance d&#39;un joueur" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="41ZDFVf17SXsZCPUASM5-1">
           <mxGeometry y="240" width="240" height="70" as="geometry" />
         </mxCell>
         <mxCell id="wRUoYIROov83_QK8fMyT-1" value="Batiment&lt;br&gt;|| Classe Batiment, gere un batiment, ses etages et cetera ||" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1140" width="200" height="330" as="geometry">
+          <mxGeometry x="340" y="1140" width="250" height="330" as="geometry">
             <mxRectangle x="1394.98" y="1436" width="95.02" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wRUoYIROov83_QK8fMyT-2" value="&lt;b&gt;- construisible: Bool&lt;/b&gt;&lt;br&gt;definit si un batiment est construisible ou non&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="wRUoYIROov83_QK8fMyT-1">
-          <mxGeometry y="71" width="200" height="59" as="geometry" />
+        <mxCell id="wRUoYIROov83_QK8fMyT-2" value="&lt;b&gt;- construisible: Bool {=False à la création}&lt;/b&gt;&lt;br&gt;definit si un batiment est construisible ou non&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="wRUoYIROov83_QK8fMyT-1">
+          <mxGeometry y="71" width="250" height="59" as="geometry" />
         </mxCell>
-        <mxCell id="wRUoYIROov83_QK8fMyT-3" value="&lt;b&gt;- nombreEtage: int&lt;/b&gt;&lt;br&gt;Le nombre d&#39;etage d&#39;un batiment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="wRUoYIROov83_QK8fMyT-1">
-          <mxGeometry y="130" width="200" height="60" as="geometry" />
+        <mxCell id="wRUoYIROov83_QK8fMyT-3" value="&lt;b&gt;- nombreEtage: int {=0 à la création}&lt;/b&gt;&lt;br&gt;Le nombre d&#39;etage d&#39;un batiment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="wRUoYIROov83_QK8fMyT-1">
+          <mxGeometry y="130" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRUoYIROov83_QK8fMyT-4" value="&lt;b&gt;- quartier: Quartier&lt;/b&gt;&lt;br&gt;Le quartier auquel appartienst le batiment&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="wRUoYIROov83_QK8fMyT-1">
-          <mxGeometry y="190" width="200" height="60" as="geometry" />
+          <mxGeometry y="190" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRUoYIROov83_QK8fMyT-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="wRUoYIROov83_QK8fMyT-1">
-          <mxGeometry y="250" width="200" height="8" as="geometry" />
+          <mxGeometry y="250" width="250" height="8" as="geometry" />
         </mxCell>
         <mxCell id="wRUoYIROov83_QK8fMyT-6" value="&lt;b&gt;+&amp;nbsp;VerifQuantiteePion()&lt;br&gt;&lt;/b&gt;Verifie si le joueur a assez de pions pour construir un etage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="wRUoYIROov83_QK8fMyT-1">
-          <mxGeometry y="258" width="200" height="72" as="geometry" />
+          <mxGeometry y="258" width="250" height="72" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
