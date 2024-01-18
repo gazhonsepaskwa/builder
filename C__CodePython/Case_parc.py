@@ -1,7 +1,7 @@
 """
-Qui: Nathan Amory
+Qui: Nathan 
 Quand: 2021-05-23
-Description: 
+Description: case ne servant a rien mais ayant une existance matérielle 
 
 """
 
@@ -17,7 +17,7 @@ class Case_parc():
     ################
 
     def __init__(self, nom):
-        self.__nom = nom
+        pass
 
 
 
@@ -34,15 +34,6 @@ class Case_parc():
     # accesseurs et mutateurs #
     ###########################
 
-    """
-    comentaire de l'attribut
-    """ 
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
 
 
 
@@ -50,5 +41,3 @@ class Case_parc():
     # methodes #
     ############
     
-    def methode(self):
-        pass
