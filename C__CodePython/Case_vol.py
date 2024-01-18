@@ -10,7 +10,7 @@ l'une des ressources d'un autre joueur.
 # import #
 ##########
 
-from Joueur.py import *
+from Joueur import *
 
 class Case_vol():
 
@@ -51,5 +51,5 @@ class Case_vol():
     # methodes #
     ############
     
-    def methode(self):
+    def (self):
         pass

@@ -11,6 +11,7 @@ en recevoir une
 # import #
 ##########
 
+from Joueur import *
 
 class Case_ressource():
 
@@ -54,5 +55,5 @@ class Case_ressource():
     # methodes #
     ############
     
-    def methode(self):
+    def donnerRessource(self):
         pass

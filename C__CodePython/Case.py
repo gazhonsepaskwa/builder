@@ -9,6 +9,7 @@ Description:
 # import #
 ##########
 
+from Joueur import *
 
 class Case():
 
@@ -17,7 +18,7 @@ class Case():
     ################
 
     def __init__(self, nom):
-        self.__nom = nom
+        self.__numero = 
 
 
 
