@@ -1,8 +1,8 @@
 """
 Qui: Nathan Amory
 Quand: 2021-05-23
-Description: 
-
+Description: case sur laquel tout les joueurs commance et qui signifie le passage 
+a un nouveau tour de plateau
 """
 
 ##########
@@ -17,7 +17,7 @@ class Case_depart():
     ################
 
     def __init__(self, nom):
-        self.__nom = nom
+        pass
 
 
 
@@ -33,22 +33,9 @@ class Case_depart():
     ###########################
     # accesseurs et mutateurs #
     ###########################
-    
-    """
-    comentaire de l'attribut
-    """
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
 
 
 
     ############
     # methodes #
     ############
-    
-    def methode(self):
-        pass
