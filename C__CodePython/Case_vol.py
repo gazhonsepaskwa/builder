@@ -1,6 +1,7 @@
 """
 Qui: Amory
-Quand: 18/01/2024
+Quand: 
+- 18/01/2024
 Description: La case vol, est une case qui permet à un joueur de voler
 l'une des ressources d'un autre joueur.
 

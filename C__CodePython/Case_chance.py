@@ -1,6 +1,7 @@
 """
 Qui: Nathan
-Quand: 2021-05-23
+Quand: 
+- 18/01/2024
 Description: Case qui permet de tirer une carte
 chance et faire l'action inscrite dessus via chance()
 
