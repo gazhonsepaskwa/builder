@@ -1,7 +1,7 @@
 """
 Qui: Nathan Amory
 Quand: 2021-05-23
-Description: 
+Description: Case qui permet de tirer une carte chance et faire l'action inscrite dessus via chance()
 
 """
 
@@ -16,8 +16,8 @@ class Case_chance():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+        pass
 
 
 
@@ -33,16 +33,6 @@ class Case_chance():
     ###########################
     # accesseurs et mutateurs #
     ###########################
-    
-    """
-    comentaire de l'attribut
-    """
-    @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
 
 
 
@@ -50,5 +40,8 @@ class Case_chance():
     # methodes #
     ############
     
-    def methode(self):
+    """
+    permet de tirer une carte chance et faire l'action inscrite dessus
+    """
+    def chance(self):
         pass
