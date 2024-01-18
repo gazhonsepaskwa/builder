@@ -11,7 +11,7 @@ Description:
 ##########
 
 
-class Nom():
+class Banque():
 
     ################
     # constructeur #

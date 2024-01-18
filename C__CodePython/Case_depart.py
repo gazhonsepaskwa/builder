@@ -10,7 +10,7 @@ Description:
 ##########
 
 
-class Nom():
+class Case_depart():
 
     ################
     # constructeur #
