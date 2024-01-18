@@ -32,6 +32,8 @@ class Quartier():
     # accesseurs et mutateurs #
     ###########################
         
+    #Définis qui est le propriétaire d'un certain quartier
+    
     @property
     def proprietaire(self):
         pass
