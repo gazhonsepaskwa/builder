@@ -1,7 +1,7 @@
 """
-Qui: Nathan Amory
+Qui: Nathan
 Quand: 2021-05-23
-Description: 
+Description: Carte qui quand tirée fait une action "choisie au hasard"
 
 """
 
@@ -16,8 +16,10 @@ class CarteChances():
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        self.__nom = nom
+    def __init__(self):
+        self.__titre: str = ""
+        self.__contenu: str = ""
+        self.__identifiant: int = 0
 
 
 
@@ -35,20 +37,44 @@ class CarteChances():
     ###########################
         
     """
-    comentaire de l'attribut
+    Titre en haut de la carte
     """
     @property
-    def nom(self):
-        pass
-    @nom.setter
-    def nom(self, nom):
-        self.__nom = nom
+    def titre(self):
+        return self.__titre
+    @titre.setter
+    def titre(self, val):
+        self.__titre = val
 
+    """
+    contenu texte de la carte
+    """
+    @property
+    def contenu(self):
+        return self.__contenu
+    @contenu.setter
+    def contenu(self, val):
+        self.__contenu = val
+
+    """
+    identifiant de la carte: 
+    permet de distinguer les cartes de la même classe pour executer l'action adéquoite
+    """
+    @property
+    def identifiant(self):
+        return self.__identifiant
+    @identifiant.setter
+    def identifiant(self, val):
+        self.__identifiant = val
+    
 
 
     ############
     # methodes #
     ############
     
-    def methode(self):
+    """
+    action faite par la carte de chance(difere en fonction de l'identifiant et donc de la carte)
+    """
+    def action(self):
         pass

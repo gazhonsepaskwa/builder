@@ -44,7 +44,7 @@ class Banque():
     """
     @property
     def envoyeur(self):
-        pass
+        return self.__envoyeur
     @envoyeur.setter
     def envoyeur(self, val):
         self.__envoyeur = val
@@ -55,7 +55,7 @@ class Banque():
     """
     @property
     def receveur(self):
-        pass
+        return self.__receveur
     @receveur.setter
     def receveur(self, nom):
         self.__receveur = nom
