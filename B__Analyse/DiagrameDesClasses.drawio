@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-01-19T09:58:05.555Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="gGDEWfdilApaMW1zBJZv" version="22.1.18" type="device" pages="5">
+<mxfile host="Electron" modified="2024-01-19T12:55:50.341Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="w8BE1jhof8In591yYw2J" version="22.1.18" type="device" pages="5">
   <diagram id="gW4KWFH_ABjafCwhLisA" name="On vera cekon an fè + tar">
-    <mxGraphModel dx="1886" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1749,45 +1749,56 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NvjoYL8UT1KLDeZYB6T3" name="Donées a stoqué dans la DB">
-    <mxGraphModel dx="1640" dy="-406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="-336" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_dgOcRrFlF6xJCfsIGuE-7" value="Batiment&lt;br&gt;|| Classe Batiment, gere un batiment, ses etages et cetera ||" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_dgOcRrFlF6xJCfsIGuE-7" value="Batiment&lt;br&gt;|| Classe Batiment, gere un batiment, ses etages et cetera ||" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="18" y="1121" width="381" height="131" as="geometry">
             <mxRectangle x="1394.98" y="1436" width="95.02" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_dgOcRrFlF6xJCfsIGuE-10" value="&lt;b&gt;- quartier: Quartier&amp;nbsp;&lt;/b&gt;&lt;br&gt;Le quartier auquel appartienst le batiment&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="_dgOcRrFlF6xJCfsIGuE-7">
+        <mxCell id="_dgOcRrFlF6xJCfsIGuE-10" value="&lt;b&gt;- quartier: Quartier&amp;nbsp;&lt;/b&gt;&lt;br&gt;Le quartier auquel appartienst le batiment&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="_dgOcRrFlF6xJCfsIGuE-7" vertex="1">
           <mxGeometry y="71" width="381" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_dgOcRrFlF6xJCfsIGuE-13" value="CarteChances&lt;br&gt;|| Carte qui quand tirée fait une action ||" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_dgOcRrFlF6xJCfsIGuE-13" value="CarteChances&lt;br&gt;|| Carte qui quand tirée fait une action ||" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="1121" width="370" height="240" as="geometry">
             <mxRectangle x="220" y="910" width="110" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_dgOcRrFlF6xJCfsIGuE-14" value="&lt;b&gt;- titre: str {!=&quot;&quot;}&lt;/b&gt;&lt;br&gt;Titre en haut de la carte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="_dgOcRrFlF6xJCfsIGuE-13">
+        <mxCell id="_dgOcRrFlF6xJCfsIGuE-14" value="&lt;b&gt;- titre: str {!=&quot;&quot;}&lt;/b&gt;&lt;br&gt;Titre en haut de la carte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="_dgOcRrFlF6xJCfsIGuE-13" vertex="1">
           <mxGeometry y="50" width="370" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="_dgOcRrFlF6xJCfsIGuE-15" value="&lt;b&gt;- contenu: str {!=&quot;&quot;}&lt;/b&gt;&lt;br&gt;contenu texte de la carte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="_dgOcRrFlF6xJCfsIGuE-13">
+        <mxCell id="_dgOcRrFlF6xJCfsIGuE-15" value="&lt;b&gt;- contenu: str {!=&quot;&quot;}&lt;/b&gt;&lt;br&gt;contenu texte de la carte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="_dgOcRrFlF6xJCfsIGuE-13" vertex="1">
           <mxGeometry y="100" width="370" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="_dgOcRrFlF6xJCfsIGuE-16" value="&lt;span&gt;- identifiant: int {unique}&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;identifiant de la carte:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;permet de distinguer les cartes de la même classe pour executer l&#39;action adéquoite&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;fontStyle=1" vertex="1" parent="_dgOcRrFlF6xJCfsIGuE-13">
+        <mxCell id="_dgOcRrFlF6xJCfsIGuE-16" value="&lt;span&gt;- identifiant: int {unique}&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;identifiant de la carte:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;permet de distinguer les cartes de la même classe pour executer l&#39;action adéquoite&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;fontStyle=1" parent="_dgOcRrFlF6xJCfsIGuE-13" vertex="1">
           <mxGeometry y="150" width="370" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="-4F9yYVKNWeeYDeDV-4S-1" value="Case_propriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;case pouvant etre acheté et qui permet de construire&amp;nbsp;&lt;/div&gt;&lt;div&gt;les batiments quand le hamaux sont complet&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="18" y="1280" width="381" height="210" as="geometry">
+        <mxCell id="-4F9yYVKNWeeYDeDV-4S-1" value="Cases" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="18" y="1280" width="381" height="169" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-4F9yYVKNWeeYDeDV-4S-2" value="&lt;div&gt;&lt;b&gt;- nom {!=&quot;&quot;}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;nom de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="-4F9yYVKNWeeYDeDV-4S-1">
-          <mxGeometry y="81" width="381" height="39" as="geometry" />
+        <mxCell id="-4F9yYVKNWeeYDeDV-4S-2" value="&lt;div&gt;&lt;b&gt;- nom {!=&quot;&quot;}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;nom de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="-4F9yYVKNWeeYDeDV-4S-1" vertex="1">
+          <mxGeometry y="40" width="381" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="-4F9yYVKNWeeYDeDV-4S-3" value="&lt;div&gt;&lt;b&gt;- prix {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;prix de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="-4F9yYVKNWeeYDeDV-4S-1">
-          <mxGeometry y="120" width="381" height="40" as="geometry" />
+        <mxCell id="-4F9yYVKNWeeYDeDV-4S-3" value="&lt;div&gt;&lt;b&gt;- prix {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;prix de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="-4F9yYVKNWeeYDeDV-4S-1" vertex="1">
+          <mxGeometry y="79" width="381" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="-4F9yYVKNWeeYDeDV-4S-4" value="&lt;div&gt;&lt;b&gt;- loyer {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;loyer à payer quand n passe sur la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="-4F9yYVKNWeeYDeDV-4S-1">
-          <mxGeometry y="160" width="381" height="50" as="geometry" />
+        <mxCell id="-4F9yYVKNWeeYDeDV-4S-4" value="&lt;div&gt;&lt;b&gt;- loyer {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;loyer à payer quand n passe sur la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="-4F9yYVKNWeeYDeDV-4S-1" vertex="1">
+          <mxGeometry y="119" width="381" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6z4_yBDIalfYKKlkhthX-1" value="plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="1400" width="260" height="118" as="geometry">
+            <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6z4_yBDIalfYKKlkhthX-2" value="&lt;div&gt;&lt;b&gt;num&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Numéro de la classe&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="6z4_yBDIalfYKKlkhthX-1">
+          <mxGeometry y="40" width="260" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="6z4_yBDIalfYKKlkhthX-6" value="&lt;b&gt;case&lt;/b&gt;&lt;br&gt;lien vers la table case" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="6z4_yBDIalfYKKlkhthX-1">
+          <mxGeometry y="79" width="260" height="39" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
