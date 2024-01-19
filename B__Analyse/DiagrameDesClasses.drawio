@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-01-19T08:20:52.502Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="P5d_tFpfbIlXKCvF_Kry" version="22.1.18" type="device" pages="4">
+<mxfile host="Electron" modified="2024-01-19T08:23:51.820Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="pBY8sthFsl0Xo4Z-rumK" version="22.1.18" type="device" pages="4">
   <diagram id="gW4KWFH_ABjafCwhLisA" name="liste des classes">
     <mxGraphModel dx="864" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1674,7 +1674,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="I1sggChajE81NTWhMDq6" name="Classes suposée finie">
-    <mxGraphModel dx="793" dy="-251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="549" dy="-512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1904,7 +1904,7 @@
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-47" vertex="1">
           <mxGeometry y="70" width="390" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-1" value="Case_propriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Description: Carte associée a un case propriété,&amp;nbsp;&lt;/div&gt;&lt;div&gt;permet de voir les informations sur la propriété achetée&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-1" value="Case_propriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;case pouvant etre acheté et qui permet de construire&amp;nbsp;&lt;/div&gt;&lt;div&gt;les batiments quand le hamaux sont complet&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="2849" width="370" height="140" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
