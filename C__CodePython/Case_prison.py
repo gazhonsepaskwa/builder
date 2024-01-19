@@ -2,8 +2,7 @@
 Qui: Amory
 Quand: 
 - 18/01/2024
-Description: 
-
+Description: Case dans laquel le joueur est envoyer quand son status est "en prison"
 """
 
 ##########
