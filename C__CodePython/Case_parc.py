@@ -2,7 +2,7 @@
 Qui: Nathan 
 Quand: 
 - 18/01/2024
-Description: case ne servant a rien mais ayant une existance matérielle 
+Description: Case ne servant a rien mais ayant une existence matérielle 
 
 """
 
