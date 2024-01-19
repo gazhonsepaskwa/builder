@@ -9,14 +9,20 @@
 <body>
 
 <header>
-    <nav>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#jeu">Le Jeu</a></li>
-            <li><a href="#groupe">Notre Groupe</a></li>
-            <li><a href="#projet">Notre Projet</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <a href="#">Accueil</a>
+            <a href="#">Le Jeu</a>
+            <a href="#">Notre Groupe</a>
+            <a href="#">Notre Projet</a>
+        </div>
+    </div>
+
     <h1>Monopoly Builder </h1>
     <img src="accueil_image.jpg" alt="Image illustrative">
 </header>
@@ -38,13 +44,14 @@
 
 <section id="projet">
     <h2>Notre Projet</h2>
-    <p>Texte expliquant votre projet...</p>
+    <p>Notre projet est donc une variante numérique du Monopoly builder de base, </p>
 </section>
 
 
 <footer>
-    <p>&copy; 2024 Amory & Nathan. Tous droits réservés.</p>
+    <p>&copy; 2024 Amory & Nathan. IPET - 6 TTR informatique 23/24</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
