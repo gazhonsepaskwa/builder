@@ -23,8 +23,6 @@ class Banque():
         self.__envoyeur:Joueur = None
         self.__receveur:Joueur = None
 
-
-
     #############
     # affichage #
     #############
