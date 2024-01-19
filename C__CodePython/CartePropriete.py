@@ -41,3 +41,8 @@ class CartePropriete():
     # methodes #
     ############
     
+    """
+    permet d'acheter la carte ou de payer le joueur qui la possède
+    """
+    def achat(self):
+        pass
