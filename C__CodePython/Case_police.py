@@ -2,8 +2,8 @@
 Qui: Nathan 
 Quand: 
 - 18/01/2024
-Description: case sur laquelle se trouve la police,
-quand on tombe dessu on est envoyé en prison
+Description: Case sur laquelle se trouve la police,
+quand on tombe dessus on est envoyé en prison
 """
 
 ##########
@@ -40,6 +40,8 @@ class Case_police():
     ############
     # methodes #
     ############
+
+    #Envoie le joueur se situant sur la case, en prison
     
     def emprisonner(self):
         pass

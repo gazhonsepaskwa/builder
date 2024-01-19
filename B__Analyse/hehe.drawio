@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" modified="2024-01-19T08:03:18.296Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0" etag="bQ_EJF3uKrr4r5MGnVMm" version="22.1.21" type="device">
+  <diagram name="Page-1" id="OiL2nmMCv03fyjxtIJDZ">
+    <mxGraphModel dx="712" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-1" value="&lt;div&gt;Case_chance&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case qui permet de tirer une carte&lt;br&gt;chance et faire l&#39;action inscrite dessus via chance()&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="24" y="50" width="406" height="140" as="geometry">
+            <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="jpQgUF-URlxB0ghtwsSu-1">
+          <mxGeometry y="70" width="406" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-6" value="&lt;div&gt;&lt;b&gt;+ chance &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="jpQgUF-URlxB0ghtwsSu-1">
+          <mxGeometry y="78" width="406" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-38" value="&lt;div&gt;Case_depart&lt;/div&gt;&lt;br&gt;Case sur laquelle tout les joueurs commence et qui signifie le passage &lt;br&gt;a un nouveau tour de plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="22" y="210" width="408" height="78" as="geometry">
+            <mxRectangle x="20" y="280" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="jpQgUF-URlxB0ghtwsSu-38">
+          <mxGeometry y="70" width="408" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-40" value="&lt;div&gt;Case_parc&lt;/div&gt;&lt;br&gt;Case sur laquel tout les joueurs commance et qui signifie le passage &lt;br&gt;a un nouveau tour de plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="23" y="320" width="408" height="78" as="geometry">
+            <mxRectangle x="20" y="280" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-41" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="jpQgUF-URlxB0ghtwsSu-40">
+          <mxGeometry y="70" width="408" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-42" value="&lt;div&gt;Case_police&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle se trouve la police,&lt;br&gt;quand on tombe dessus on est envoyé en prison&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="24" y="420" width="406" height="140" as="geometry">
+            <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="jpQgUF-URlxB0ghtwsSu-42">
+          <mxGeometry y="70" width="406" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jpQgUF-URlxB0ghtwsSu-44" value="&lt;div&gt;&lt;b&gt;+ emprisonner&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="jpQgUF-URlxB0ghtwsSu-42">
+          <mxGeometry y="78" width="406" height="62" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

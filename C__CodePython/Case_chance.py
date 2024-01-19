@@ -43,7 +43,7 @@ class Case_chance():
     ############
     
     """
-    permet de tirer une carte chance et faire l'action inscrite dessus
+    Permet de tirer une carte chance et faire l'action inscrite dessus
     """
     def chance(self):
         pass
