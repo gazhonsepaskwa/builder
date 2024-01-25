@@ -1,7 +1,8 @@
 """
-Qui: Amory
+Qui: Amory & Nathan
 Quand: 
-- 18/01/2024
+- 18/01/2024 Amory
+- 25/01/2024 Nathan
 Description: Le jeu Monopoly en lui même qui va pouvoir
 être joué par les joueurs qui veulent bien y jouer
 """
@@ -21,7 +22,7 @@ class Jeu():
     def __init__(self):
         self.__nbrDeJoueurs:int = 0
         self.__listeJoueurs = []
-        self.__joueurActif = 0
+        self.__joueurActif:Joueur = None
         self.__fini = False
 
 
@@ -92,4 +93,14 @@ class Jeu():
     #À la fin du tour d'un joueur, on passe au joueur suivant
 
     def changerJoueurActif(self):
+        pass
+    
+    # Détermine qui commence la partie
+
+    def deterQuiCommence(self):
+        pass
+    
+    # Defini qui est le grand gagnant 
+    
+    def finDePartie():
         pass
