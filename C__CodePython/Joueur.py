@@ -50,8 +50,15 @@ class Joueur():
     def ID(self):
         return self.__ID
     @ID.setter
-    def ID(self, val):
-        self.__ID = val
+    def ID(self, leID:int) -> None:
+
+        #Test de la valeur reçue.
+
+        if not(isinstance(leID, int) and >= 0):
+
+            raise TypeError("")
+
+        self.__ID = leID
 
     #Argent qui permet d'acheter les diverses propriétés du jeu
 
@@ -59,8 +66,15 @@ class Joueur():
     def argent(self):
         return self.__argent
     @argent.setter
-    def argent(self, val):
-        self.__argent = val
+    def argent(self, leArgent:int) -> None:
+
+        #Test de la valeur reçue.
+
+        if not(isinstance(leArgent, int) and leArgent >= 0):
+
+            raise TypeError("")
+
+        self.__argent = leArgent
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
@@ -68,8 +82,15 @@ class Joueur():
     def jetonsTractopelle(self):
         return self.__jetonsTractopelle
     @jetonsTractopelle.setter
-    def jetonsTractopelle(self, val):
-        self.__jetonsTractopelle = val
+    def jetonsTractopelle(self, leJetonsTractopelle:int):
+
+        #Test de la valeur reçue.
+
+        if not(isinstance(leJetonsTractopelle, int) and >= 0):
+
+            raise TypeError("")
+
+        self.__jetonsTractopelle = leJetonsTractopelle
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
@@ -77,8 +98,15 @@ class Joueur():
     def jetonsBateau(self):
         return self.__jetonsBateau
     @jetonsBateau.setter
-    def jetonsBateau(self, val):
-        self.__jetonsBateau = val
+    def jetonsBateau(self, leJetonsBateau:int):
+        
+        #Test de la valeur reçue.
+
+        if not(isinstance(leJetonsBateau, int) and >= 0):
+
+            raise TypeError("")
+
+        self.__jetonsBateau = leJetonsBateau
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
@@ -86,8 +114,15 @@ class Joueur():
     def jetonsCamion(self):
         return self.__jetonsCamion
     @jetonsCamion.setter
-    def jetonsCamion(self, val):
-        self.__jetonsCamion = val
+    def jetonsCamion(self, leJetonsCamion:int):
+        
+        #Test de la valeur reçue.
+
+        if not(isinstance(leJetonsCamion, int) and >= 0):
+
+            raise TypeError("")
+
+        self.__jetonsCamion = leJetonsCamion
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
@@ -95,8 +130,15 @@ class Joueur():
     def jetonsGrue(self):
         return self.__jetonsGrue
     @jetonsGrue.setter
-    def jetonsGrue(self, val):
-        self.__jetonsGrue = val
+    def jetonsGrue(self, leJetonsGrue:int):
+        
+        #Test de la valeur reçue.
+
+        if not(isinstance(leJetonsGrue, int) and >= 0):
+
+            raise TypeError("")
+
+        self.__jetonsGrue = leJetonsGrue
 
     #Propriétés obtenues par le/les joueur(s)
 
@@ -104,8 +146,9 @@ class Joueur():
     def proprietes(self):
         return self.__proprietes
     @proprietes.setter
-    def proprietes(self, val):
-        self.__proprietes = val
+    def proprietes(self, leProprietes):
+
+        self.__proprietes = leProprietes
 
     #La valeur du premier lancé ?
 
@@ -113,8 +156,15 @@ class Joueur():
     def valeurPremierLance(self):
         return self.__valeurPremierLance
     @valeurPremierLance.setter
-    def valeurPremierLance(self, val):
-        self.__valeurPremierLance = val
+    def valeurPremierLance(self, leValeurPremierLance:int):
+    
+        #Test de la valeur reçue.
+
+        if not(isinstance(leValeurPremierLance, int) and leValeurPremierLance > 2 and leValeurPremierLance < 12):
+
+            raise TypeError("")
+
+        self.__valeurPremierLance = leValeurPremierLance
 
     #Case sur laquelle le joueur est actuellement
 
@@ -122,8 +172,9 @@ class Joueur():
     def caseActuelle(self):
         return self.__caseActuelle
     @caseActuelle.setter
-    def caseActuelle(self, val):
-        self.__caseActuelle = val
+    def caseActuelle(self, leCaseActuelle):
+
+        self.__caseActuelle = leCaseActuelle
 
     #Liste de cases disponible sur le plateau
 
@@ -131,8 +182,8 @@ class Joueur():
     def caseListe(self):
         return self.__caseListe
     @caseListe.setter
-    def caseListe(self, val):
-        self.__caseListe = val
+    def caseListe(self, leCaseListe):
+        self.__caseListe = leCaseListe
 
     #Dernière somme retenu après le lancé de dé
 
@@ -140,8 +191,15 @@ class Joueur():
     def derniereSommeDE(self):
         return self.__derniereSommeDE
     @derniereSommeDE.setter
-    def derniereSommeDE(self, val):
-        self.__derniereSommeDE = val
+    def derniereSommeDE(self, leDerniereSomme:int):
+    
+        #Test de la valeur reçue.
+
+        if not(isinstance(leDerniereSomme, int) and leDerniereSomme > 2 and leDerniereSomme < 12):
+
+            raise TypeError("")
+
+        self.__derniereSommeDE = leDerniereSomme
 
     #Envoi le joueur en prison
 
@@ -149,8 +207,8 @@ class Joueur():
     def enPrison(self):
         return self.__enPrison
     @enPrison.setter
-    def enPrison(self, val):
-        self.__enPrison = val
+    def enPrison(self, leEnPrison:bool):
+        self.__enPrison = leEnPrison
 
     #???
 
