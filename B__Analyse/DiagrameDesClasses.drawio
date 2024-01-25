@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-01-19T12:55:50.341Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="w8BE1jhof8In591yYw2J" version="22.1.18" type="device" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-01-25T08:55:17.667Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0" etag="617PLVkvm28q9GEFqVaW" version="23.0.1" type="device" pages="5">
   <diagram id="gW4KWFH_ABjafCwhLisA" name="On vera cekon an fè + tar">
-    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -266,7 +266,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="7tXG9CqI5JnREmKTy40y" name="justification de 4 liens">
-    <mxGraphModel dx="2219" dy="939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -619,7 +619,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="liens interclasses" id="33vtKQogQdE3ajYRxeQ-">
-    <mxGraphModel dx="2694" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1441,7 +1441,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="I1sggChajE81NTWhMDq6" name="Classes suposée finie">
-    <mxGraphModel dx="1301" dy="-550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="347" dy="-671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1563,7 +1563,7 @@
           <mxGeometry y="70" width="390" height="8" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-16" value="&lt;div&gt;Jeu&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Le jeu Monopoly en lui même qui va pouvoir&lt;br&gt;être joué par les joueurs qui veulent bien y jouer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="2240" width="370" height="410" as="geometry">
+          <mxGeometry x="18.5" y="2200" width="370" height="480" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1592,14 +1592,20 @@
           <mxGeometry y="310" width="370" height="50" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-25" value="&lt;div&gt;&lt;b&gt;+ changerJoueurActif(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;À la fin du tour d&#39;un joueur, on passe au joueur suivant&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
-          <mxGeometry y="360" width="370" height="50" as="geometry" />
+          <mxGeometry y="360" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CXzDHP1VofXxcQM4s6Ol-1" value="&lt;div&gt;&lt;b&gt;+ finDePartie&lt;/b&gt;() : None&lt;/div&gt;Définis qui est le grand gagnant de la partie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="cuxR2tFWYrxJDSZeBXdW-16">
+          <mxGeometry y="400" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CXzDHP1VofXxcQM4s6Ol-2" value="&lt;div&gt;&lt;b&gt;+ deterQuiCommence&lt;/b&gt;() : None&lt;/div&gt;&lt;div&gt;Détermine qui commence&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="cuxR2tFWYrxJDSZeBXdW-16">
+          <mxGeometry y="440" width="370" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-26" value="&lt;div&gt;Joueur&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Les joueurs/adversaires qui disputent une partie&lt;br&gt;(matérialisés par des pions.)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="433" y="2345" width="380" height="770" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-27" value="&lt;div&gt;&lt;b&gt;- ID&lt;/b&gt;&lt;b style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;:int {&amp;gt;=0}&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-27" value="&lt;div&gt;&lt;b&gt;- ID&lt;/b&gt;&lt;b style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;:int {&amp;gt;=0}&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet d&#39;identifier le joueur&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
           <mxGeometry y="70" width="380" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-28" value="&lt;div&gt;&lt;b&gt;- argent&lt;/b&gt;&lt;b style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;:int {&amp;gt;=0}&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Argent qui permet d&#39;acheter les diverses propriétés du jeu&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
@@ -1656,7 +1662,7 @@
           <mxGeometry y="70" width="370" height="8" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-45" value="&lt;div&gt;Quartier&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Zone où les joueurs peuvent construire leurs bâtiments&lt;/div&gt;s&#39;ils ont les matériaux suffisant pour ajouter leurs bâtiments" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="2679" width="370" height="123" as="geometry">
+          <mxGeometry x="18.5" y="2689" width="370" height="123" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1671,85 +1677,85 @@
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-47" vertex="1">
           <mxGeometry y="70" width="390" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-1" value="Case_propriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;case pouvant etre acheté et qui permet de construire&amp;nbsp;&lt;/div&gt;&lt;div&gt;les batiments quand le hamaux sont complet&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-1" value="Case_propriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;case pouvant etre acheté et qui permet de construire&amp;nbsp;&lt;/div&gt;&lt;div&gt;les batiments quand le hamaux sont complet&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="2843" width="370" height="259" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-3" value="&lt;div&gt;&lt;b&gt;- nom {!=&quot;&quot;}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;nom de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-1">
+        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-3" value="&lt;div&gt;&lt;b&gt;- nom {!=&quot;&quot;}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;nom de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
           <mxGeometry y="81" width="370" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-2" value="&lt;div&gt;&lt;b&gt;- prix {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;prix de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-1">
+        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-2" value="&lt;div&gt;&lt;b&gt;- prix {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;prix de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
           <mxGeometry y="120" width="370" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-4" value="&lt;div&gt;&lt;b&gt;- loyer {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;loyer à payer quand n passe sur la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-1">
+        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-4" value="&lt;div&gt;&lt;b&gt;- loyer {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;loyer à payer quand n passe sur la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
           <mxGeometry y="160" width="370" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
           <mxGeometry y="200" width="370" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-4" value="&lt;div&gt;&lt;b&gt;+ achat(): None&lt;/b&gt;&lt;/div&gt;&lt;div&gt;permet d&#39;acheter la carte ou de payer le joueur qui la possède&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-4" value="&lt;div&gt;&lt;b&gt;+ achat(): None&lt;/b&gt;&lt;/div&gt;&lt;div&gt;permet d&#39;acheter la carte ou de payer le joueur qui la possède&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
           <mxGeometry y="208" width="370" height="51" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-5" value="Case_prison&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Carte associée a un case propriété,&amp;nbsp;&lt;/div&gt;&lt;div&gt;permet de voir les informations sur la propriété achetée&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-5" value="Case_prison&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Carte associée a un case propriété,&amp;nbsp;&lt;/div&gt;&lt;div&gt;permet de voir les informations sur la propriété achetée&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="1660" width="390" height="89" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-5">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-5" vertex="1">
           <mxGeometry y="81" width="390" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-8" value="&lt;div&gt;Case_depart&lt;/div&gt;&lt;br&gt;Case sur laquelle tout les joueurs commence et qui signifie le passage &lt;br&gt;a un nouveau tour de plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=86;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-8" value="&lt;div&gt;Case_depart&lt;/div&gt;&lt;br&gt;Case sur laquelle tout les joueurs commence et qui signifie le passage &lt;br&gt;a un nouveau tour de plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=86;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="17" y="2090" width="373" height="94" as="geometry">
             <mxRectangle x="20" y="280" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-8">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-8" vertex="1">
           <mxGeometry y="86" width="373" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-10" value="&lt;div&gt;Case_parc&lt;/div&gt;&lt;br&gt;Case sur laquel tout les joueurs commance et qui signifie le passage &lt;br&gt;a un nouveau tour de plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=86;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-10" value="&lt;div&gt;Case_parc&lt;/div&gt;&lt;br&gt;Case sur laquel tout les joueurs commance et qui signifie le passage &lt;br&gt;a un nouveau tour de plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=86;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="2090" width="390" height="94" as="geometry">
             <mxRectangle x="20" y="280" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-10">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-10" vertex="1">
           <mxGeometry y="86" width="390" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-12" value="&lt;div&gt;Case_chance&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case qui permet de tirer une carte&lt;br&gt;chance et faire l&#39;action inscrite dessus via chance()&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-12" value="&lt;div&gt;Case_chance&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case qui permet de tirer une carte&lt;br&gt;chance et faire l&#39;action inscrite dessus via chance()&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="3130" width="380" height="140" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-12">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-12" vertex="1">
           <mxGeometry y="70" width="380" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-14" value="&lt;div&gt;&lt;b&gt;+ chance(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-12">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-14" value="&lt;div&gt;&lt;b&gt;+ chance(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-12" vertex="1">
           <mxGeometry y="78" width="380" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-15" value="&lt;div&gt;Case_police&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle se trouve la police,&lt;br&gt;quand on tombe dessus on est envoyé en prison&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-15" value="&lt;div&gt;Case_police&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle se trouve la police,&lt;br&gt;quand on tombe dessus on est envoyé en prison&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="3130" width="370" height="140" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-15">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-15" vertex="1">
           <mxGeometry y="70" width="370" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-17" value="&lt;div&gt;&lt;b&gt;+ emprisonner(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-15">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-17" value="&lt;div&gt;&lt;b&gt;+ emprisonner(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-15" vertex="1">
           <mxGeometry y="78" width="370" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-18" value="CartePropriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Description: Carte associée a un case propriété,&amp;nbsp;&lt;/div&gt;&lt;div&gt;permet de voir les informations sur la propriété achetée&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-18" value="CartePropriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Description: Carte associée a un case propriété,&amp;nbsp;&lt;/div&gt;&lt;div&gt;permet de voir les informations sur la propriété achetée&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="2240" width="383" height="89" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-18">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-18" vertex="1">
           <mxGeometry y="81" width="383" height="8" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="NvjoYL8UT1KLDeZYB6T3" name="Donées a stoqué dans la DB">
-    <mxGraphModel dx="1434" dy="-336" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="-348" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1789,15 +1795,15 @@
         <mxCell id="-4F9yYVKNWeeYDeDV-4S-4" value="&lt;div&gt;&lt;b&gt;- loyer {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;loyer à payer quand n passe sur la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="-4F9yYVKNWeeYDeDV-4S-1" vertex="1">
           <mxGeometry y="119" width="381" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="6z4_yBDIalfYKKlkhthX-1" value="plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
+        <mxCell id="6z4_yBDIalfYKKlkhthX-1" value="plateau" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="495" y="1400" width="260" height="118" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6z4_yBDIalfYKKlkhthX-2" value="&lt;div&gt;&lt;b&gt;num&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Numéro de la classe&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="6z4_yBDIalfYKKlkhthX-1">
+        <mxCell id="6z4_yBDIalfYKKlkhthX-2" value="&lt;div&gt;&lt;b&gt;num&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Numéro de la classe&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="6z4_yBDIalfYKKlkhthX-1" vertex="1">
           <mxGeometry y="40" width="260" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="6z4_yBDIalfYKKlkhthX-6" value="&lt;b&gt;case&lt;/b&gt;&lt;br&gt;lien vers la table case" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="6z4_yBDIalfYKKlkhthX-1">
+        <mxCell id="6z4_yBDIalfYKKlkhthX-6" value="&lt;b&gt;case&lt;/b&gt;&lt;br&gt;lien vers la table case" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="6z4_yBDIalfYKKlkhthX-1" vertex="1">
           <mxGeometry y="79" width="260" height="39" as="geometry" />
         </mxCell>
       </root>
