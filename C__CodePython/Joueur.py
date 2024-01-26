@@ -54,7 +54,7 @@ class Joueur():
 
         #Test de la valeur reçue.
 
-        if not(isinstance(leID, int) and >= 0):
+        if not(isinstance(leID, int) and leID >= 0):
 
             raise TypeError("")
 
@@ -86,7 +86,7 @@ class Joueur():
 
         #Test de la valeur reçue.
 
-        if not(isinstance(leJetonsTractopelle, int) and >= 0):
+        if not(isinstance(leJetonsTractopelle, int) and leJetonsTractopelle >= 0):
 
             raise TypeError("")
 
@@ -102,7 +102,7 @@ class Joueur():
         
         #Test de la valeur reçue.
 
-        if not(isinstance(leJetonsBateau, int) and >= 0):
+        if not(isinstance(leJetonsBateau, int) and leJetonsBateau >= 0):
 
             raise TypeError("")
 
@@ -118,7 +118,7 @@ class Joueur():
         
         #Test de la valeur reçue.
 
-        if not(isinstance(leJetonsCamion, int) and >= 0):
+        if not(isinstance(leJetonsCamion, int) and leJetonsCamion >= 0):
 
             raise TypeError("")
 
@@ -134,7 +134,7 @@ class Joueur():
         
         #Test de la valeur reçue.
 
-        if not(isinstance(leJetonsGrue, int) and >= 0):
+        if not(isinstance(leJetonsGrue, int) and leJetonsGrue >= 0):
 
             raise TypeError("")
 
