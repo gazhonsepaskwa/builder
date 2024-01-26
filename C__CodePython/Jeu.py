@@ -12,6 +12,8 @@ Description: Le jeu Monopoly en lui même qui va pouvoir
 ##########
 
 from Joueur import *
+from GestionnaireDePion import *
+from random import randrange as random
 
 class Jeu():
 
@@ -21,7 +23,7 @@ class Jeu():
 
     def __init__(self):
         self.__nbrDeJoueurs:int = 0
-        self.__listeJoueurs = []
+        self.__listeJoueurs:list = []
         self.__joueurActif:Joueur = None
         self.__fini = False
 
@@ -73,33 +75,64 @@ class Jeu():
     def fini(self, val):
         self.__fini = val
 
+
+
+
     ############
     # methodes #
     ############
     
-    #Permet de préparer le plateau de jeu
+    # Détermine qui commence la partie
 
-    def preparer(self):
-        pass
+    def deterQuiCommence(self):
+        self.__joueurActif = self.listeJoueurs(random.randrange(1,self.listeJoueurs.lenght()))
+        print("Le joueur " + self.__joueurActif.ID + " commence la partie")
 
-    def jouerUnTour(self):
-        pass
+
 
     #Choix qui permet de déterminer le nombre de joueur au début de la partie (maximum 4)
 
     def choixNbrJoueur(self):
+        self.__nbrDeJoueurs = int(input("Entrez le nombre de joueurs (minimum2, maximum 4): "))
+
+
+
+    #Permet de générer les objets du jeu
+
+    def genererObjects():
         pass
+
+
+
+    #Permet de préparer le jeu
+
+    def preparer(self):
+        self.choixNbrJoueur()
+        self.__joueurActif.pion = GestionnaireDePion.choisir()
+        for i in self.__listeJoueurs:
+            self.__listeJoueurs[i].pion = GestionnaireDePion.choisir()
+            self.__listeJoueurs[i].argent = 2000
+        self.genererObjects()
+
+        self.__joueurActif = self.deterQuiCommence()
+
+
+    #Permet de jouer un tour
+
+    def jouerUnTour(self):
+        pass
+
+
 
     #À la fin du tour d'un joueur, on passe au joueur suivant
 
     def changerJoueurActif(self):
-        pass
-    
-    # Détermine qui commence la partie
+        indiceJoueurActif = self.__listeJoueurs.index(self.__joueurActif)
+        indiceJoueurSuivant = (indiceJoueurActif + 1) % self.__listeJoueurs.lenght()
+        self.__joueurActif = self.__listeJoueurs[indiceJoueurSuivant]
 
-    def deterQuiCommence(self):
-        pass
-    
+
+
     # Defini qui est le grand gagnant 
     
     def finDePartie():

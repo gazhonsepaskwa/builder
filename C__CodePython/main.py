@@ -15,23 +15,21 @@ from Jeu import *
 
 
 
-# Initialisation du moteur graphique
-app = Ursina()
-
-
-
 ########
 # Code #
 ########
 
-Jeu.joueurActif = Jeu.deterQuiCommence()
-Jeu.preparer()
+# Initialisation du moteur graphique
+app = Ursina()
 
-while not Jeu.fini:
-    Jeu.jouerUnTour()
+jeu = Jeu()
+jeu.preparer()
 
-    if Jeu.fini:
-        Jeu.finDePartie()
+while not jeu.fini:
+    jeu.jouerUnTour()
+
+    if jeu.fini:
+        jeu.finDePartie()
         break
 
-    Jeu.joueurSuivant()
+    jeu.joueurSuivant()
