@@ -27,8 +27,7 @@ class Joueur():
         self.__proprietes = []
         self.__etagesRestants:int = 0
         self.__valeurPremierLance:int = 0
-        self.__caseActuelle:int = 0
-        self.__caseListe = ""
+        self.__numCaseActuelle:int = 0
         self.__derniereSommeDE: int = 0
         self.__enPrison: bool = False
         self.__pion = ""
@@ -169,21 +168,13 @@ class Joueur():
     #Case sur laquelle le joueur est actuellement
 
     @property
-    def caseActuelle(self):
+    def numCaseActuelle(self):
         return self.__caseActuelle
-    @caseActuelle.setter
-    def caseActuelle(self, leCaseActuelle):
+    @numCaseActuelle.setter
+    def numCaseActuelle(self, leCaseActuelle):
 
         self.__caseActuelle = leCaseActuelle
 
-    #Liste de cases disponible sur le plateau
-
-    @property
-    def caseListe(self):
-        return self.__caseListe
-    @caseListe.setter
-    def caseListe(self, leCaseListe):
-        self.__caseListe = leCaseListe
 
     #Dernière somme retenu après le lancé de dé
 

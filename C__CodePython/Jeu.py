@@ -2,7 +2,8 @@
 Qui: Amory & Nathan
 Quand: 
 - 18/01/2024 Amory
-- 25/01/2024 Nathan
+- 25/01/2024 Nathan 
+- 29/01/2024 Nathan 
 Description: Le jeu Monopoly en lui même qui va pouvoir
 être joué par les joueurs qui veulent bien y jouer
 """
@@ -14,6 +15,11 @@ Description: Le jeu Monopoly en lui même qui va pouvoir
 from Joueur import *
 from GestionnaireDePion import *
 from random import randrange as random
+from Case_propriete import *
+from Case_chance import *
+from Case_police import *
+from Case_ressource import *
+from Case_vol import *
 
 class Jeu():
 
@@ -25,7 +31,9 @@ class Jeu():
         self.__nbrDeJoueurs:int = 0
         self.__listeJoueurs:list = []
         self.__joueurActif:Joueur = None
+        self.__caseListe:list = []
         self.__fini = False
+        self.__listeBatiments = []
 
 
     #############
@@ -57,6 +65,13 @@ class Jeu():
     def listeJoueurs(self, val):
         self.__listeJoueurs = val
 
+    
+    #Liste de cases disponible sur le plateau
+
+    @property
+    def caseListe(self):
+        return self.__caseListe
+
     #Le joueur qui joue son tour sur le moment
 
     @property
@@ -74,6 +89,13 @@ class Jeu():
     @fini.setter
     def fini(self, val):
         self.__fini = val
+
+    
+    #Liste qui stoque tout les batiments du jeu
+    
+    @property
+    def nbrDeJoueurs(self):
+        return self.__nbrDeJoueurs
 
 
 
@@ -120,7 +142,36 @@ class Jeu():
     #Permet de jouer un tour
 
     def jouerUnTour(self):
-        pass
+        self.__joueurActif.avancer()
+        if isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
+            self.joueurActif.caseLise[self.joueurActif.caseActuelle].Achat()
+        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_chance):
+            self.joueurActif.caseLise[self.joueurActif.caseActuelle].chance()
+        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_police):
+            self.joueurActif.caseLise[self.joueurActif.caseActuelle].emprisonner()
+        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_ressource):
+            self.joueurActif.caseLise[self.joueurActif.caseActuelle].donnerResource()
+        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_vol):
+            self.joueurActif.caseLise[self.joueurActif.caseActuelle].voler()
+        else: pass
+        
+        tmp=""
+        while(tmp!= "Y" or tmp!= "y" or tmp!= "YES" or tmp!= "yes" or tmp!= "Yes" or tmp!= "oui" or tmp!= "OUI" or tmp!= "Oui" or tmp == "N" or tmp == "n" or tmp == "NO" or tmp == "no" or tmp == "No" or tmp == "non"):
+            tmp = input("Voulez vous construire? (Y/N)")
+
+        if tmp == "N" or tmp == "n" or tmp == "NO" or tmp == "no" or tmp == "No" or tmp == "non":
+            pass
+        else:
+            # construire
+            self.__joueurActif.tourEditionFini = False
+            while self.__joueurActif.tourEditionFini  == False:
+                for batiment in self.__listeBatiments:
+                    if batiment.quartier.proprietaire == self.__joueurActif:
+                        batiment.construisible = True
+                    
+
+        # en courssss (c long putinnnn)
+
 
 
 
