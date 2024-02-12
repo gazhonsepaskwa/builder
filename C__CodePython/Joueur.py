@@ -169,11 +169,11 @@ class Joueur():
 
     @property
     def numCaseActuelle(self):
-        return self.__caseActuelle
+        return self.__numCaseActuelle
     @numCaseActuelle.setter
     def numCaseActuelle(self, leCaseActuelle):
 
-        self.__caseActuelle = leCaseActuelle
+        self.__numCaseActuelle = leCaseActuelle
 
 
     #Dernière somme retenu après le lancé de dé

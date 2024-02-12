@@ -136,7 +136,6 @@ class Jeu():
 
     def deterQuiCommence(self):
         self.__joueurActif = random.choice(self.__listeJoueurs)
-        print(self.__joueurActif)
         print(self.__listeJoueurs)
         print("Le joueur " + str(self.__joueurActif.ID) + " commence la partie")
 
@@ -168,8 +167,7 @@ class Jeu():
             self.__listeJoueurs[i].argent = 2000
  
         self.genererObjects()
-
-        self.__joueurActif = self.deterQuiCommence()
+        self.deterQuiCommence()
 
 
     #Permet de jouer un tour
