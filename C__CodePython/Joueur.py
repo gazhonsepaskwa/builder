@@ -18,7 +18,7 @@ class Joueur():
     ################
 
     def __init__(self):
-        self.__ID:str = ""
+        self.__ID:int = 0
         self.__argent:int = 0
         self.__jetonsTractopelle:int = 0
         self.__jetonsBateau:int = 0
@@ -37,7 +37,7 @@ class Joueur():
     #############
         
     def __str__(self):
-        print("")
+        return(f"Joueur {self.__ID}")
         
     ###########################
     # accesseurs et mutateurs #

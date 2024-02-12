@@ -19,10 +19,8 @@ from Jeu import *
 # Code #
 ########
 
-# Initialisation du moteur graphique
-app = Ursina()
-
 jeu = Jeu()
+jeu.ursinaStart()
 jeu.preparer()
 
 while not jeu.fini:

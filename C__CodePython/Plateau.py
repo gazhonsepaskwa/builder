@@ -11,15 +11,21 @@ se déplacer lors de la partie
 ##########
 
 from Joueur import *
+from ursina import *
 
-class Plateau():
+class Plateau(Entity):
 
     ################
     # constructeur #
     ################
 
     def __init__(self):
-        pass
+        super().__init__(
+                model="cube",
+                color=color.gray,
+                scale=(5,0.1,5),
+                position=(0,-1,0),
+            )
 
     #############
     # affichage #

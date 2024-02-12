@@ -20,6 +20,9 @@ from Case_chance import *
 from Case_police import *
 from Case_ressource import *
 from Case_vol import *
+from Plateau import *   
+
+from ursina import *
 
 class Jeu():
 
@@ -28,12 +31,37 @@ class Jeu():
     ################
 
     def __init__(self):
+
+        # Initialisation du moteur graphique
+        self.app = Ursina()
+
+        # Creation de la camera libre
+        self.camera = EditorCamera()
+
         self.__nbrDeJoueurs:int = 0
         self.__listeJoueurs:list = []
         self.__joueurActif:Joueur = None
         self.__caseListe:list = []
         self.__fini = False
         self.__listeBatiments = []
+
+        #Enfants
+        self.__plateau = None
+
+
+    def update():
+        # Move the camera using WASD keys
+        if held_keys['z']:
+            camera.position += camera.forward * time.dt
+        if held_keys['s']:
+            camera.position -= camera.forward * time.dt
+        if held_keys['q']:
+            camera.position -= camera.right * time.dt
+        if held_keys['d']:
+            camera.position += camera.right * time.dt
+
+    def ursinaStart(self):
+        self.app.run()
 
 
     #############
@@ -107,8 +135,10 @@ class Jeu():
     # Détermine qui commence la partie
 
     def deterQuiCommence(self):
-        self.__joueurActif = self.listeJoueurs(random.randrange(1,self.listeJoueurs.lenght()))
-        print("Le joueur " + self.__joueurActif.ID + " commence la partie")
+        self.__joueurActif = random.choice(self.__listeJoueurs)
+        print(self.__joueurActif)
+        print(self.__listeJoueurs)
+        print("Le joueur " + str(self.__joueurActif.ID) + " commence la partie")
 
 
 
@@ -116,13 +146,15 @@ class Jeu():
 
     def choixNbrJoueur(self):
         self.__nbrDeJoueurs = int(input("Entrez le nombre de joueurs (minimum2, maximum 4): "))
-
+        for i in range(self.__nbrDeJoueurs):
+            self.__listeJoueurs.append(Joueur())
+            self.__listeJoueurs[i].ID = i
 
 
     #Permet de générer les objets du jeu
 
-    def genererObjects():
-        pass
+    def genererObjects(self):
+        self.__plateau = Plateau()
 
 
 
@@ -130,10 +162,11 @@ class Jeu():
 
     def preparer(self):
         self.choixNbrJoueur()
-        self.__joueurActif.pion = GestionnaireDePion.choisir()
-        for i in self.__listeJoueurs:
-            self.__listeJoueurs[i].pion = GestionnaireDePion.choisir()
+        # self.__joueurActif.pion = GestionnaireDePion.choisir()
+        for i in range(len(self.__listeJoueurs)):
+            # self.__listeJoueurs[i].pion = GestionnaireDePion.choisir()
             self.__listeJoueurs[i].argent = 2000
+ 
         self.genererObjects()
 
         self.__joueurActif = self.deterQuiCommence()
@@ -167,10 +200,8 @@ class Jeu():
             while self.__joueurActif.tourEditionFini  == False:
                 for batiment in self.__listeBatiments:
                     if batiment.quartier.proprietaire == self.__joueurActif:
-                        batiment.construisible = True
-                    
+                        batiment.construisible = True    
 
-        # en courssss (c long putinnnn)
 
 
 
