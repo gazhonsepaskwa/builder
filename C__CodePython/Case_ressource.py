@@ -51,4 +51,14 @@ class Case_ressource():
     #Donne le type de ressource que la case propose quand on tombe dessus
 
     def donnerRessource(self):
-        pass
+        if (Case_ressource.ressource_contenue == "tractopelle"):
+            Jeu.joueurActif.jetonsTractopelle += 2
+        
+        elif (Case_ressource.ressource_contenue == "bateau"):
+            Jeu.joueurActif.jetonsBateau += 2
+
+        elif (Case_ressource.ressource_contenue == "camion"):
+            Jeu.joueurActif.jetonsCamion += 2
+
+        elif (Case_ressource.ressource_contenue == "grue"):
+            Jeu.joueurActif.jetonsBateau += 2
