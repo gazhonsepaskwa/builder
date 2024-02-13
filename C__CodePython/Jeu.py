@@ -154,6 +154,7 @@ class Jeu():
 
     def genererObjects(self):
         self.__plateau = Plateau()
+        self.__caseListe
 
 
 
@@ -208,7 +209,7 @@ class Jeu():
 
     def changerJoueurActif(self):
         indiceJoueurActif = self.__listeJoueurs.index(self.__joueurActif)
-        indiceJoueurSuivant = (indiceJoueurActif + 1) % self.__listeJoueurs.lenght()
+        indiceJoueurSuivant = (indiceJoueurActif + 1) % len(self.__listeJoueurs)
         self.__joueurActif = self.__listeJoueurs[indiceJoueurSuivant]
 
 

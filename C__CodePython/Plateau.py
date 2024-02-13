@@ -23,9 +23,10 @@ class Plateau(Entity):
         super().__init__(
                 model="cube",
                 color=color.gray,
-                scale=(5,0.1,5),
+                scale=(5,1,5),
                 position=(0,-1,0),
             )
+        print("Plateau créé")
 
     #############
     # affichage #
