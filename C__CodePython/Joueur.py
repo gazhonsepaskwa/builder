@@ -10,6 +10,7 @@ Description: Les joueurs/adversaires qui disputent une partie
 # import #
 ##########
 
+from Jeu import *
 
 class Joueur():
 
@@ -231,4 +232,14 @@ class Joueur():
     #Le joueur avance par rapport à la somme des dés lancés
 
     def avancer(self):
-        pass
+        if JoueurActif.enPrison == False:
+            JoueurActif.lancerDE()
+            JoueurActif.caseActuelle = JoueurActif.caseActuelle + JoueurActif.dernierreSommeDE
+        
+            if Joueur.caseActuelle > 31:
+
+                Joueur.argent  += 200
+                Joueur.caseActuelle -= 32
+
+        else:
+            print("VOUS ÊTES EN PRISON, RIP")

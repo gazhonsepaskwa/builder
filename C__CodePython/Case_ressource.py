@@ -12,6 +12,7 @@ en recevoir une
 # import #
 ##########
 
+from Jeu import *
 from Joueur import *
 
 class Case_ressource():
@@ -41,8 +42,8 @@ class Case_ressource():
     def ressource_contenue(self):
         return self.__ressource_contenue
     @ressource_contenue.setter
-    def nom(self, val):
-        self.__nom = val
+    def ressource_contenue(self, val):
+        self.__ressource_contenue = val
 
     ############
     # methodes #

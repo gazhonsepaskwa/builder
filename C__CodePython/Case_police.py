@@ -10,6 +10,8 @@ quand on tombe dessus on est envoyé en prison
 # import #
 ##########
 
+from Jeu import *
+from Joueur import *
 
 class Case_police():
 
@@ -44,4 +46,7 @@ class Case_police():
     #Envoie le joueur se situant sur la case, en prison
     
     def emprisonner(self):
-        pass
+
+        Jeu.joueurActif.caseActuelle = 8
+
+        JoueurActif.enPrison = True

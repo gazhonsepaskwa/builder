@@ -11,6 +11,7 @@ les batiments quand le hamaux sont complet
 ##########
 
 from Joueur import *
+from Banque import *
 
 class Case_propriete():
 
@@ -55,4 +56,27 @@ class Case_propriete():
     ############
     
     def achat(self):
-        pass
+
+        if Case_propriete.apartenu == None:
+            
+            #Ici il y a la proposition d'acheter avec les boutons
+
+            if Jeu.joueurActif.argent > Case_propriete.prix :
+        
+                Banque.modifierBalance(Jeu.joueurActif, - (Case_propriete.prix))
+                Case_propriete.apartenu = Jeu.joueurActif
+
+            else:
+                print("Vous êtes pauvre")
+
+        else:
+
+            Banque.envoyeur = Jeu.joueurActif
+            Banque.receveur = Case_propriete.apartenu
+
+            if Banque.envoyer.argent > Case_propriete.loyer:
+
+                Banque.transferer(Case_propriete.loyer)
+
+            else:
+                pass

@@ -68,11 +68,14 @@ class Banque():
     méthode qui permet de transférer une somme d'argent à un joueur
     """
     def tranferer(self, somme):
-        pass
+        Banque.envoyeur.argent = Banque.envoyeur.argent - somme
+
+        Banque.receveur.argent = Banque.receveur.argent + somme
 
 
     """
     méthode qui permet de modifier la balance d'un joueur
     """
     def modifierBalance(self, joueur, somme):
-        pass
+        
+        joueur.argent = joueur.argent + somme
