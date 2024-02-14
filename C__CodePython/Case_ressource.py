@@ -53,13 +53,13 @@ class Case_ressource():
 
     def donnerRessource(self):
         if (Case_ressource.ressource_contenue == "tractopelle"):
-            Jeu.joueurActif.jetonsTractopelle += 2
+            Jeu.Joueur.Actif.jetonsTractopelle += 2
         
         elif (Case_ressource.ressource_contenue == "bateau"):
-            Jeu.joueurActif.jetonsBateau += 2
+            Jeu.Joueur.Actif.jetonsBateau += 2
 
         elif (Case_ressource.ressource_contenue == "camion"):
-            Jeu.joueurActif.jetonsCamion += 2
+            Jeu.Joueur.Actif.jetonsCamion += 2
 
         elif (Case_ressource.ressource_contenue == "grue"):
-            Jeu.joueurActif.jetonsBateau += 2
+            Jeu.Joueur.Actif.jetonsBateau += 2

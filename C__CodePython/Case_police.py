@@ -49,4 +49,4 @@ class Case_police():
 
         Jeu.joueurActif.caseActuelle = 8
 
-        JoueurActif.enPrison = True
+        Joueur.Actif.enPrison = True
