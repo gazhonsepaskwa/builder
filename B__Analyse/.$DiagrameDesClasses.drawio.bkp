@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-01-26T11:45:44.697Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="iUJ-zfelaL2ECeCAQg3b" version="22.1.21" type="device" pages="5">
+<mxfile host="Electron" modified="2024-01-29T11:45:28.782Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="2Cdk_Vrydm6xTmcwL2qb" version="23.0.2" type="device" pages="5">
   <diagram id="gW4KWFH_ABjafCwhLisA" name="On vera cekon an fè + tar">
     <mxGraphModel dx="1434" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1563,7 +1563,7 @@
           <mxGeometry y="70" width="390" height="8" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-16" value="&lt;div&gt;Jeu&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Le jeu Monopoly en lui même qui va pouvoir&lt;br&gt;être joué par les joueurs qui veulent bien y jouer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="18.5" y="2200" width="370" height="520" as="geometry">
+          <mxGeometry x="18.5" y="2200" width="370" height="600" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1576,35 +1576,41 @@
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-19" value="&lt;div&gt;&lt;b&gt;- joueurActif: Joueur&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Le joueur qui joue son tour sur le moment&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
           <mxGeometry y="150" width="370" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-20" value="&lt;div&gt;&lt;b&gt;- fini: bool&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;La fin de la partie quand l&#39;une des conditions est faite&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-36" value="&lt;div&gt;&lt;b&gt;- caseListe: array: Case (GET)&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Liste de cases disponible sur le plateau&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
           <mxGeometry y="190" width="370" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="hgoQfLm3julGMYvbuvHc-1" value="&lt;div&gt;&lt;b&gt;- batimentListe: array: Batiment&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Liste qui stoque tout les batiments du jeu&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="cuxR2tFWYrxJDSZeBXdW-16">
+          <mxGeometry y="230" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-20" value="&lt;div&gt;&lt;b&gt;- fini: bool&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;La fin de la partie quand l&#39;une des conditions est faite&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
+          <mxGeometry y="270" width="370" height="40" as="geometry" />
+        </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
-          <mxGeometry y="230" width="370" height="8" as="geometry" />
+          <mxGeometry y="310" width="370" height="8" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-22" value="&lt;div&gt;&lt;b&gt;+ preparer(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de préparer le plateau de jeu&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
-          <mxGeometry y="238" width="370" height="42" as="geometry" />
+          <mxGeometry y="318" width="370" height="42" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-23" value="&lt;div&gt;&lt;b&gt;+ jouerUnTour(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de faire un tour de jeu&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
-          <mxGeometry y="280" width="370" height="30" as="geometry" />
+          <mxGeometry y="360" width="370" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-24" value="&lt;div&gt;&lt;b&gt;+ choixNbrJoueur(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Choix qui permet de déterminer le nombre de joueur au début de la partie (maximum 4)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
-          <mxGeometry y="310" width="370" height="50" as="geometry" />
+          <mxGeometry y="390" width="370" height="50" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-25" value="&lt;div&gt;&lt;b&gt;+ changerJoueurActif(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;À la fin du tour d&#39;un joueur, on passe au joueur suivant&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
-          <mxGeometry y="360" width="370" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="CXzDHP1VofXxcQM4s6Ol-1" value="&lt;div&gt;&lt;b&gt;+ finDePartie&lt;/b&gt;() : None&lt;/div&gt;Définis qui est le grand gagnant de la partie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
-          <mxGeometry y="400" width="370" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="CXzDHP1VofXxcQM4s6Ol-2" value="&lt;div&gt;&lt;b&gt;+ deterQuiCommence&lt;/b&gt;() : None&lt;/div&gt;&lt;div&gt;Détermine qui commence&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
           <mxGeometry y="440" width="370" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="XnDK6QQ478CCdIng-3Ri-2" value="&lt;div&gt;&lt;b&gt;+ genererObjects&lt;/b&gt;() : None&lt;/div&gt;&lt;div&gt;génère les objets de la partie&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="cuxR2tFWYrxJDSZeBXdW-16">
+        <mxCell id="CXzDHP1VofXxcQM4s6Ol-1" value="&lt;div&gt;&lt;b&gt;+ finDePartie&lt;/b&gt;() : None&lt;/div&gt;Définis qui est le grand gagnant de la partie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
           <mxGeometry y="480" width="370" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="CXzDHP1VofXxcQM4s6Ol-2" value="&lt;div&gt;&lt;b&gt;+ deterQuiCommence&lt;/b&gt;() : None&lt;/div&gt;&lt;div&gt;Détermine qui commence&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
+          <mxGeometry y="520" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XnDK6QQ478CCdIng-3Ri-2" value="&lt;div&gt;&lt;b&gt;+ genererObjects&lt;/b&gt;() : None&lt;/div&gt;&lt;div&gt;génère les objets de la partie&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-16" vertex="1">
+          <mxGeometry y="560" width="370" height="40" as="geometry" />
+        </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-26" value="&lt;div&gt;Joueur&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Les joueurs/adversaires qui disputent une partie&lt;br&gt;(matérialisés par des pions.)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="433" y="2345" width="380" height="770" as="geometry">
+          <mxGeometry x="433" y="2345" width="380" height="730" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1632,29 +1638,26 @@
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-34" value="&lt;div&gt;&lt;b&gt;- valeurPremierLance: int {2&amp;lt;...&amp;lt;12}&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;La valeur du premier lancé&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
           <mxGeometry y="430" width="380" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-35" value="&lt;div&gt;&lt;b&gt;- caseActuelle: Case&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle le joueur est actuellement&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-35" value="&lt;div&gt;&lt;b&gt;- numCaseActuelle: int&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle le joueur est actuellement&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
           <mxGeometry y="470" width="380" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-36" value="&lt;div&gt;&lt;b&gt;- caseListe: array: Case&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Liste de cases disponible sur le plateau&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-37" value="&lt;div&gt;&lt;b&gt;- derniereSommeDE: int {2&amp;lt;...&amp;lt;12}&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dernière somme retenu après le lancé de dé&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
           <mxGeometry y="510" width="380" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-37" value="&lt;div&gt;&lt;b&gt;- derniereSommeDE: int {2&amp;lt;...&amp;lt;12}&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dernière somme retenu après le lancé de dé&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-38" value="&lt;div&gt;&lt;b&gt;- enPrison: bool&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Statue du joueur par raport à la la prison (en prison ou non)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
           <mxGeometry y="550" width="380" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-38" value="&lt;div&gt;&lt;b&gt;- enPrison: bool&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Statue du joueur par raport à la la prison (en prison ou non)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-39" value="&lt;div&gt;&lt;b&gt;- tourEditionFini: bool&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;si le joueur a fini de construire ou non&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
           <mxGeometry y="590" width="380" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-39" value="&lt;div&gt;&lt;b&gt;- tourEditionFini: bool&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;si le joueur a fini de construire ou non&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
-          <mxGeometry y="630" width="380" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-40" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
-          <mxGeometry y="670" width="380" height="8" as="geometry" />
+          <mxGeometry y="630" width="380" height="8" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-41" value="&lt;div&gt;&lt;b&gt;+ lancerDE(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Les dés se font lancer&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
-          <mxGeometry y="678" width="380" height="42" as="geometry" />
+          <mxGeometry y="638" width="380" height="42" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-42" value="&lt;div&gt;&lt;b&gt;+ avancer():None&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Le joueur avance par rapport à la somme des dés lancés&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-26" vertex="1">
-          <mxGeometry y="720" width="380" height="50" as="geometry" />
+          <mxGeometry y="680" width="380" height="50" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-43" value="&lt;div&gt;Plateau&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Le plateau de jeu sur lesquels les joueurs vont pouvoir&lt;/div&gt;se déplacer lors de la partie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="1980" width="370" height="78" as="geometry">
@@ -1665,7 +1668,7 @@
           <mxGeometry y="70" width="370" height="8" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-45" value="&lt;div&gt;Quartier&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Zone où les joueurs peuvent construire leurs bâtiments&lt;/div&gt;s&#39;ils ont les matériaux suffisant pour ajouter leurs bâtiments" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="17" y="2740" width="370" height="123" as="geometry">
+          <mxGeometry x="17" y="2780" width="370" height="123" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1681,7 +1684,7 @@
           <mxGeometry y="70" width="390" height="8" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-1" value="Case_propriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;case pouvant etre acheté et qui permet de construire&amp;nbsp;&lt;/div&gt;&lt;div&gt;les batiments quand le hamaux sont complet&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="2880" width="370" height="259" as="geometry">
+          <mxGeometry x="20" y="2920" width="370" height="259" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1736,7 +1739,7 @@
           <mxGeometry y="78" width="380" height="62" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-15" value="&lt;div&gt;Case_police&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle se trouve la police,&lt;br&gt;quand on tombe dessus on est envoyé en prison&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="18.5" y="3180" width="370" height="140" as="geometry">
+          <mxGeometry x="18.5" y="3220" width="370" height="140" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1758,7 +1761,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NvjoYL8UT1KLDeZYB6T3" name="Donées a stoqué dans la DB">
-    <mxGraphModel dx="1194" dy="-348" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="-257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
