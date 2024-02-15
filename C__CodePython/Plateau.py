@@ -23,10 +23,26 @@ class Plateau(Entity):
         super().__init__(
                 model="cube",
                 color=color.gray,
-                scale=(5,1,5),
-                position=(0,-1,0),
+                scale=(10,0.1,10),
+                position=(0,0,0),
             )
-        print("Plateau créé")
+
+        self.__caseListe:list = []
+
+
+    
+    ################
+    ### get, set ###
+    ################
+        
+    @property
+    def caseListe(self):
+        return self.__caseListe
+    @caseListe.setter
+    def caseListe(self, val):
+        self.__caseListe = val
+
+
 
     #############
     # affichage #
@@ -34,3 +50,12 @@ class Plateau(Entity):
         
     def __str__(self):
         print("")
+
+
+    ############
+    # methodes #
+    ############
+        
+    # permet de genere les cases du jeu
+    def genererCases():
+        pass

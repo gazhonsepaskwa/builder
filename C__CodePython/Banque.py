@@ -69,7 +69,6 @@ class Banque():
     """
     def tranferer(self, somme):
         Banque.envoyeur.argent = Banque.envoyeur.argent - somme
-
         Banque.receveur.argent = Banque.receveur.argent + somme
 
 

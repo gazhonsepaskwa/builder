@@ -11,14 +11,22 @@ Description: Les joueurs/adversaires qui disputent une partie
 ##########
 
 from Jeu import *
+from ursina import *
 
-class Joueur():
+class Joueur(Entity):
 
     ################
     # constructeur #
     ################
 
     def __init__(self):
+        super().__init__(
+                model="cube",
+                color=color.red,
+                scale=(0.3,0.5,0.3),
+                position=(0,0,0),
+            )
+
         self.__ID:int = 0
         self.__argent:int = 0
         self.__jetonsTractopelle:int = 0

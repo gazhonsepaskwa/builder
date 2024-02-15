@@ -15,6 +15,7 @@ Description: Le jeu Monopoly en lui même qui va pouvoir
 from Joueur import *
 from GestionnaireDePion import *
 from random import randrange as random
+from Case import *
 from Case_propriete import *
 from Case_chance import *
 from Case_police import *
@@ -41,7 +42,6 @@ class Jeu():
         self.__nbrDeJoueurs:int = 0
         self.__listeJoueurs:list = []
         self.__joueurActif:Joueur = None
-        self.__caseListe:list = []
         self.__fini = False
         self.__listeBatiments = []
 
@@ -154,7 +154,10 @@ class Jeu():
 
     def genererObjects(self):
         self.__plateau = Plateau()
-        self.__caseListe
+        self.__plateau.genererCases()
+        
+        case0 = Case(0, (-5,-5,0))
+        self.__plateau.caseListe.append(case0)
 
 
 
