@@ -24,7 +24,7 @@ class Joueur(Entity):
                 model="cube",
                 color=color.red,
                 scale=(0.3,0.5,0.3),
-                position=(0,0,0),
+                position=(4,0.25,-4),
             )
 
         self.__ID:int = 0
@@ -240,14 +240,14 @@ class Joueur(Entity):
     #Le joueur avance par rapport à la somme des dés lancés
 
     def avancer(self):
-        if JoueurActif.enPrison == False:
-            JoueurActif.lancerDE()
-            JoueurActif.caseActuelle = JoueurActif.caseActuelle + JoueurActif.dernierreSommeDE
+        if self.__enPrison == False:
+            self.lancerDE()
+            self.__caseActuelle = self.__caseActuelle + self.__dernierreSommeDE
         
-            if Joueur.caseActuelle > 31:
+            if self.__caseActuelle > 31:
 
-                Joueur.argent  += 200
-                Joueur.caseActuelle -= 32
+                self.__argent  += 200
+                self.__caseActuelle -= 32
 
         else:
             print("VOUS ÊTES EN PRISON, RIP")

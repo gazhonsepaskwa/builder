@@ -71,6 +71,5 @@ class Plateau(Entity):
                             (4, 0, 3), (4, 0, 2), (4, 0, 1), (4, 0, 0), (4, 0, -1), (4, 0, -2), (4, 0, -3) ]
         i=0
         for i in range(len(liste_positions)):
-            print(i)
             case = Case(i, liste_positions[i])
             self.caseListe.append(case)
