@@ -26,9 +26,8 @@ jeu = Jeu()
 def code():
 
     time.sleep(1)
-
     jeu.preparer()
-
+    
     while not jeu.fini:
         # jeu.jouerUnTour()
 

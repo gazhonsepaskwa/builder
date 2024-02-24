@@ -12,6 +12,7 @@ se déplacer lors de la partie
 
 from Joueur import *
 from ursina import *
+from Case import *
 
 class Plateau(Entity):
 
@@ -23,7 +24,7 @@ class Plateau(Entity):
         super().__init__(
                 model="cube",
                 color=color.gray,
-                scale=(10,0.1,10),
+                scale=(10.5,0.1,10.5),
                 position=(0,0,0),
             )
 
@@ -57,5 +58,19 @@ class Plateau(Entity):
     ############
         
     # permet de genere les cases du jeu
-    def genererCases():
-        pass
+    def genererCases(self):
+
+        # se prendra de la DB en temps voulu
+        liste_positions = [ (4, 0, -4), 
+                            (3, 0, -4), (2, 0, -4), (1, 0, -4), (0, 0, -4), (-1, 0, -4), (-2, 0, -4), (-3, 0, -4),
+                            (-4, 0, -4),
+                            (-4, 0, -3), (-4, 0, -2), (-4, 0, -1), (-4, 0, 0), (-4, 0, 1), (-4, 0, 2), (-4, 0, 3),
+                            (-4, 0, 4),
+                            (-3, 0, 4), (-2, 0, 4), (-1, 0, 4), (0, 0, 4), (1, 0, 4), (2, 0, 4), (3, 0, 4),
+                            (4, 0, 4),
+                            (4, 0, 3), (4, 0, 2), (4, 0, 1), (4, 0, 0), (4, 0, -1), (4, 0, -2), (4, 0, -3) ]
+        i=0
+        for i in range(len(liste_positions)):
+            print(i)
+            case = Case(i, liste_positions[i])
+            self.caseListe.append(case)

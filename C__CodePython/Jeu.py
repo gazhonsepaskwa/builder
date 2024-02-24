@@ -41,7 +41,7 @@ class Jeu():
 
         self.__nbrDeJoueurs:int = 0
         self.__listeJoueurs:list = []
-        self.__joueurActif:Joueur = None
+        self.__joueurActif = None
         self.__fini = False
         self.__listeBatiments = []
 
@@ -156,8 +156,6 @@ class Jeu():
         self.__plateau = Plateau()
         self.__plateau.genererCases()
         
-        case0 = Case(0, (-5,-5,0))
-        self.__plateau.caseListe.append(case0)
 
 
 

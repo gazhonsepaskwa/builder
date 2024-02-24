@@ -13,18 +13,19 @@ sur la partie
 from Joueur import *
 from ursina import *
 
-class Case():
+class Case(Entity):
 
     ################
     # constructeur #
     ################
 
-    def __init__(self, num):
+    def __init__(self, num, pos):
         super().__init__(
                 model="cube",
                 color=color.blue,
+                texture= "white_cube",
                 scale=(1,0.2,1),
-                position=(1,0,1),
+                position=pos,
             )
         
         self.__numero:int = num
