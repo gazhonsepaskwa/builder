@@ -29,7 +29,7 @@ def code():
     jeu.preparer()
     
     while not jeu.fini:
-        # jeu.jouerUnTour()
+        jeu.jouerUnTour()
 
         if jeu.fini:
             jeu.finDePartie()

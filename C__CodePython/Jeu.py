@@ -175,17 +175,18 @@ class Jeu():
     #Permet de jouer un tour
 
     def jouerUnTour(self):
-        self.__joueurActif.avancer()
-        if isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
-            self.joueurActif.caseLise[self.joueurActif.caseActuelle].Achat()
-        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_chance):
-            self.joueurActif.caseLise[self.joueurActif.caseActuelle].chance()
-        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_police):
-            self.joueurActif.caseLise[self.joueurActif.caseActuelle].emprisonner()
-        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_ressource):
-            self.joueurActif.caseLise[self.joueurActif.caseActuelle].donnerResource()
-        elif isinstance(self.__caseListe[self.joueurActif.numCaseActuelle], Case_vol):
-            self.joueurActif.caseLise[self.joueurActif.caseActuelle].voler()
+        print("Le joueur " + str(self.__joueurActif.ID) + " joue son tour")
+        self.__joueurActif.avancer(self.__plateau)
+        if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
+            self.__plateau.caseListe[self.joueurActif.caseActuelle].Achat()
+        elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
+            self.__plateau.caseListe[self.joueurActif.caseActuelle].chance()
+        elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
+            self.__plateau.caseListe[self.joueurActif.caseActuelle].emprisonner()
+        elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_ressource):
+            self.__plateau.caseListe[self.joueurActif.caseActuelle].donnerResource()
+        elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_vol):
+            self.__plateau.caseListe[self.joueurActif.caseActuelle].voler()
         else: pass
         
         tmp=""
@@ -200,7 +201,7 @@ class Jeu():
             while self.__joueurActif.tourEditionFini  == False:
                 for batiment in self.__listeBatiments:
                     if batiment.quartier.proprietaire == self.__joueurActif:
-                        batiment.construisible = True    
+                        batiment.construisible = True
 
 
 

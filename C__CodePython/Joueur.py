@@ -12,6 +12,8 @@ Description: Les joueurs/adversaires qui disputent une partie
 
 from Jeu import *
 from ursina import *
+from random import randint
+from time import sleep
 
 class Joueur(Entity):
 
@@ -210,7 +212,7 @@ class Joueur(Entity):
     def enPrison(self, leEnPrison:bool):
         self.__enPrison = leEnPrison
 
-    #???
+    #fin du tour de construction
 
     @property
     def tourEditionFini(self):
@@ -235,19 +237,29 @@ class Joueur(Entity):
     #Les dés se font lancer
 
     def lancerDE(self):
-        pass
+        self.derniereSommeDE = random.randint(2,12)
+        print("Vous avez obtenu une somme de dé de {}".format(self.__derniereSommeDE))
 
     #Le joueur avance par rapport à la somme des dés lancés
 
-    def avancer(self):
+    def avancer(self, plateau):
         if self.__enPrison == False:
             self.lancerDE()
-            self.__caseActuelle = self.__caseActuelle + self.__dernierreSommeDE
+            self.__numCaseActuelle = self.__numCaseActuelle + self.__derniereSommeDE
         
-            if self.__caseActuelle > 31:
+            if self.__numCaseActuelle > 31:
 
                 self.__argent  += 200
-                self.__caseActuelle -= 32
+                print("Vous avez gagné 200 d'argent")
+                self.__numCaseActuelle -= 32
+            
+            # bouger le pion visuellement
+            (x,y,z) = plateau.caseListe[self.__numCaseActuelle].position
+            self.position = (x,y+0.25,z)
+
+            time.sleep(1)
+            print("Vous avez avancé de {} cases".format(self.__derniereSommeDE))
 
         else:
-            print("VOUS ÊTES EN PRISON, RIP")
+            print("VOUS ÊTES EN PRISON, RIP, on se revoie au tour prochain")
+            self.__enPrison == False
