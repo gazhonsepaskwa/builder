@@ -1,0 +1,20 @@
+Condition de victoire :
+
+	Être le joueur avec le + de points OU le dernier joueur restant
+
+Conditions de défaite :
+
+	Avoir moins de point ou se faire éliminer pendant la partie
+
+Conditions pour gagner des points :
+
+	- Posséder un groupe de couleurs de propriétés
+	- Avoir construit des étages (au plus il y en a, au mieux c'est. Surtout si le penthouse est placé)
+	- Avoir le + d'argent
+	- Avoir le + construit d'étages
+	- Avoir fait le + grand nombre de tours (en discussion)
+
+Conditions d'élimination :
+
+	- Ne plus avoir d'argent
+	- Abandon du joueur
