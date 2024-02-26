@@ -10,8 +10,9 @@ Description: Case ne servant a rien mais ayant une existence matérielle
 # import #
 ##########
 
+from Case import *
 
-class Case_parc():
+class Case_parc(Case):
 
     ################
     # constructeur #

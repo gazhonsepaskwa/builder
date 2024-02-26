@@ -12,17 +12,20 @@ les batiments quand le hamaux sont complet
 
 from Joueur import *
 from Banque import *
+from Case import *
 
-class Case_propriete():
+class Case_propriete(Case):
 
     ################
     # constructeur #
     ################
 
-    def __init__(self):
+    def __init__(self, num, pos, nom, prix, loyer):
+        super().__init__(num, pos)
         self.__appartenu:Joueur = None
-        self.__prix:int = 0
-        self.__loyer:int = 0
+        self.__nom = nom
+        self.__prix = prix
+        self.__loyer = loyer
 
 
 
@@ -44,7 +47,7 @@ class Case_propriete():
     """  
     @property
     def appartenu(self):
-        pass
+        return self.__appartenu
     @appartenu.setter
     def appartenu(self, val):
         self.__appartenu = val
@@ -55,23 +58,23 @@ class Case_propriete():
     # methodes #
     ############
     
-    def achat(self):
+    def achat(self, joueur):
 
         if Case_propriete.apartenu == None:
             
             #Ici il y a la proposition d'acheter avec les boutons
 
-            if Jeu.joueurActif.argent > Case_propriete.prix :
+            if joueur.argent > Case_propriete.prix :
         
-                Banque.modifierBalance(Jeu.joueurActif, - (Case_propriete.prix))
-                Case_propriete.apartenu = Jeu.joueurActif
+                Banque.modifierBalance(joueur, - (Case_propriete.prix))
+                Case_propriete.apartenu = joueur
 
             else:
-                print("Vous êtes pauvre")
+                print("Vous êtes pauvre lol")
 
         else:
 
-            Banque.envoyeur = Jeu.joueurActif
+            Banque.envoyeur = joueur
             Banque.receveur = Case_propriete.apartenu
 
             if Banque.envoyer.argent > Case_propriete.loyer:

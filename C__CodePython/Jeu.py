@@ -180,7 +180,7 @@ class Jeu():
         print("Le joueur " + str(self.__joueurActif.ID) + " joue son tour")
         self.__joueurActif.avancer(self.__plateau)
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
-            self.__plateau.caseListe[self.joueurActif.caseActuelle].Achat()
+            self.__plateau.caseListe[self.joueurActif.caseActuelle].Achat(self.__joueurActif)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
             self.__plateau.caseListe[self.joueurActif.caseActuelle].chance()
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):

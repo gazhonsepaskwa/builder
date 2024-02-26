@@ -12,8 +12,9 @@ quand on tombe dessus on est envoyé en prison
 
 from Jeu import *
 from Joueur import *
+from Case import *
 
-class Case_police():
+class Case_police(Case):
 
     ################
     # constructeur #

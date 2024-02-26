@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-02-25T14:31:45.011Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="mJoK3E4j5L5DkwO-LWWX" version="22.0.3" type="device" pages="5">
+<mxfile host="Electron" modified="2024-02-26T15:08:12.105Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="FxYBEOSpmziPDb3nU_AJ" version="22.0.3" type="device" pages="5">
   <diagram id="gW4KWFH_ABjafCwhLisA" name="On vera cekon an fè + tar">
     <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1520,19 +1520,19 @@
           <mxGeometry y="138" width="370" height="62" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-5" value="&lt;div&gt;Case_vol&lt;/div&gt;&lt;br&gt;La case vol, est une case qui permet à un joueur de voler&lt;br&gt;l&#39;une des ressources d&#39;un autre joueur." style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="1720" width="370" height="78" as="geometry">
+          <mxGeometry x="20" y="1710" width="370" height="78" as="geometry">
             <mxRectangle x="20" y="280" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-5" vertex="1">
           <mxGeometry y="70" width="370" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-7" value="&lt;div&gt;Case (num, x, ,y z)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case du plateau avec ou sans spécificité ou influence&lt;/div&gt;sur la partie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-7" value="&lt;div&gt;Case (num, (x ,y, z))&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case du plateau avec ou sans spécificité ou influence&lt;/div&gt;sur la partie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="1770" width="390" height="118" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TYYiD-EL2-LFtYtRWzP6-1" value="&lt;b&gt;- numero: int {&amp;gt;= 0} (get)&lt;/b&gt;&lt;br&gt;numero de lq case" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-7" vertex="1">
+        <mxCell id="TYYiD-EL2-LFtYtRWzP6-1" value="&lt;b&gt;- numero: int {&amp;gt;= 0} (get)&lt;/b&gt;&lt;br&gt;numero de la case" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-7" vertex="1">
           <mxGeometry y="70" width="390" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-7" vertex="1">
@@ -1545,17 +1545,6 @@
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-9" vertex="1">
           <mxGeometry y="70" width="370" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-11" value="Case_ressource&lt;br&gt;&lt;br&gt;&lt;div&gt;La case ressource est une case qui permet de donner au&lt;/div&gt;&lt;div&gt;joueur qui tombe dessus, de choisir entre l&#39;une des 4 ressources pour&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;en recevoir une&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=90;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="430" y="1494" width="392" height="150" as="geometry">
-            <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-11" vertex="1">
-          <mxGeometry y="90" width="392" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-13" value="&lt;div&gt;&lt;b&gt;+ donnerRessource()&lt;/b&gt;&lt;/div&gt;&lt;div&gt;La possibilité de choisir l&#39;apparence que le joueur aura&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-11" vertex="1">
-          <mxGeometry y="98" width="392" height="52" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-14" value="&lt;div&gt;Hameau&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Case où les joueurs peuvent acheter des propriétés&lt;br&gt;pour ensuite construire des bâtiments dans des quartiers" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="425" y="1900" width="390" height="78" as="geometry">
@@ -1690,24 +1679,27 @@
           <mxGeometry y="70" width="390" height="8" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-1" value="Case_propriete&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;case pouvant etre acheté et qui permet de construire&amp;nbsp;&lt;/div&gt;&lt;div&gt;les batiments quand le hamaux sont complet&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="2920" width="370" height="259" as="geometry">
+          <mxGeometry x="20" y="2920" width="370" height="298" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-3" value="&lt;div&gt;&lt;b&gt;- nom {!=&quot;&quot;}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;nom de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
+        <mxCell id="u2PX_lE0IdIlJOBg122D-1" value="&lt;div&gt;&lt;b&gt;- appartenu&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Joueur à qui appartient la case&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="HI2nkk8JbpxF9vzqCVUE-1">
           <mxGeometry y="81" width="370" height="39" as="geometry" />
         </mxCell>
+        <mxCell id="JOkHdGRqZLQfQ6ihi4hf-3" value="&lt;div&gt;&lt;b&gt;- nom {!=&quot;&quot;}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;nom de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
+          <mxGeometry y="120" width="370" height="39" as="geometry" />
+        </mxCell>
         <mxCell id="JOkHdGRqZLQfQ6ihi4hf-2" value="&lt;div&gt;&lt;b&gt;- prix {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;prix de la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
-          <mxGeometry y="120" width="370" height="40" as="geometry" />
+          <mxGeometry y="159" width="370" height="40" as="geometry" />
         </mxCell>
         <mxCell id="JOkHdGRqZLQfQ6ihi4hf-4" value="&lt;div&gt;&lt;b&gt;- loyer {&amp;gt;=0}&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;loyer à payer quand n passe sur la propriété&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
-          <mxGeometry y="160" width="370" height="40" as="geometry" />
+          <mxGeometry y="199" width="370" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
-          <mxGeometry y="200" width="370" height="8" as="geometry" />
+          <mxGeometry y="239" width="370" height="8" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-4" value="&lt;div&gt;&lt;b&gt;+ achat(): None&lt;/b&gt;&lt;/div&gt;&lt;div&gt;permet d&#39;acheter la carte ou de payer le joueur qui la possède&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-1" vertex="1">
-          <mxGeometry y="208" width="370" height="51" as="geometry" />
+          <mxGeometry y="247" width="370" height="51" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-5" value="Case_prison&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Carte associée a un case propriété,&amp;nbsp;&lt;/div&gt;&lt;div&gt;permet de voir les informations sur la propriété achetée&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=81;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="1660" width="390" height="89" as="geometry">
@@ -1745,7 +1737,7 @@
           <mxGeometry y="78" width="380" height="62" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-15" value="&lt;div&gt;Case_police&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle se trouve la police,&lt;br&gt;quand on tombe dessus on est envoyé en prison&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="18.5" y="3220" width="370" height="140" as="geometry">
+          <mxGeometry x="17" y="3240" width="370" height="140" as="geometry">
             <mxRectangle x="310" y="90" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>

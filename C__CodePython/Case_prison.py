@@ -9,8 +9,9 @@ Description: Case dans laquel le joueur est envoyer quand son status est "en pri
 # import #
 ##########
 
+from Case import *
 
-class Case_prison():
+class Case_prison(Case):
 
     ################
     # constructeur #

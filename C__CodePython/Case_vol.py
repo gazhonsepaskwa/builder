@@ -14,8 +14,9 @@ l'une des ressources d'un autre joueur.
 from Joueur import *
 from Jeu import *
 from Ressource import *
+from Case import *
 
-class Case_vol():
+class Case_vol(Case):
 
     ################
     # constructeur #

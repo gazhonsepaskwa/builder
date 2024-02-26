@@ -10,8 +10,9 @@ a un nouveau tour de plateau
 # import #
 ##########
 
+from Case import *
 
-class Case_depart():
+class Case_depart(Case):
 
     ################
     # constructeur #

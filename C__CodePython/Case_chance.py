@@ -11,7 +11,9 @@ chance et faire l'action inscrite dessus via chance()
 # import #
 ##########
 
-class Case_chance():
+from Case import *
+
+class Case_chance(Case):
 
     ################
     # constructeur #
