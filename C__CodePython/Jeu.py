@@ -25,6 +25,8 @@ from Plateau import *
 
 from ursina import *
 
+import outils as outils
+
 class Jeu():
 
     ################
@@ -189,13 +191,7 @@ class Jeu():
             self.__plateau.caseListe[self.joueurActif.caseActuelle].voler()
         else: pass
         
-        tmp=""
-        while(tmp!= "Y" or tmp!= "y" or tmp!= "YES" or tmp!= "yes" or tmp!= "Yes" or tmp!= "oui" or tmp!= "OUI" or tmp!= "Oui" or tmp == "N" or tmp == "n" or tmp == "NO" or tmp == "no" or tmp == "No" or tmp == "non"):
-            tmp = input("Voulez vous construire? (Y/N)")
-
-        if tmp == "N" or tmp == "n" or tmp == "NO" or tmp == "no" or tmp == "No" or tmp == "non":
-            pass
-        else:
+        if not outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
             # construire
             self.__joueurActif.tourEditionFini = False
             while self.__joueurActif.tourEditionFini  == False:
