@@ -20,8 +20,8 @@ class Case_police(Case):
     # constructeur #
     ################
 
-    def __init__(self, nom):
-        pass
+    def __init__(self, num, pos):
+        super().__init__(num, pos)
 
 
 

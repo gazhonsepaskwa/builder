@@ -22,8 +22,8 @@ class Case_vol(Case):
     # constructeur #
     ################
 
-    def __init__(self):
-
+    def __init__(self, num, pos):
+        super().__init__(num, pos)
         self.__voleur:Joueur = None
         self.__victime:Joueur = None
 

@@ -17,8 +17,8 @@ class Case_prison(Case):
     # constructeur #
     ################
 
-    def __init__(self):
-        pass
+    def __init__(self,num,pos):
+        super().__init__(num, pos)
 
     #############
     # affichage #

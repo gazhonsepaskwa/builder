@@ -13,6 +13,7 @@ les batiments quand le hamaux sont complet
 from Joueur import *
 from Banque import *
 from Case import *
+import outils as outils
 
 class Case_propriete(Case):
 
@@ -58,28 +59,30 @@ class Case_propriete(Case):
     # methodes #
     ############
     
-    def achat(self, joueur):
+    def achat(self, joueur, banque):
 
-        if Case_propriete.apartenu == None:
+        if self.__appartenu == None:
             
-            #Ici il y a la proposition d'acheter avec les boutons
+            #a modif pour mettre des boutons
 
-            if joueur.argent > Case_propriete.prix :
-        
-                Banque.modifierBalance(joueur, - (Case_propriete.prix))
-                Case_propriete.apartenu = joueur
+            if outils.ouiOuNon("Voulez-vous acheter la propriété " + self.__nom + "?"):
 
-            else:
-                print("Vous êtes pauvre lol")
+                if joueur.argent > self.__prix :
+            
+                    banque.modifierBalance(joueur, - (self.__prix))
+                    self.__appartenu = joueur
+
+                else:
+                    print("Désolé, vous n'êtes pas capable de payer, vous êtes trop pauvre lol")
 
         else:
 
-            Banque.envoyeur = joueur
-            Banque.receveur = Case_propriete.apartenu
+            banque.envoyeur = joueur
+            banque.receveur = self.__appartenu
 
-            if Banque.envoyer.argent > Case_propriete.loyer:
+            if banque.envoyer.argent > self.__loyer:
 
-                Banque.transferer(Case_propriete.loyer)
+                banque.transferer(self.__loyer)
 
             else:
                 pass

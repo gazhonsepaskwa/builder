@@ -21,7 +21,8 @@ from Case_chance import *
 from Case_police import *
 from Case_ressource import *
 from Case_vol import *
-from Plateau import *   
+from Plateau import *  
+from Banque import *
 
 from ursina import *
 
@@ -49,6 +50,7 @@ class Jeu():
 
         #Enfants
         self.__plateau = None
+        self.__banque = None
 
 
     def update():
@@ -157,6 +159,7 @@ class Jeu():
     def genererObjects(self):
         self.__plateau = Plateau()
         self.__plateau.genererCases()
+        self.__banque = Banque()
         
 
 
@@ -180,15 +183,15 @@ class Jeu():
         print("Le joueur " + str(self.__joueurActif.ID) + " joue son tour")
         self.__joueurActif.avancer(self.__plateau)
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
-            self.__plateau.caseListe[self.joueurActif.caseActuelle].Achat(self.__joueurActif)
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
-            self.__plateau.caseListe[self.joueurActif.caseActuelle].chance()
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance()
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
-            self.__plateau.caseListe[self.joueurActif.caseActuelle].emprisonner()
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner()
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_ressource):
-            self.__plateau.caseListe[self.joueurActif.caseActuelle].donnerResource()
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].donnerResource()
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_vol):
-            self.__plateau.caseListe[self.joueurActif.caseActuelle].voler()
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler()
         else: pass
         
         if not outils.ouiOuNon("Voulez vous construire (oui/non) ?"):

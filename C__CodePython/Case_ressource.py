@@ -15,15 +15,15 @@ en recevoir une
 from Jeu import *
 from Joueur import *
 
-class Case_ressource():
+class Case_ressource(Case):
 
     ################
     # constructeur #
     ################
 
-    def __init__(self):
-
-        self.__ressource_contenue:str = ""
+    def __init__(self, num, pos, ressource):
+        super().__init__(num, pos)
+        self.__ressource_contenue:str = ressource
 
     #############
     # affichage #
