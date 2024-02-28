@@ -1,5 +1,4 @@
-- Écrire la répartition des tâches par rapport au code
-- Finir le code pour le jour de la rentrée max
-
-(Note à moi-même):
-Travailler un max tout les jours quand je peux
+- permettre aux joueurs de passer la case départ (Les pauvres)
+- Ajouter 2-3 cartes chance
+- Trouver et régler les erreurs (Jouer jusqu'à pas d'heures)
+-Donner ressource aux joueurs (Les pauvres)

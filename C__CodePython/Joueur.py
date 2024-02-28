@@ -244,7 +244,7 @@ class Joueur(Entity):
     def avancer(self, plateau):
         if self.__enPrison == False:
             self.lancerDE()
-            self.__numCaseActuelle = self.__numCaseActuelle + self.__derniereSommeDE
+            self.__numCaseActuelle = self.__numCaseActuelle + self.__derniereSommeDE - 1
         
             if self.__numCaseActuelle > 31:
 
