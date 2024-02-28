@@ -17,10 +17,10 @@ class CarteChances():
     # constructeur #
     ################
 
-    def __init__(self):
-        self.__titre: str = ""
-        self.__contenu: str = ""
-        self.__identifiant: int = 0
+    def __init__(self, titre: str, contenu: str, identifiant: int):
+        self.__titre: str = titre
+        self.__contenu: str = contenu
+        self.__identifiant: int = identifiant
 
 
 
