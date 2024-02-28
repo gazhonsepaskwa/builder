@@ -180,7 +180,11 @@ class Jeu():
     #Permet de jouer un tour
 
     def jouerUnTour(self):
+        print("")
         print("Le joueur " + str(self.__joueurActif.ID) + " joue son tour")
+        print(f"Il a {self.__joueurActif.argent} d'argent | {self.__joueurActif.jetonsTractopelle} jetons tractopelle | {self.__joueurActif.jetonsBateau} jetons bateau | {self.__joueurActif.jetonsCamion} jetons camion | {self.__joueurActif.jetonsGrue} jetons grue")
+        print("")
+
         self.__joueurActif.avancer(self.__plateau)
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
@@ -189,15 +193,17 @@ class Jeu():
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner()
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_ressource):
-            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].donnerResource()
-        elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_vol):
-            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler()
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].donnerResource(self.__joueurActif)
+        # elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_vol):
+            # self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler(self.__joueurActif, self.__listeJoueurs)    ### je sais pas comment faire pour le voleur et la victime
         else: pass
         
-        if not outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
+        if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
             # construire
+            print("test")
             self.__joueurActif.tourEditionFini = False
             while self.__joueurActif.tourEditionFini  == False:
+                print("test in while")
                 for batiment in self.__listeBatiments:
                     if batiment.quartier.proprietaire == self.__joueurActif:
                         batiment.construisible = True

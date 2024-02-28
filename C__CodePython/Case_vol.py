@@ -58,13 +58,29 @@ class Case_vol(Case):
     # methodes #
     ############
         
-    def voler(self):
+    def voler(self, voleur, listeJoueurs):
 
         '''
-        Case_vol.victime = menuDeroulant(Jeu.listeJoueurs)
+        self.__victime = menuDeroulant(Jeu.listeJoueurs)
 
         choix = menuDeroulant(tractopelle, bateau, camion, grue)
         '''
+
+        # attribution de voleur et victime
+        self.__voleur = voleur
+        self.__victime = listeJoueurs[int(input(print(f"Choisissez le joueur victime parmis: {listeJoueurs} (via son numéro dans la liste) "))) -1]
+
+        # Demande le type de ressource à voler | a changer !!!
+        tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
+        if tmp == "1": choix = "tractopelle"
+        elif tmp == "2": choix = "bateau"
+        elif tmp == "3": choix = "camion"
+        elif tmp == "4": choix = "grue"
+        else: 
+            print("Choix invalide")
+            choix = "nada"
+
+        
 
         if choix == "tractopelle":
 

@@ -51,15 +51,19 @@ class Case_ressource(Case):
     
     #Donne le type de ressource que la case propose quand on tombe dessus
 
-    def donnerRessource(self):
-        if (Case_ressource.ressource_contenue == "tractopelle"):
-            Jeu.Joueur.Actif.jetonsTractopelle += 2
+    def donnerResource(self, joueur):
+        if (self.__ressource_contenue == "tractopelle"):
+            joueur.jetonsTractopelle += 2
+            print(f"Vous recevez 2 jetons tractopelle")
         
-        elif (Case_ressource.ressource_contenue == "bateau"):
-            Jeu.Joueur.Actif.jetonsBateau += 2
+        elif (self.__ressource_contenue == "bateau"):
+            joueur.jetonsBateau += 2
+            print(f"Vous recevez 2 jetons bateau")
 
-        elif (Case_ressource.ressource_contenue == "camion"):
-            Jeu.Joueur.Actif.jetonsCamion += 2
+        elif (self.__ressource_contenue == "camion"):
+            joueur.jetonsCamion += 2
+            print(f"Vous recevez 2 jetons camion")
 
-        elif (Case_ressource.ressource_contenue == "grue"):
-            Jeu.Joueur.Actif.jetonsBateau += 2
+        elif (self.__ressource_contenue == "grue"):
+            joueur.jetonsBateau += 2
+            print(f"Vous recevez 2 jetons grue")

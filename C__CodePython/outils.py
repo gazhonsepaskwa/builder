@@ -3,9 +3,9 @@ def ouiOuNon(question):
     oui = ["yes", "y", "oui", "o"]
     non = ["no", "n", "non"]
 
-    entree = input(question)
-
     while True:
+        entree = input(question)
+
         if entree.lower() in oui:
             return True
         elif entree.lower() in non:

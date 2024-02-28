@@ -238,7 +238,6 @@ class Joueur(Entity):
 
     def lancerDE(self):
         self.derniereSommeDE = random.randint(2,12)
-        print("Vous avez obtenu une somme de dé de {}".format(self.__derniereSommeDE))
 
     #Le joueur avance par rapport à la somme des dés lancés
 
