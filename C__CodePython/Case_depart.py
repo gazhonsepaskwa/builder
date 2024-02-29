@@ -18,7 +18,7 @@ class Case_depart(Case):
     # constructeur #
     ################
 
-    def __init__(self, nom):
+    def __init__(self):
         pass
 
 

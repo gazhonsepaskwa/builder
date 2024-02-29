@@ -23,7 +23,7 @@ class Case_vol(Case):
     ################
 
     def __init__(self, num, pos):
-        super().__init__(num, pos)
+        super().__init__(num, pos, couleur=color.red)
         self.__voleur:Joueur = None
         self.__victime:Joueur = None
 

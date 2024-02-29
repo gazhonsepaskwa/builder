@@ -22,7 +22,7 @@ class Case_propriete(Case):
     ################
 
     def __init__(self, num, pos, nom, prix, loyer):
-        super().__init__(num, pos)
+        super().__init__(num, pos, couleur=color.blue)
         self.__appartenu:Joueur = None
         self.__nom = nom
         self.__prix = prix

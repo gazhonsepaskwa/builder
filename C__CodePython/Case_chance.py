@@ -20,7 +20,7 @@ class Case_chance(Case):
     ################
 
     def __init__(self,num ,pos):
-        super().__init__(num, pos)
+        super().__init__(num, pos, couleur=color.gold)
 
 
 

@@ -22,7 +22,7 @@ class Case_ressource(Case):
     ################
 
     def __init__(self, num, pos, ressource):
-        super().__init__(num, pos)
+        super().__init__(num, pos, couleur=color.azure)
         self.__ressource_contenue:str = ressource
 
     #############

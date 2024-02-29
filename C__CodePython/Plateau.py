@@ -64,7 +64,7 @@ class Plateau(Entity):
     def genererCases(self):
 
         # se prendra de la DB en temps voulu
-        c0 = Case           (0, (4, 0, -4)                          )
+        c0 = Case           (0, (4, 0, -4),     couleur=color.green )
         c1 = Case_propriete (1, (3, 0, -4),     "Nom a.1", 60, 10   )
         c2 = Case_ressource (2, (2, 0, -4),     "camion"            )
         c3 = Case_propriete (3, (1, 0, -4),     "Nom a.2", 60, 10   )
