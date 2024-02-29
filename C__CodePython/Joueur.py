@@ -197,11 +197,13 @@ class Joueur(Entity):
     
         #Test de la valeur reçue.
 
-        if not(isinstance(leDerniereSomme, int) and leDerniereSomme > 2 and leDerniereSomme < 12):
+        if (isinstance(leDerniereSomme, int) and leDerniereSomme > 2 and leDerniereSomme < 12):
+
+            self.__derniereSommeDE = leDerniereSomme
+        else: 
 
             raise TypeError("")
-
-        self.__derniereSommeDE = leDerniereSomme
+        
 
     #Envoi le joueur en prison
 
@@ -237,7 +239,7 @@ class Joueur(Entity):
     #Les dés se font lancer
 
     def lancerDE(self):
-        self.derniereSommeDE = random.randint(2,12)
+        self.derniereSommeDE = random.randint(2, 12)
 
     #Le joueur avance par rapport à la somme des dés lancés
 

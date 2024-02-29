@@ -18,6 +18,7 @@ from random import randrange as random
 from Case import *
 from Case_propriete import *
 from Case_chance import *
+from CarteChances import *
 from Case_police import *
 from Case_ressource import *
 from Case_vol import *
@@ -47,6 +48,7 @@ class Jeu():
         self.__joueurActif = None
         self.__fini = False
         self.__listeBatiments = []
+        self.__listeCartesChances = []
 
         #Enfants
         self.__plateau = None
@@ -128,6 +130,15 @@ class Jeu():
     @property
     def nbrDeJoueurs(self):
         return self.__nbrDeJoueurs
+    
+    #Liste qui stoque toute les cartes chances
+
+    @property
+    def listeCartesChances(self):
+        return self.__listeCartesChances
+    @listeCartesChances.setter
+    def listeCartesChances(self, val):
+        self.__listeCartesChances = val
 
 
 
@@ -161,7 +172,9 @@ class Jeu():
         self.__plateau.genererCases()
         self.__banque = Banque()
         
+        carteChance0 = CarteChances("Donne la thune", "Tu me dois 100$ \n Payez 100$", 0)
 
+        self.__listeCartesChances.append(carteChance0)
 
 
     #Permet de préparer le jeu
