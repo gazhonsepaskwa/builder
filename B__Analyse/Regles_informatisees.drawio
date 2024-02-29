@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-02-29T09:39:06.826Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="uZ20YJhOynv4lWL731Xd" version="22.0.3" type="device" pages="2">
+<mxfile host="Electron" modified="2024-02-29T16:24:55.334Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="bsS-nxPBAk2cUw1dbQKQ" version="22.0.3" type="device" pages="2">
   <diagram name="DIAGRAM" id="bxNONvTWKdA4XL9HC_S2">
     <mxGraphModel dx="4817" dy="3226" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1761,6 +1761,7 @@
         <mxCell id="Ozmm_VvvbrrvaCaHDA8e-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="Ozmm_VvvbrrvaCaHDA8e-26" target="07FAVQGMEFVIG5u2skKg-33" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="500" y="1148" />
               <mxPoint x="330" y="1148" />
               <mxPoint x="330" y="1410" />
               <mxPoint x="527" y="1410" />
@@ -1969,7 +1970,7 @@
           <mxGeometry x="2040" y="959.45" width="120" height="103.05" as="geometry" />
         </mxCell>
         <mxCell id="2YIh3Yj40AdjRFNX-GQj-16" value="tant que JoueurActif.tourEditionFini&amp;nbsp; = False&amp;nbsp;" style="shape=loopLimit;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1535" y="1307" width="730" height="43" as="geometry" />
+          <mxGeometry x="1727.5" y="1303.5" width="345" height="43" as="geometry" />
         </mxCell>
         <mxCell id="2YIh3Yj40AdjRFNX-GQj-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2YIh3Yj40AdjRFNX-GQj-17" target="2YIh3Yj40AdjRFNX-GQj-16">
           <mxGeometry relative="1" as="geometry" />
@@ -1978,7 +1979,7 @@
           <mxGeometry x="1802.88" y="1232.25" width="194.23" height="40.05" as="geometry" />
         </mxCell>
         <mxCell id="2YIh3Yj40AdjRFNX-GQj-15" value="Pour batiment dans listeBatiments" style="shape=loopLimit;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1534.99" y="1350" width="730" height="43" as="geometry" />
+          <mxGeometry x="1730" y="1350" width="340" height="43" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

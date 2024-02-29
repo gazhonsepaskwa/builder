@@ -9,20 +9,26 @@ Description: Classe Batiment, gere un batiment, ses etages et cetera.
 # import #
 ##########
 
-from Quartier import *
+from ursina import *
 
 
-
-class Batiment():
+class Batiment(Button):
 
     ################
     # constructeur #
     ################
 
-    def __init__(self, quartier):
+    def __init__(self, pos):
+        super().__init__(
+                model="cube",
+                color=color.gray,
+                texture= "white_cube",
+                scale=(0.8,0.2,0.8),
+                position=pos,
+                parent=scene
+            )
         self.__construisible: bool = False
-        self.__nombreEtage: int = 0
-        self.__quartier: Quartier = quartier
+        self.__Etages: int = 0
 
 
     #############

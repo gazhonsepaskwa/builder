@@ -47,7 +47,6 @@ class Jeu():
         self.__listeJoueurs:list = []
         self.__joueurActif = None
         self.__fini = False
-        self.__listeBatiments = []
         self.__listeCartesChances = []
 
         #Enfants

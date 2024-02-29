@@ -13,7 +13,9 @@ les batiments quand le hamaux sont complet
 from Joueur import *
 from Banque import *
 from Case import *
+from Batiment import *
 import outils as outils
+from ursina import *
 
 class Case_propriete(Case):
 
@@ -21,12 +23,14 @@ class Case_propriete(Case):
     # constructeur #
     ################
 
-    def __init__(self, num, pos, nom, prix, loyer):
+    def __init__(self, num, pos, nom, prix, loyer, posBatiment, numHamaux):
         super().__init__(num, pos, couleur=color.blue)
         self.__appartenu:Joueur = None
         self.__nom = nom
         self.__prix = prix
         self.__loyer = loyer
+        self.__batiments = Batiment(posBatiment)
+        self.numHamaux = numHamaux
 
 
 
