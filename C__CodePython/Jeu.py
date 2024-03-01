@@ -187,6 +187,13 @@ class Jeu():
  
         self.genererObjects()
         self.deterQuiCommence()
+    
+    def modeConstruction(self):
+        hamaux = self.__jouerActif.caseActuelle.hamaux
+        caseDansHamaux = []
+
+        for case in self.__plateau.caseListe:
+            if isinstance(case, Case_propriete) and :
 
 
     #Permet de jouer un tour
@@ -211,14 +218,7 @@ class Jeu():
         else: pass
         
         if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
-            # construire
-            print("test")
-            self.__joueurActif.tourEditionFini = False
-            while self.__joueurActif.tourEditionFini  == False:
-                print("test in while")
-                for batiment in self.__listeBatiments:
-                    if batiment.quartier.proprietaire == self.__joueurActif:
-                        batiment.construisible = True
+            self.modeConstruction()
 
 
 

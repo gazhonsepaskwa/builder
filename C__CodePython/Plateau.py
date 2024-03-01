@@ -70,7 +70,7 @@ class Plateau(Entity):
         c5 = Case_propriete (5, (-1, 0, -4),    "Nom b.1", 100, 10, (1,0,0), 2  )
         c6 = Case_chance    (6, (-2, 0, -4)                                     )
         c7 = Case_propriete (7, (-3, 0, -4),    "Nom b.2", 100, 10, (0,0,1), 2  )
-        c8 = Case_prison    (8, (-4, 0, -4)                                     )
+        c8 = Case           (8, (-4, 0, -4)                                     )
         c9 = Case_propriete (9, (-4, 0, -3),    "Nom c.1", 140, 10, (0,0,0), 3  )
         c10= Case_ressource (10,(-4, 0, -2),    "bateau"                        )
         c11= Case_propriete (11,(-4, 0, -1),    "Nom c.2", 140, 10, (1,0,-1), 3 )

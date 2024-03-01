@@ -29,7 +29,7 @@ class Case_propriete(Case):
         self.__nom = nom
         self.__prix = prix
         self.__loyer = loyer
-        self.__batiments = Batiment(posBatiment)
+        self.__batiment = Batiment(posBatiment)
         self.numHamaux = numHamaux
 
 

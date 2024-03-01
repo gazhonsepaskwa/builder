@@ -10,6 +10,7 @@ Description: Classe Batiment, gere un batiment, ses etages et cetera.
 ##########
 
 from ursina import *
+from Etage import *
 
 
 class Batiment(Button):
@@ -28,7 +29,7 @@ class Batiment(Button):
                 parent=scene
             )
         self.__construisible: bool = False
-        self.__Etages: int = 0
+        self.__Etages: list = []
 
 
     #############
@@ -53,17 +54,6 @@ class Batiment(Button):
     @construisible.setter
     def construisible(self, val):
         self.__construisible = val
-
-
-    """
-    Le nombre d'etage d'un batiment
-    """
-    @property
-    def nombreEtage(self):
-        return self.__nombreEtage
-    @construisible.setter
-    def nombreEtage(self, val):
-        self.__nombreEtage = val
 
 
     """
