@@ -67,20 +67,23 @@ class Case_chance(Case):
     ############
     # methodes #
     ############
-        
+    """  
+"""
+"""
     def choixRandomCarteChance(self):
         self.carteChanceChoisis = random.randint(1,3)
-
-    """
+"""
+    
+"""
     Permet de tirer une carte chance et faire l'action inscrite dessus
     """
+"""
     def chance(self):
 
         self.choixRandomCarteChance()
-
-        
-
-    """
+    
+"""
+"""
     Prendre élément random de la liste, puis faire un if id = quelque chose
     alors, faire action
-    """
+"""

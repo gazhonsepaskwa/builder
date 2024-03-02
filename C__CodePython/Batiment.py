@@ -10,7 +10,6 @@ Description: Classe Batiment, gere un batiment, ses etages et cetera.
 ##########
 
 from ursina import *
-from Etage import *
 
 
 class Batiment(Button):

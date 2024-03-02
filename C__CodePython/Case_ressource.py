@@ -65,5 +65,5 @@ class Case_ressource(Case):
             print(f"Vous recevez 2 jetons camion")
 
         elif (self.__ressource_contenue == "grue"):
-            joueur.jetonsBateau += 2
+            joueur.jetonsGrue += 2
             print(f"Vous recevez 2 jetons grue")

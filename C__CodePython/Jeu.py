@@ -184,6 +184,15 @@ class Jeu():
         for i in range(len(self.__listeJoueurs)):
             # self.__listeJoueurs[i].pion = GestionnaireDePion.choisir()
             self.__listeJoueurs[i].argent = 2000
+            
+            if i == 1:
+                self.__listeJoueurs[i].jetonsTractopelle +=2
+            elif i == 2:
+                self.__listeJoueurs[i].jetonsBateau +=2
+            elif i == 3:
+                self.__listeJoueurs[i].jetonsCamion +=2
+            elif i == 4:
+                self.__listeJoueurs[i].jetonsGrue +=2
  
         self.genererObjects()
         self.deterQuiCommence()
@@ -193,7 +202,8 @@ class Jeu():
         caseDansHamaux = []
 
         for case in self.__plateau.caseListe:
-            if isinstance(case, Case_propriete) and :
+            if isinstance(case, Case_propriete) :
+                pass
 
 
     #Permet de jouer un tour

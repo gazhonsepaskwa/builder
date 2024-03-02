@@ -170,7 +170,7 @@ class Joueur(Entity):
     
         #Test de la valeur reçue.
 
-        if not(isinstance(leValeurPremierLance, int) and leValeurPremierLance > 2 and leValeurPremierLance < 12):
+        if not(isinstance(leValeurPremierLance, int) and leValeurPremierLance > 1 and leValeurPremierLance < 13):
 
             raise TypeError("")
 
@@ -197,7 +197,7 @@ class Joueur(Entity):
     
         #Test de la valeur reçue.
 
-        if (isinstance(leDerniereSomme, int) and leDerniereSomme > 2 and leDerniereSomme < 12):
+        if (isinstance(leDerniereSomme, int) and leDerniereSomme > 1 and leDerniereSomme < 13):
 
             self.__derniereSommeDE = leDerniereSomme
         else: 
@@ -239,14 +239,16 @@ class Joueur(Entity):
     #Les dés se font lancer
 
     def lancerDE(self):
-        self.derniereSommeDE = random.randint(2, 12)
+        self.derniereSommeDE = random.randrange(2, 13)
 
     #Le joueur avance par rapport à la somme des dés lancés
 
     def avancer(self, plateau):
         if self.__enPrison == False:
             self.lancerDE()
-            self.__numCaseActuelle = self.__numCaseActuelle + self.__derniereSommeDE - 1
+            self.__numCaseActuelle = self.__numCaseActuelle - 1 + self.__derniereSommeDE
+            print(self.__derniereSommeDE)
+            print(self.__numCaseActuelle)
         
             if self.__numCaseActuelle > 31:
 

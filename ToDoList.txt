@@ -1,4 +1,3 @@
-- permettre aux joueurs de passer la case départ (Les pauvres)
 - Ajouter 2-3 cartes chance
 - Trouver et régler les erreurs (Jouer jusqu'à pas d'heures)
--Donner ressource aux joueurs (Les pauvres)
+
