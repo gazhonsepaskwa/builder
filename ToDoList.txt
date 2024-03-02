@@ -1,3 +1,3 @@
 - Ajouter 2-3 cartes chance
 - Trouver et régler les erreurs (Jouer jusqu'à pas d'heures)
-
+- Update le drawio
