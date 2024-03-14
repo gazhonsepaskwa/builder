@@ -10,6 +10,7 @@ Description: Classe Batiment, gere un batiment, ses etages et cetera.
 ##########
 
 from ursina import *
+import outils as outils
 
 
 class Batiment(Button):
@@ -27,8 +28,14 @@ class Batiment(Button):
                 position=pos,
                 parent=scene
             )
+        
         self.__construisible: bool = False
-        self.__Etages: list = []
+        self.__nombreEtage: int = 0
+
+        self.__tract = 0
+        self.__bat = 0
+        self.__cam = 0
+        self.__grue = 0
 
 
     #############
@@ -76,3 +83,43 @@ class Batiment(Button):
     """
     def VerifQuantiteePion():
         pass
+
+    def on_click(self):
+         
+        if self.construisible:
+            if self.__nombreEtage == 0:
+                self.__tract = 1
+                self.__bat = 0
+                self.__cam = 1
+                self.__grue = 0
+
+            elif self.__nombreEtage == 1:
+                self.__tract = 0
+                self.__bat = 1
+                self.__cam = 0
+                self.__grue = 1
+        
+            elif self.__nombreEtage == 2:
+                self.__tract = 0
+                self.__bat = 2
+                self.__cam = 0
+                self.__grue = 1
+        
+            elif self.__nombreEtage == 3:
+                self.__tract = 1
+                self.__bat = 1
+                self.__cam = 1
+                self.__grue = 1
+        
+            elif self.__nombreEtage == 4:
+                self.__tract = 2
+                self.__bat = 2
+                self.__cam = 2
+                self.__grue = 2
+        
+            if self.verifQuantiteePion():
+                print("Le prix est de : " + self.__tract + " tractopelle, " + self.__bat + " bateau, " + self.__cam + " camion, " + self.__grue + " grue.")
+                if outils.ouiOuNon("Voulez-vous construire un etage sur ce batiment? Oui/Non"):
+                    self.__nombreEtage += 1
+            else:
+                print("Vous n'avez pas la possiblilite de vous offrir un etage sur ce batiment, le prix est de : " + self.__tract + " tractopelle, " + self.__bat + " bateau, " + self.__cam + " camion, " + self.__grue + " grue.")
