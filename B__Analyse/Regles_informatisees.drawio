@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-03-12T19:20:46.488Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="8HxG_-HwGTq4klVK76d3" version="22.0.3" type="device" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-14T17:48:21.139Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="Yz2onh1ia4Kw6xhJcSED" version="24.0.6" type="device" pages="2">
   <diagram name="DIAGRAM" id="bxNONvTWKdA4XL9HC_S2">
-    <mxGraphModel dx="4982" dy="3182" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4742" dy="3084" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -813,7 +813,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="M_Z6mFilWkLScB1Hqa6Q-25" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Jeu.joueurActif.jetonsBateau +←&amp;nbsp;&lt;br&gt;&amp;nbsp;2&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="M_Z6mFilWkLScB1Hqa6Q-25" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Jeu.joueurActif.jetonsGrue +←&amp;nbsp;&lt;br&gt;&amp;nbsp;2&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="336.76" y="45" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="M_Z6mFilWkLScB1Hqa6Q-28" value="donnerRessource()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
@@ -1588,7 +1588,7 @@
         <mxCell id="7SDSGmt9Q3SNft79trZ1-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7SDSGmt9Q3SNft79trZ1-10" target="7SDSGmt9Q3SNft79trZ1-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7SDSGmt9Q3SNft79trZ1-10" value="dernierreSommeDE ← numAléatoire entre 2 et 12" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="7SDSGmt9Q3SNft79trZ1-10" value="dernierreSommeDE ← numAléatoire entre 2 et 13" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-2048.7200000000003" y="1137.25" width="190" height="44" as="geometry" />
         </mxCell>
         <mxCell id="pRc9m41uA3Mv5hKWPW92-1" value="Plateau.genererCases()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
