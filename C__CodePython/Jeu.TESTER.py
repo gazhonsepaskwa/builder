@@ -30,5 +30,7 @@ def testJeu():
 
         print(f"Accesseurs/mutateurs de la classe [Jeu] CORRECT ! :D")
 
+    objetJeu.deterQuiCommence()
+
 if __name__ == '__main__':
     testJeu()
