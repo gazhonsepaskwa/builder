@@ -154,11 +154,23 @@ class Jeu():
         print("Le joueur " + str(self.__joueurActif.ID) + " commence la partie")
 
 
-
     #Choix qui permet de déterminer le nombre de joueur au début de la partie (maximum 4)
 
     def choixNbrJoueur(self):
-        self.__nbrDeJoueurs = int(input("Entrez le nombre de joueurs (minimum2, maximum 4): "))
+        
+        while True:
+        
+            self.__nbrDeJoueurs = int(input("Entrez le nombre de joueurs (minimum2, maximum 4): "))
+        
+            if self.__nbrDeJoueurs > 4 or self.__nbrDeJoueurs < 2:
+
+                print("Vous tenter de jouer à plus ou moins que le nombre de joueurs autorisé ! \n Veuillez recommencer.")
+
+            else:
+
+                break
+
+
         for i in range(self.__nbrDeJoueurs):
             self.__listeJoueurs.append(Joueur())
             self.__listeJoueurs[i].ID = i

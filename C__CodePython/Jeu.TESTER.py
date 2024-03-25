@@ -1,36 +1,68 @@
 from Jeu import *
 
-def testJeu(): 
-
-    objetJeu = Jeu()
+class TestJeu(): 
 
     print(f"Test de la classe [Jeu]")
     print(f"==================================================================================== \n")
 
-    print(f"Tester : accesseurs/mutateurs")
-    print(f"------------------------------------------------------------------------------------")   
+    def testAccesseursMutateurs(self):
 
-    if not(isinstance(objetJeu.nbrDeJoueurs, int)):
+        objetJeu = Jeu()
 
-        print("nbrDeJoueurs doit être un entier !")
+        print(f"Tester : accesseurs/mutateurs")
+        print(f"------------------------------------------------------------------------------------")   
 
-    elif not(isinstance(objetJeu.listeJoueurs, list)):
+        if not(isinstance(objetJeu.nbrDeJoueurs, int)):
+
+            print("nbrDeJoueurs doit être un entier !")
+
+        elif not(isinstance(objetJeu.listeJoueurs, list)):
         
-        print("listeJoeurs doit être une liste !")
+            print("listeJoeurs doit être une liste !")
 
-    elif not(isinstance(objetJeu.fini, bool)):
+        elif not(isinstance(objetJeu.fini, bool)):
         
-        print("La variable fini doit être booléenne")
+            print("La variable fini doit être booléenne")
 
-    elif not(isinstance(objetJeu.listeCartesChances, list)):
+        elif not(isinstance(objetJeu.listeCartesChances, list)):
         
-        print("listeCartesChances n'est pas une liste")
+            print("listeCartesChances n'est pas une liste")
 
-    else :
+        else :
 
-        print(f"Accesseurs/mutateurs de la classe [Jeu] CORRECT ! :D")
+            print(f"Accesseurs/mutateurs de la classe [Jeu] CORRECT ! :D")
+    
+    def choixNbrJoueurTEST(self):
 
-    objetJeu.deterQuiCommence()
+        print("\n Test de la méthode choixNbrJoueur")
+        print(f"------------------------------------------------------------------------------------")
 
+        try :
+
+            Jeu.choixNbrJoueur(self)
+
+        except Exception as e:
+
+            print("ça a pas trop fonctionné je t'avoue. \n La raison : ", e)
+
+
+    """
+    def deterQuiCommenceTEST(self):
+
+        print("\n Test de la méthode deterQuiCommence")
+        print(f"------------------------------------------------------------------------------------")
+        
+        try:
+
+            leListeTest = []
+            Jeu.deterQuiCommence(leListeTest)
+
+        except Exception as e:
+            print("ça a pas trop fonctionné je t'avoue. \n La raison : ", e)
+    """
 if __name__ == '__main__':
-    testJeu()
+    
+    leTest = TestJeu()
+    leTest.testAccesseursMutateurs()
+    leTest.choixNbrJoueurTEST()
+    #leTest.deterQuiCommenceTEST()
