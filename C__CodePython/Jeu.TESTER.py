@@ -37,6 +37,8 @@ class TestJeu():
         print("\n Test de la méthode choixNbrJoueur")
         print(f"------------------------------------------------------------------------------------")
 
+        Jeu.listeJoueurs = [1, 2, 3]
+
         try :
 
             Jeu.choixNbrJoueur(self)
@@ -45,24 +47,8 @@ class TestJeu():
 
             print("ça a pas trop fonctionné je t'avoue. \n La raison : ", e)
 
-
-    """
-    def deterQuiCommenceTEST(self):
-
-        print("\n Test de la méthode deterQuiCommence")
-        print(f"------------------------------------------------------------------------------------")
-        
-        try:
-
-            leListeTest = []
-            Jeu.deterQuiCommence(leListeTest)
-
-        except Exception as e:
-            print("ça a pas trop fonctionné je t'avoue. \n La raison : ", e)
-    """
 if __name__ == '__main__':
     
     leTest = TestJeu()
     leTest.testAccesseursMutateurs()
     leTest.choixNbrJoueurTEST()
-    #leTest.deterQuiCommenceTEST()
