@@ -184,6 +184,7 @@ class Jeu():
         self.__banque = Banque()
         
         carteChance0 = CarteChances("Donne la thune", "Tu me dois 100$ \n Payez 100$", 0)
+        carteChance0 = CarteChances("Donne la thune", "Tu me dois 100$ \n Payez 100$", 1)
 
         self.__listeCartesChances.append(carteChance0)
 
@@ -230,7 +231,7 @@ class Jeu():
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
-            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance()
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self.__listeCartesChances)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner()
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_ressource):

@@ -77,5 +77,21 @@ class CarteChances():
     """
     action faite par la carte de chance(difere en fonction de l'identifiant et donc de la carte)
     """
-    def action(self):
-        pass
+    def action(self, jActif, listeJoueurs):
+        print(self.__titre)
+        print(self.__contenu)
+
+        val = random.randint(100,250)
+
+        if self.__identifiant == 0:
+            print("Vous avez gagné ", val)
+            jActif.argent += 1000
+        elif self.__identifiant == 1:
+            print("Vous avez perdu ", val)
+            jActif.argent -= 250
+        elif self.__identifiant == 2:
+            print("Vous avez mangé le joueur ayant jouer juste avant vous mouhahaha. Il ne oeu donc plus jouer, dommage.")
+            precedent = listeJoueurs[listeJoueurs.index(jActif) - 1]
+            listeJoueurs.pop(precedent)
+
+        
