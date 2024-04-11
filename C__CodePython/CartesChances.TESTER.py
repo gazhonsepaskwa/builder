@@ -21,13 +21,23 @@ class CartesChanceTEST():
 
         for i in range(1, 5):
 
-            try:
+            if i == 4:
+
+                try:
+
+                    CarteChances("unObjet" + str(i), "Un objet" + str(i - 3))
+
+                except Exception as e:
+
+                    print(e)
+            
+                try:
                     
-                CarteChances("unObjet" + str(i), "Un objet" + str(i + 1))
+                    CarteChances("unObjet" + str(i), "Un objet" + str(i + 1))
 
-            except Exception as e:
+                except Exception as e:
 
-                print(e)
+                    print(e)
 
 if __name__ == '__main__':
      
