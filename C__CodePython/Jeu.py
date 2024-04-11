@@ -231,7 +231,7 @@ class Jeu():
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
-            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self.__listeCartesChances)
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner()
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_ressource):

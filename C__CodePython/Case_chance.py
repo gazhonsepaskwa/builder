@@ -12,7 +12,7 @@ chance et faire l'action inscrite dessus via chance()
 ##########
 
 from Case import *
-from random import randrange as random
+from random import randrange
 
 class Case_chance(Case):
 
@@ -22,8 +22,6 @@ class Case_chance(Case):
 
     def __init__(self,num ,pos):
         super().__init__(num, pos, couleur=color.gold)
-        self.__carteChanceChoisis: int = 0
-        self.__chance: int = 0
 
 
 
@@ -37,41 +35,13 @@ class Case_chance(Case):
         
     
 
-    ###########################
-    # accesseurs et mutateurs #
-    ###########################
-
-    #Permet de choisir un nombre random entre 1 et 3
-
-    @property
-    def carteChanceChoisis(self):
-        return self.__carteChanceChoisis
-    @carteChanceChoisis.setter
-    def carteChanceChoisis(self, leCarteChanceChoisis:int):
-
-        if (isinstance(leCarteChanceChoisis, int) and leCarteChanceChoisis > 1 and leCarteChanceChoisis < 3):
-
-            self.__carteChanceChoisis = leCarteChanceChoisis
-
-        else :
-
-            raise TypeError("")
-        
-    @property
-    def chance(self):
-        return self.__chance
-    @chance.setter
-    def chance(self):
-        self.__chance
-
     ############
     # methodes #
     ############
 
 
+    # Permet de tirer une carte chance et faire l'action inscrite dessus
 
-# Permet de tirer une carte chance et faire l'action inscrite dessus
-
-def chance(self, listeCartesChances, jActif, listeJoueurs):
-    self.carteChanceChoisis = random.randint(0,listeCartesChances.length)
-    Jeu.listeCartesChances[self.carteChanceChoisis].action(jActif, listeJoueurs)
+    def chance(self, jeu):
+        carteChanceChoisis = randint(0,len(jeu.listeCartesChances)-1)
+        jeu.listeCartesChances[carteChanceChoisis].action(jeu.joueurActif, jeu.listeJoueurs)

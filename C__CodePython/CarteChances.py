@@ -10,6 +10,7 @@ Description: Carte qui quand tirée fait une action
 # import #
 ##########
 
+import random
 
 class CarteChances():
 
@@ -32,7 +33,6 @@ class CarteChances():
         print("")
         
     
-
     ###########################
     # accesseurs et mutateurs #
     ###########################
