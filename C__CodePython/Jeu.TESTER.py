@@ -5,6 +5,23 @@ class TestJeu():
     print(f"Test de la classe [Jeu]")
     print(f"==================================================================================== \n")
 
+    def test_init(self):
+
+        unObjet1:int = 0
+        unObjet2:float = 0.0
+        unObjet3:str = "Oui, bonjour"
+        unObjet4:bool = True
+
+        for i in range(1, 5):
+
+            try : 
+
+                Jeu("unObjet" + str(i))
+
+            except Exception as e:
+
+                print(e)
+
     def testAccesseursMutateurs(self):
 
         objetJeu = Jeu()
@@ -50,5 +67,6 @@ class TestJeu():
 if __name__ == '__main__':
     
     leTest = TestJeu()
+    leTest.test_init()
     leTest.testAccesseursMutateurs()
     leTest.choixNbrJoueurTEST()

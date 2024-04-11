@@ -2,12 +2,30 @@ from Joueur import *
 
 class JoueurTEST():
 
-    def testJoueur(self):
-    
-        objetJoueur = Joueur()
+    def test_init(self):
 
         print(f"Test de la classe [Jeu]")
         print(f"==================================================================================== \n")
+
+
+        unObjet1:int = 0
+        unObjet2:float = 0.0
+        unObjet3:str = "Oui, bonjour"
+        unObjet4:bool = True
+
+        for i in range(1, 5):
+
+            try : 
+
+                Joueur("unObjet" + str(i))
+
+            except Exception as e:
+
+                print(e)
+
+    def testJoueur(self):
+    
+        objetJoueur = Joueur()
 
         print(f"Tester : accesseurs/mutateurs")
         print(f"------------------------------------------------------------------------------------")   
@@ -88,5 +106,6 @@ class JoueurTEST():
 if __name__ == '__main__':
     
     leTest = JoueurTEST()
+    leTest.test_init()
     leTest.testJoueur()
     leTest.lancerDETEST()
