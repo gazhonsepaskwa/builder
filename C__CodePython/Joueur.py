@@ -250,7 +250,7 @@ class Joueur(Entity):
             print(self.__derniereSommeDE)
             print(self.__numCaseActuelle)
         
-            if self.__numCaseActuelle > 31:
+            if self.__numCaseActuelle >= 32:
 
                 self.__argent  += 200
                 print("Vous avez gagné 200 d'argent")
