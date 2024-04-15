@@ -25,15 +25,49 @@ class CartesChanceTEST():
 
                 try:
 
-                    CarteChances("unObjet" + str(i), "Un objet" + str(i - 3))
+                    CarteChances("unObjet" + str(i), "unObjet" + str(i - 3))
 
                 except Exception as e:
 
                     print(e)
             
+            else:
+
                 try:
                     
-                    CarteChances("unObjet" + str(i), "Un objet" + str(i + 1))
+                    CarteChances("unObjet" + str(i), "unObjet" + str(i + 1))
+
+                except Exception as e:
+
+                    print(e)
+
+        for i in range(1, 5):
+
+            if i == 4:
+
+                try:
+
+                    CarteChances("unObjet" + str(i), "unObjet" + str(i - 3), "unObjet" + str(i - 2))
+
+                except Exception as e:
+
+                    print(e)
+
+            elif i == 3:
+
+                try:
+
+                     CarteChances("unObjet" + str(i), "unObjet" + str(i - 2), "unObjet" + str(i - 1))
+
+                except Exception as e:
+
+                    print(e)
+
+            else:
+
+                try:
+                    
+                    CarteChances("unObjet" + str(i), "unObjet" + str(i + 1), "unObjet" + str(i + 2))
 
                 except Exception as e:
 
