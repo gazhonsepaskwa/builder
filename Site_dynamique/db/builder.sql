@@ -3,10 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 15 Mai 2024 à 17:22
+-- Généré le :  Jeu 16 Mai 2024 à 06:47
 -- Version du serveur :  5.6.20-log
 -- Version de PHP :  5.4.31
 
+SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -98,7 +99,8 @@ MODIFY `Id_Cases` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT pour la table `plateau`
 --
 ALTER TABLE `plateau`
-MODIFY `num` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `num` int(11) NOT NULL AUTO_INCREMENT;SET FOREIGN_KEY_CHECKS=1;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

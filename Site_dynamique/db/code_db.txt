@@ -1,0 +1,31 @@
+--Création de la db
+
+CREATE DATABASE IF NOT EXISTS Builder;
+
+-- Utilisation de la base de données Builder
+USE Builder;
+
+-- Création de la table Cases
+CREATE TABLE IF NOT EXISTS Cases (
+    Id_Cases INT AUTO_INCREMENT PRIMARY KEY,
+    type_case VARCHAR(255),
+    nom VARCHAR(255),
+    prix DECIMAL(10, 2),
+    loyer DECIMAL(10, 2),
+    resource_contenue VARCHAR(255)
+);
+
+-- Création de la table Plateau
+CREATE TABLE IF NOT EXISTS Plateau (
+    num INT AUTO_INCREMENT PRIMARY KEY,
+    id_Cases INT,
+    FOREIGN KEY (id_Cases) REFERENCES Cases(Id_Cases)
+);
+
+-- Création de la table CarteChance
+CREATE TABLE IF NOT EXISTS CarteChance (
+    id_CarteChance INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255),
+    contennu TEXT,
+    action INT
+);

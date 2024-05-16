@@ -1,36 +1,32 @@
+<!--Connexion à la db-->
+
 <?php
-// Vérifie si le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Connexion à la base de données
-    $conn = new mysqli("localhost", "root", "root", "builder");
+// Connexion à la base de données
+$conn = new mysqli("localhost", "root", "root", "builder");
 
-    // Vérification de la connexion
-    if ($conn->connect_error) {
-        die("Connexion échouée: " . $conn->connect_error);
+// Vérification de la connexion
+if ($conn->connect_error) {
+    die("Connexion échouée: " . $conn->connect_error);
+}
+
+// Traitement des données envoyées par le formulaire
+for ($i = 0; $i < 32; $i++) {
+    $type_case = $_POST["type_case$i"];
+    $nom = $_POST["nom$i"];
+    $prix = $_POST["prix$i"];
+    $loyer = $_POST["loyer$i"];
+    $resource = $_POST["resource$i"];
+    $nbr_ressource = $_POST["Nbr_ressource$i"];
+
+    // Exemple de requête SQL d'insertion
+    $sql = "INSERT INTO Cases (type_case, nom, prix, loyer, resource_contenue, nbr_ressource) VALUES ('$type', '$nom', '$prix', '$loyer', '$resource', '$nbr_ressource')";
+    
+    // Exécution de la requête SQL
+    if ($conn->query($sql) === TRUE) {
+        echo "Nouvel enregistrement créé avec succès";
+    } else {
+        echo "Erreur: " . $sql . "<br>" . $conn->error;
     }
-
-    // Traitement des données envoyées par le formulaire
-    for ($i = 0; $i < 32; $i++) {
-        $type = $_POST["type$i"];
-        $nom = $_POST["nom$i"];
-        $prix = $_POST["prix$i"];
-        $loyer = $_POST["loyer$i"];
-        $resource = $_POST["resource$i"];
-        $nbr_ressource = $_POST["Nbr_ressource$i"];
-
-        // Exemple de requête SQL d'insertion
-        $sql = "INSERT INTO Cases (type, nom, prix, loyer, resource_contenue, nbr_ressource) VALUES ('$type', '$nom', '$prix', '$loyer', '$resource', '$nbr_ressource')";
-        
-        // Exécution de la requête SQL
-        if ($conn->query($sql) === TRUE) {
-            echo "Nouvel enregistrement créé avec succès";
-        } else {
-            echo "Erreur: " . $sql . "<br>" . $conn->error;
-        }
-    }
-
-    // Fermeture de la connexion à la base de données
-    $conn->close();
 }
 ?>
 
@@ -40,6 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gestion des cases</title>
+
+<!--CSS-->
+
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -116,18 +115,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 <script>
-// Event listener for dropdown change
 const caseTypes = document.querySelectorAll('.case-type');
 caseTypes.forEach(select => {
     select.addEventListener('change', function() {
         const selectedOption = this.value;
         const caseDiv = this.closest('.case');
 
-        // Hide all text fields initially
         const textFields = caseDiv.querySelectorAll('.nom, .prix, .loyer, .resource, .Nbr_ressource');
         textFields.forEach(field => field.classList.add('hidden'));
 
-        // Show relevant text fields based on selected option
         switch(selectedOption) {
             
             case 'case_propriete':
@@ -150,9 +146,7 @@ caseTypes.forEach(select => {
     });
 });
 
-// Initial state setup
 window.addEventListener('DOMContentLoaded', function() {
-    // Hide all text fields initially
     const allTextFields = document.querySelectorAll('.nom, .prix, .loyer, .resource');
     allTextFields.forEach(field => field.classList.add('hidden'));
 });
