@@ -1,7 +1,8 @@
 """
-Qui: Amory
+Qui: Nathan
 Quand: 
 - 18/01/2024
+- 16/05/2024
 Description: Le plateau de jeu sur lesquels les joueurs vont pouvoir
 se déplacer lors de la partie
 """

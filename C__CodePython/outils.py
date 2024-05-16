@@ -1,3 +1,10 @@
+"""
+Qui: Nathan
+Quand: 
+- 18/01/2024
+Description: outils de developpement
+"""
+
 # retourne True si vrai et False si non
 def ouiOuNon(question):
     oui = ["yes", "y", "oui", "o"]

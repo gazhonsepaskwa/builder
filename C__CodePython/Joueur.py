@@ -1,5 +1,5 @@
 """
-Qui: Amory
+Qui: Nathan
 Quand: 
 - 18/01/2024
 Description: Les joueurs/adversaires qui disputent une partie

@@ -1,5 +1,5 @@
 """
-Qui: Nathan Amory
+Qui: Nathan
 Quand: 
 - 18/01/2024
 Description: 
