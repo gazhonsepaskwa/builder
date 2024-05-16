@@ -11,6 +11,8 @@ if ($conn->connect_error) {
 
 // Traitement des données envoyées par le formulaire
 for ($i = 0; $i < 32; $i++) {
+
+    $Id_Cases = $_POST["Id_Cases$i"];
     $type_case = $_POST["type_case$i"];
     $nom = $_POST["nom$i"];
     $prix = $_POST["prix$i"];
@@ -18,8 +20,18 @@ for ($i = 0; $i < 32; $i++) {
     $resource = $_POST["resource$i"];
     $nbr_ressource = $_POST["Nbr_ressource$i"];
 
-    // Exemple de requête SQL d'insertion
-    $sql = "INSERT INTO Cases (type_case, nom, prix, loyer, resource_contenue, nbr_ressource) VALUES ('$type', '$nom', '$prix', '$loyer', '$resource', '$nbr_ressource')";
+    $req = $db -> prepare("SELECT count(*) as existe FROM users WHERE Id_Cases$i = ?");
+    $req->execute(intval($Id_Cases));
+
+    while($Id_verification = $req->fetch()){
+        if($Id_verification['existe'] != 0) {
+            $sql = "INSERT INTO Cases (Id_cases, type_case, nom, prix, loyer, resource_contenue, nbr_ressource) VALUES ('$type', '$nom', '$prix', '$loyer', '$resource', '$nbr_ressource')";        
+            exit();
+        }
+        else{
+            $sql = "UPDATE Cases (Id_cases, type_case, nom, prix, loyer, resource_contenue, nbr_ressource) VALUES ('$type', '$nom', '$prix', '$loyer', '$resource', '$nbr_ressource')";
+        }
+    }
     
     // Exécution de la requête SQL
     if ($conn->query($sql) === TRUE) {
