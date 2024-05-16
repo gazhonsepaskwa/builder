@@ -1,6 +1,6 @@
---Création de la db
+-- Création de la db
 
-CREATE DATABASE IF NOT EXISTS Builder;
+CREATE DATABASE IF NOT EXISTS builder;
 
 -- Utilisation de la base de données Builder
 USE Builder;
