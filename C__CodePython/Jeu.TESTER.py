@@ -49,24 +49,37 @@ class TestJeu():
 
             print(f"Accesseurs/mutateurs de la classe [Jeu] CORRECT ! :D")
     
-    def choixNbrJoueurTEST(self):
+    def initialisationNbrJoueursTEST(self):
+        jeu = Jeu()
+        assert jeu.nbrDeJoueurs == 0
 
-        print("\n Test de la méthode choixNbrJoueur")
-        print(f"------------------------------------------------------------------------------------")
+    def InitialisationListeJoueursVide(self):
+        jeu = Jeu()
+        assert jeu.listeJoueurs == []
 
-        Jeu.listeJoueurs = [1, 2, 3]
+    def choixNbrJoueursTEST(self):
+        jeu = Jeu()
+        jeu.choixNbrJoueur()
+        assert jeu.nbrDeJoueurs >= 2 and jeu.nbrDeJoueurs <= 4
+        assert len(jeu.listeJoueurs) == jeu.nbrDeJoueurs
+        for joueur in jeu.listeJoueurs:
+            assert joueur.ID >= 0
 
-        try :
+    def deterQuiCommenceTEST(self):
+        
+        leJeu = Jeu()
+        leJeu.nbrDeJoueurs = 4 
+        leJeu.listeJoueurs = [Joueur(), Joueur(), Joueur(), Joueur()]  # Simuler la création des joueurs
+        leJeu.deterQuiCommence()
+        assert leJeu.joueurActif in leJeu.listeJoueurs
 
-            Jeu.choixNbrJoueur(self)
-
-        except Exception as e:
-
-            print("ça a pas trop fonctionné je t'avoue. \n La raison : ", e)
 
 if __name__ == '__main__':
     
     leTest = TestJeu()
     leTest.test_init()
     leTest.testAccesseursMutateurs()
-    leTest.choixNbrJoueurTEST()
+    leTest.initialisationNbrJoueursTEST()
+    leTest.InitialisationListeJoueursVide()
+    leTest.choixNbrJoueursTEST()
+    leTest.deterQuiCommenceTEST()
