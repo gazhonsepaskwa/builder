@@ -31,14 +31,6 @@ class Case_police(Case):
         
     def __str__(self):
         print("")
-        
-    
-
-    ###########################
-    # accesseurs et mutateurs #
-    ###########################
-   
-
 
     ############
     # methodes #
