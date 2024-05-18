@@ -69,8 +69,14 @@
                 </div>
                 <div class="resource hidden">
                     <label for="resource<?php echo $i; ?>">Resource Contenue:</label>
-                    <input type="text" id="resource<?php echo $i; ?>" name="resource<?php echo $i; ?>">
+                    <select id="resource<?php echo $i; ?>" name="resource<?php echo $i; ?>">
+                        <option value="tractopelle">Tractopelle</option>
+                        <option value="grue">Grue</option>
+                        <option value="camion">Camion</option>
+                        <option value="bateau">Bateau</option>
+                    </select>
                 </div>
+
                 <div class="case-number">Case <?php echo $i; ?></div>
             </div>
         <?php endfor; ?>
@@ -80,32 +86,33 @@
 
 
 <script>
-    // Event listener for dropdown change
+    // afficher les bon champs en fct du choix dans le dropdown
     const caseTypes = document.querySelectorAll('.case-type');
     caseTypes.forEach(select => {
         select.addEventListener('change', function() {
             const selectedOption = this.value;
             const caseDiv = this.parentElement.parentElement;
 
-            // Hide all text fields
-            const textFields = caseDiv.querySelectorAll('.nom, .prix, .loyer, .resource');
-            textFields.forEach(field => field.classList.add('hidden'));
+            // Tout cacher
+            const fields = caseDiv.querySelectorAll('.nom, .prix, .loyer, .resource');
+            fields.forEach(field => field.classList.add('hidden'));
 
-            // Show relevant text fields based on selected option
+            // Afficher les nécécaires 
             switch(selectedOption) {
                 case 'case':
                 case 'case_chance':
+                case 'case_vol':
                 case 'case_police':
-                    break; // No additional fields to show
+                    break; // plus rien a afficher
                 case 'case_propriete':
                     caseDiv.querySelector('.nom').classList.remove('hidden');
                     caseDiv.querySelector('.prix').classList.remove('hidden');
                     caseDiv.querySelector('.loyer').classList.remove('hidden');
                     break;
                 case 'case_ressource':
-                case 'case_vol':
                     caseDiv.querySelector('.resource').classList.remove('hidden');
                     break;
+                    
             }
         });
     });

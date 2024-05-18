@@ -68,7 +68,7 @@ class Plateau(Entity):
     # permet de genere les cases du jeu
     def genererCases(self):
         
-        if ouiOuNon("Taper 1 pour utiliser les données en dur pour la génération des cases ou 2 pour les données via l'acces à la base de donnée"): 
+        if ouiOuNon("Taper 1 pour utiliser les données en dure pour la génération des cases ou 2 pour les données via l'acces à la base de donnée"): 
 
             c0 = Case           (0, (4, 0, -4),     couleur=color.green             )
             c1 = Case_propriete (1, (3, 0, -4),     "Nom a.1", 60, 10,  (2,0,0), 1  )
@@ -133,6 +133,8 @@ class Plateau(Entity):
                 # en dure car pas dans la db
                 pos_batt = "(2,0,0)"
                 num_hamaux = "1"
+
+                # position des cases dynamiquement "alouées"
                 if i >= 0 and i <= 8:
                     pos_case = f"( {4-i}, 0, -4)"
                 elif i >= 9 and i <= 16:

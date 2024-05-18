@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS Cases (
     nom VARCHAR(255),
     prix DECIMAL(10, 2),
     loyer DECIMAL(10, 2),
-    resource_contenue VARCHAR(255)
+    resource_contenue VARCHAR(255),
+    num_hamaux INT
 );
 
 -- Création de la table Plateau
