@@ -28,5 +28,5 @@ CREATE TABLE IF NOT EXISTS CarteChance (
     id_CarteChance INT AUTO_INCREMENT PRIMARY KEY,
     titre VARCHAR(255),
     contennu TEXT,
-    action INT
+    action VARCHAR(255)
 );

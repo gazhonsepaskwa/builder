@@ -182,11 +182,6 @@ class Jeu():
         self.__plateau = Plateau()
         self.__plateau.genererCases()
         self.__banque = Banque()
-        
-        carteChance0 = CarteChances("Donne la thune", "Tu me dois 100$ \n Payez 100$", 0)
-        carteChance0 = CarteChances("Donne la thune", "Tu me dois 100$ \n Payez 100$", 1)
-
-        self.__listeCartesChances.append(carteChance0)
 
 
     #Permet de préparer le jeu

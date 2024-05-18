@@ -2,6 +2,7 @@
 Qui: Nathan
 Quand: 
 - 18/01/2024
+- 10/05/2024
 Description: Case qui permet de tirer une carte
 chance et faire l'action inscrite dessus via chance()
 
@@ -12,7 +13,7 @@ chance et faire l'action inscrite dessus via chance()
 ##########
 
 from Case import *
-from random import randrange
+from random import *
 
 class Case_chance(Case):
 
@@ -43,5 +44,31 @@ class Case_chance(Case):
     # Permet de tirer une carte chance et faire l'action inscrite dessus
 
     def chance(self, jeu):
-        carteChanceChoisis = randint(0,len(jeu.listeCartesChances)-1)
-        jeu.listeCartesChances[carteChanceChoisis].action(jeu.joueurActif, jeu.listeJoueurs)
+
+        db = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="root",
+            database="builder"
+            )
+        
+        curseur = db.cursor()
+
+        curseur.execute("SELECT COUNT(*) FROM CarteChance")
+        nombre_total_lignes = curseur.fetchone()[0]
+
+        # Générer un id aléatoire
+        id_ = random.randint(0, nombre_total_lignes - 1)
+        val = (id_,)
+        sql = "SELECT titre, contenu, action FROM CarteChance WHERE id_CarteChance = %s"
+
+        curseur.execute(sql, val)
+        retour = curseur.fetchone()
+
+        # Assigner le retour au variables de générations
+        if retour: titre, contenu, action = retour 
+        else: raise ValueError(f"La base de donnée n'a rien retourner pour l'ID {i}")
+
+        print(f"Titre: {titre}")
+        print(f"description: {contenu}")
+        exec(action)
