@@ -22,6 +22,8 @@ class TestJeu():
 
                 print(e)
 
+    #Tester les accesseurs/mutateurs
+
     def testAccesseursMutateurs(self):
 
         objetJeu = Jeu()
@@ -49,15 +51,25 @@ class TestJeu():
 
             print(f"Accesseurs/mutateurs de la classe [Jeu] CORRECT ! :D")
     
+    #Initialiser le nombre de joueurs pour s'assurer qu'il y en bien 0 à la base
+    
     def initialisationNbrJoueursTEST(self):
+
         jeu = Jeu()
         assert jeu.nbrDeJoueurs == 0
+
+    #Initialiser la liste de joueur pour qu'elle soit vide
 
     def InitialisationListeJoueursVide(self):
         jeu = Jeu()
         assert jeu.listeJoueurs == []
 
+    #Tester le choix du nombre de joueurs en lançant le début du jeu
+
     def choixNbrJoueursTEST(self):
+
+        print("\n Test de choix de nombre de joueurs \n")
+
         jeu = Jeu()
         jeu.choixNbrJoueur()
         assert jeu.nbrDeJoueurs >= 2 and jeu.nbrDeJoueurs <= 4
@@ -65,10 +77,14 @@ class TestJeu():
         for joueur in jeu.listeJoueurs:
             assert joueur.ID >= 0
 
+    #Tester la méthode déter qui commence
+
     def deterQuiCommenceTEST(self):
         
+        print("\n Test de la méthode déterminer qui commence \n")
+
         leJeu = Jeu()
-        leJeu.nbrDeJoueurs = 4 
+        leJeu.__nbrDeJoueurs = 4 
         leJeu.listeJoueurs = [Joueur(), Joueur(), Joueur(), Joueur()]  # Simuler la création des joueurs
         leJeu.deterQuiCommence()
         assert leJeu.joueurActif in leJeu.listeJoueurs
