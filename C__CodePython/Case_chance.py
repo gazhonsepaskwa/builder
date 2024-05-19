@@ -37,7 +37,7 @@ class Case_chance(Case):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis la case chance ! Si un joueur tombe sur moi, je lui donne un bonus ou un malus qui permettra de pimenter un peu la partie")
         
     
 

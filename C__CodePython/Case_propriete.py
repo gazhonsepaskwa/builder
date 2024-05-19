@@ -43,7 +43,7 @@ class Case_propriete(Case):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis la case propriété ! Je sers à définir si l'une des cases propriété appartient à quelqu'un ou non, et permet au joueur de m'acheter si je n'appartient à personnes ou de payer le propriétaire de la case")
         
     
 

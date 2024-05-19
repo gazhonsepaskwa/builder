@@ -49,4 +49,4 @@ class Case(Entity):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis la case !")

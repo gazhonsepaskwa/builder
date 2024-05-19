@@ -33,7 +33,7 @@ class Case_police(Case):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis la case police ! Si un joueur tombe sur moi, il ira en prison pour mauvais stationnement !")
 
     ############
     # methodes #

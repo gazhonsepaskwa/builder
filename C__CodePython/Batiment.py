@@ -46,7 +46,7 @@ class Batiment(Button):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis le batiment ! Je permet aux joueurs de pouvoir construire des bâtiments au milieu du plateau et j'impose des conditions pour pouvoir construire un étage")
         
     
 

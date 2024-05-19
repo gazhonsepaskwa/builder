@@ -84,7 +84,7 @@ class Jeu():
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis le jeu ! Je permet aux joueurs de jouer")
         
     ###########################
     # accesseurs et mutateurs #

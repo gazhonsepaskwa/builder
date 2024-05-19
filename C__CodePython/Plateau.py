@@ -65,7 +65,7 @@ class Plateau(Entity):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis le plateau ! Les joueurs se déplacent sur moi, par le biais de cases.")
 
 
     ############

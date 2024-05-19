@@ -36,7 +36,7 @@ class Case_vol(Case):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis la case vol ! Je permet aux joueurs de se voler des ressources entre eux. Mouhahahaha !")
 
     ###########################
     # accesseurs et mutateurs #

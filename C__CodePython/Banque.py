@@ -28,7 +28,7 @@ class Banque():
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis la banque ! Je sers principalement à permettre aux joueurs d'effectuer des paiements en eux si l'un d'eux tombe sur la propriété d'un autre")
         
     
 

@@ -33,7 +33,7 @@ class Case_ressource(Case):
     #############
         
     def __str__(self):
-        print("")
+        print("Bonjour, je suis la case ressource ! Je permet aux joueurs qui tombent sur moi, de gagner des ressources qui leurs permettront de construire leurs batiments")
         
     ###########################
     # accesseurs et mutateurs #
