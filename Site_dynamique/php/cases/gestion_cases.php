@@ -1,3 +1,10 @@
+<-- 
+qui: Nathan
+quoi: gestionnaire des cases (interface)
+quand: 
+- 17/05/2024 Nathan
+- 19/05/2024 Nathan
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

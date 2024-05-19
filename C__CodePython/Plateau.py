@@ -1,9 +1,16 @@
 """
 Qui: Nathan
 Quand: 
-- 18/01/2024
-- 16/05/2024
-- 18/05/2024
+- 18/01/2024 Nathan
+- 12/02/2024 Nathan
+- 15/02/2024 Nathan
+- 24/02/2024 Nathan
+- 26/02/2024 Nathan
+- 29/02/2024 Nathan
+- 01/03/2024 Nathan
+- 16/05/2024 Nathan
+- 17/05/2024 Nathan
+- 18/05/2024 Nathan
 Description: Le plateau de jeu sur lesquels les joueurs vont pouvoir
 se déplacer lors de la partie
 """

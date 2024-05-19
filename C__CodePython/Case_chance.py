@@ -1,8 +1,13 @@
 """
 Qui: Nathan
 Quand: 
-- 18/01/2024
-- 10/05/2024
+- 18/01/2024 Nathan
+- 26/02/2024 Nathan
+- 27/02/2024 Nathan
+- 29/02/2024 Nathan
+- 02/04/2024 Nathan
+- 10/05/2024 Nathan
+- 18/05/2024 Nathan
 Description: Case qui permet de tirer une carte
 chance et faire l'action inscrite dessus via chance()
 

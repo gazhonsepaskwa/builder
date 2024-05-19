@@ -1,3 +1,10 @@
+<-- 
+qui: Nathan
+quoi: gestionnaire d'envoie  a la db les cases
+quand: 
+- 17/05/2024 Nathan
+- 19/05/2024 Nathan
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">

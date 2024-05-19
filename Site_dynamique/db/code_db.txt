@@ -1,9 +1,12 @@
--- Création de la db
+-- Qui:Nathan Et Amory 
+-- Quand: - 17/05/2024 Nathan
+--        - 18/05/2024 Nathan
 
+-- Création de la db
 CREATE DATABASE IF NOT EXISTS builder;
 
--- Utilisation de la base de données Builder
-USE Builder;
+-- Utilisation de la base de données builder
+USE builder;
 
 -- Création de la table Cases
 CREATE TABLE IF NOT EXISTS Cases (
@@ -16,7 +19,7 @@ CREATE TABLE IF NOT EXISTS Cases (
     num_hamaux INT
 );
 
--- Création de la table Plateau
+-- Création de la table Plateau (Sert simplement a prouver que nous somme capable de faire un lien entre 2 tables, n'as pas de réelle utilitée dans le projet)
 CREATE TABLE IF NOT EXISTS Plateau (
     num INT AUTO_INCREMENT PRIMARY KEY,
     id_Cases INT,

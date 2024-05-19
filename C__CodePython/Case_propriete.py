@@ -1,7 +1,11 @@
 """
 Qui: Nathan
 Quand: 
-- 18/01/2024
+- 19/01/2024 Nathan
+- 26/02/2024 Nathan
+- 27/02/2024 Nathan
+- 29/02/2024 Nathan
+- 01/03/2024 Nathan
 Description: case pouvant etre acheté et qui permet de construire 
 les batiments quand le hamaux sont complet
 """

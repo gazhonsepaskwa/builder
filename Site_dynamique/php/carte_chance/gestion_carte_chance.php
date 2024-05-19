@@ -1,3 +1,11 @@
+<-- 
+qui: Nathan
+quoi: gestionnaire des cart chance (interface et lecture de la db)
+quand: 
+- 17/05/2024 Nathan
+- 18/05/2024 Nathan
+-->
+
 <?php
 // Connexion à la base de données
 $servername = "localhost";

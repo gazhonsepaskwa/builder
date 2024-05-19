@@ -1,7 +1,13 @@
 """
 Qui: Nathan
 Quand: 
-- 18/01/2024
+- 18/01/2024 Nathan
+- 29/01/2024 Nathan
+- 12/02/2024 Nathan
+- 15/02/2024 Nathan
+- 24/02/2024 Nathan
+- 28/02/2024 Nathan
+- 17/05/2024 Nathan
 Description: Les joueurs/adversaires qui disputent une partie
 (matérialisés par des pions.)
 """

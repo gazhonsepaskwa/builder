@@ -1,7 +1,7 @@
 """
 Qui: Nathan
 Quand: 
-- 18/01/2024
+- 18/01/2024 Nathan
 Description: Objet qui permet de gérer les transfert d'argent entre les joueurs
 
 """

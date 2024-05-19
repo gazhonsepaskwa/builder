@@ -1,7 +1,10 @@
 """
-Qui: Amory
+Qui: Amory et Nathan
 Quand: 
-- 18/01/2024
+- 18/01/2024 Amory
+- 15/02/2024 Nathan 
+- 24/02/2024 Nathan
+- 29/02/2024 Nathan
 Description: Case du plateau avec ou sans spécificité ou influence
 sur la partie
 """

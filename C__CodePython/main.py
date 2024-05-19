@@ -1,8 +1,14 @@
 """
 Qui: Nathan
 Quand: 
-- 18/01/2024
-Description: 
+- 25/01/2024 Nathan
+- 26/01/2024 Nathan
+- 12/02/2024 Nathan
+- 13/02/2024 Nathan
+- 24/02/2024 Nathan
+- 25/02/2024 Nathan
+- 17/05/2024 Nathan
+Description: script permettant le multi-threading et de les démarrer
 
 """
 

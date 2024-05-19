@@ -1,7 +1,10 @@
 """
 Qui: Nathan 
 Quand: 
-- 18/01/2024
+- 18/01/2024 Nathan
+- 26/02/2024 Nathan
+- 27/02/2024 Nathan
+- 19/05/2024 Nathan
 Description: Case sur laquelle se trouve la police,
 quand on tombe dessus on est envoyé en prison
 """
@@ -38,8 +41,7 @@ class Case_police(Case):
 
     #Envoie le joueur se situant sur la case, en prison
     
-    def emprisonner(self):
+    def emprisonner(self, joueurActif):
 
-        Jeu.joueurActif.caseActuelle = 8
-
-        Joueur.Actif.enPrison = True
+        joueurActif.caseActuelle = 8
+        JoueurActif.enPrison = True

@@ -1,7 +1,12 @@
 """
-Qui: Amory
+Qui: Amory et Nathan
 Quand: 
-- 18/01/2024
+- 18/01/2024 Amory
+- 26/02/2024 Nathan
+- 27/02/2024 Nathan
+- 28/02/2024 Nathan
+- 29/02/2024 Nathan
+- 01/03/2024 Nathan
 Description: La case vol, est une case qui permet à un joueur de voler
 l'une des ressources d'un autre joueur.
 
@@ -69,7 +74,7 @@ class Case_vol(Case):
         self.__voleur = voleur
         self.__victime = listeJoueurs[int(input(print(f"Choisissez le joueur victime parmis: {listeJoueurs} (via son numéro dans la liste) "))) -1]
 
-        # Demande le type de ressource à voler | a changer !!!
+        # Demande le type de ressource à voler 
         tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
         if tmp == "1": choix = "tractopelle"
         elif tmp == "2": choix = "bateau"

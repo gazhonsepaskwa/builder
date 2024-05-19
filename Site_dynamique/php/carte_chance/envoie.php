@@ -1,3 +1,9 @@
+<-- 
+qui: Nathan
+quoi: gestionnaire d'envoie  a la db les cartes chances
+quand: 
+- 17/05/2024 Nathan
+-->
 <?php
 // Connexion à la base de données
 $servername = "localhost";

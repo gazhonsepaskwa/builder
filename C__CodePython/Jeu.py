@@ -2,10 +2,23 @@
 Qui: Amory & Nathan
 Quand: 
 - 18/01/2024 Amory
+- 19/01/24 Nathan 
 - 25/01/2024 Nathan 
 - 29/01/2024 Nathan 
+- 12/02/2024 Nathan 
+- 13/02/2024 Nathan
+- 15/02/2024 Nathan
+- 24/02/2024 Nathan
+- 24/02/2024 Nathan
+- 26/02/2024 Nathan
+- 27/02/2024 Nathan
+- 28/02/2024 Nathan
+- 01/03/2024 Nathan
+- 02/04/2024 Nathan
+- 11/04/2024 Nathan
+- 18/05/2024 Nathan
 Description: Le jeu Monopoly en lui même qui va pouvoir
-être joué par les joueurs qui veulent bien y jouer
+être joué par les joueurs
 """
 
 ##########
@@ -13,12 +26,10 @@ Description: Le jeu Monopoly en lui même qui va pouvoir
 ##########
 
 from Joueur import *
-from GestionnaireDePion import *
 from random import randrange as random
 from Case import *
 from Case_propriete import *
 from Case_chance import *
-from CarteChances import *
 from Case_police import *
 from Case_ressource import *
 from Case_vol import *
@@ -55,7 +66,6 @@ class Jeu():
 
 
     def update():
-        # Move the camera using WASD keys
         if held_keys['z']:
             camera.position += camera.forward * time.dt
         if held_keys['s']:
@@ -228,11 +238,11 @@ class Jeu():
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
-            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner()
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner(self.__joueurActif)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_ressource):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].donnerResource(self.__joueurActif)
-        # elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_vol):
-            # self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler(self.__joueurActif, self.__listeJoueurs)    ### je sais pas comment faire pour le voleur et la victime
+        elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_vol):
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler(self.__joueurActif, self.__listeJoueurs) 
         else: pass
         
         if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
