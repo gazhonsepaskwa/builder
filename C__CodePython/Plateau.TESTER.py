@@ -1,3 +1,11 @@
+"""
+QUI : Amory et Nathan
+
+QUAND : 16/05/2024 Amory
+
+QUOI : Les tests du fichier Plateau.py
+"""
+
 from Plateau import *
 
 class TestPlateau():

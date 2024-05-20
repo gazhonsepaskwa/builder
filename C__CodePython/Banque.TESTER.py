@@ -1,3 +1,12 @@
+"""
+QUI : Amory et Nathan
+
+QUAND : 16/05/2024 Amory
+        19/05/2024 Amory
+
+QUOI : Les tests du fichier Banque.py
+"""
+
 from Banque import *
 
 class TestBanque():

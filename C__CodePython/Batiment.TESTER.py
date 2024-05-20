@@ -1,3 +1,12 @@
+"""
+QUI : Amory et Nathan
+
+QUAND : 05/05/2024 Amory
+        20/05/2024 Amory
+
+QUOI : Les tests du fichier Jeu.py
+"""
+
 from Batiment import *
 
 class TestBatiment():

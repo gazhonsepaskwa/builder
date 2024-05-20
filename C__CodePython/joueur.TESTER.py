@@ -1,3 +1,16 @@
+"""
+QUI : Amory et Nathan
+
+QUAND : 21/03/2024 Amory
+        22/03/2024 Amory
+        25/03/2024 Amory
+        11/04/2024 Amory
+        16/05/2024 Amory
+        19/05/2024 Amory
+
+QUOI : Les tests du fichier Joueur.py
+"""
+
 from Joueur import *
 
 class JoueurTEST():
