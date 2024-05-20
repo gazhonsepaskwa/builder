@@ -54,11 +54,11 @@ class Jeu():
         # Creation de la camera libre
         self.camera = EditorCamera()
 
+        # Attributs
         self.__nbrDeJoueurs:int = 0
         self.__listeJoueurs:list = []
         self.__joueurActif = None
         self.__fini = False
-        self.__listeCartesChances = []
 
         #Enfants
         self.__plateau = None
@@ -140,14 +140,6 @@ class Jeu():
     def nbrDeJoueurs(self):
         return self.__nbrDeJoueurs
     
-    #Liste qui stoque toute les cartes chances
-
-    @property
-    def listeCartesChances(self):
-        return self.__listeCartesChances
-    @listeCartesChances.setter
-    def listeCartesChances(self, val):
-        self.__listeCartesChances = val
 
 
 
@@ -222,6 +214,8 @@ class Jeu():
         for case in self.__plateau.caseListe:
             if isinstance(case, Case_propriete) :
                 pass
+
+        # le mode construction n'a pas été terminer et ne le serra pas par manque de temps
 
 
     #Permet de jouer un tour

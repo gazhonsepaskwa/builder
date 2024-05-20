@@ -35,11 +35,6 @@ class Batiment(Button):
         self.__construisible: bool = False
         self.__nombreEtage: int = 0
 
-        self.__tract = 0
-        self.__bat = 0
-        self.__cam = 0
-        self.__grue = 0
-
 
     #############
     # affichage #
@@ -91,38 +86,38 @@ class Batiment(Button):
          
         if self.construisible:
             if self.__nombreEtage == 0:
-                self.__tract = 1
-                self.__bat = 0
-                self.__cam = 1
-                self.__grue = 0
+                tract = 1
+                bat = 0
+                cam = 1
+                grue = 0
 
             elif self.__nombreEtage == 1:
-                self.__tract = 0
-                self.__bat = 1
-                self.__cam = 0
-                self.__grue = 1
+                tract = 0
+                bat = 1
+                cam = 0
+                grue = 1
         
             elif self.__nombreEtage == 2:
-                self.__tract = 0
-                self.__bat = 2
-                self.__cam = 0
-                self.__grue = 1
+                tract = 0
+                bat = 2
+                cam = 0
+                grue = 1
         
             elif self.__nombreEtage == 3:
-                self.__tract = 1
-                self.__bat = 1
-                self.__cam = 1
-                self.__grue = 1
+                tract = 1
+                bat = 1
+                cam = 1
+                grue = 1
         
             elif self.__nombreEtage == 4:
-                self.__tract = 2
-                self.__bat = 2
-                self.__cam = 2
-                self.__grue = 2
+                tract = 2
+                bat = 2
+                cam = 2
+                grue = 2
         
             if self.verifQuantiteePion():
-                print("Le prix est de : " + self.__tract + " tractopelle, " + self.__bat + " bateau, " + self.__cam + " camion, " + self.__grue + " grue.")
+                print("Le prix est de : " + tract + " tractopelle, " +  bat + " bateau, " +  cam + " camion, " +  grue + " grue.")
                 if outils.ouiOuNon("Voulez-vous construire un etage sur ce batiment? Oui/Non"):
                     self.__nombreEtage += 1
             else:
-                print("Vous n'avez pas la possiblilite de vous offrir un etage sur ce batiment, le prix est de : " + self.__tract + " tractopelle, " + self.__bat + " bateau, " + self.__cam + " camion, " + self.__grue + " grue.")
+                print("Vous n'avez pas la possiblilite de vous offrir un etage sur ce batiment, le prix est de : " + tract + " tractopelle, " + bat + " bateau, " + cam + " camion, " + grue + " grue.")

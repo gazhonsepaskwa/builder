@@ -42,12 +42,10 @@ class Joueur(Entity):
         self.__jetonsCamion:int = 0
         self.__jetonsGrue:int = 0
         self.__proprietes = []
-        self.__etagesRestants:int = 0
         self.__valeurPremierLance:int = 0
         self.__numCaseActuelle:int = 0
         self.__derniereSommeDE: int = 0
         self.__enPrison: bool = False
-        self.__pion = ""
 
     #############
     # affichage #
@@ -229,14 +227,6 @@ class Joueur(Entity):
     def tourEditionFini(self, val):
         self.__tourEditionFini = val
 
-    #L'apparence du joueur
-
-    @property
-    def pion(self):
-        return self.__pion
-    @pion.setter
-    def pion(self, val):
-        self.__pion = val
 
     ############
     # methodes #
