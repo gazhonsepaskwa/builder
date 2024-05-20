@@ -7,6 +7,7 @@ Quand:
 - 28/02/2024 Nathan
 - 29/02/2024 Nathan
 - 01/03/2024 Nathan
+- 20/05/2024 Nathan
 Description: La case vol, est une case qui permet à un joueur de voler
 l'une des ressources d'un autre joueur.
 

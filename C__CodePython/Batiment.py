@@ -5,6 +5,7 @@ Quand:
 - 29/02/2024 Nathan
 - 01/03/2024 Nathan
 - 14/03/2024 Nathan
+- 20/05/2024 Nathan
 Description: Classe Batiment, gere un batiment, ses etages et cetera.
 """
 

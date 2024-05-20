@@ -17,6 +17,7 @@ Quand:
 - 02/04/2024 Nathan
 - 11/04/2024 Nathan
 - 18/05/2024 Nathan
+- 20/05/2024 Nathan
 Description: Le jeu Monopoly en lui même qui va pouvoir
 être joué par les joueurs
 """
@@ -259,3 +260,5 @@ class Jeu():
     
     def finDePartie():
         pass
+
+        # la partie ne se finie pas, par manque de temps 

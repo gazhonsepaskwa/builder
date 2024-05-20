@@ -8,6 +8,7 @@ Quand:
 - 24/02/2024 Nathan
 - 28/02/2024 Nathan
 - 17/05/2024 Nathan
+- 20/05/2024 Nathan
 Description: Les joueurs/adversaires qui disputent une partie
 (matérialisés par des pions.)
 """
