@@ -2,6 +2,11 @@
 -- Quand: - 17/05/2024 Nathan
 --        - 18/05/2024 Nathan
 
+-- Création de L'utilisateur
+CREATE USER 'builderADMIN'@'localhost' IDENTIFIED BY 'p@sW0rDssss';
+GRANT ALL PRIVILEGES ON *.* TO 'builderADMIN'@'localhost';
+FLUSH PRIVILEGES;
+
 -- Création de la db
 CREATE DATABASE IF NOT EXISTS builder;
 

@@ -11,6 +11,7 @@ Quand:
 - 16/05/2024 Nathan
 - 17/05/2024 Nathan
 - 18/05/2024 Nathan
+- 20/05/2024 Nathan
 Description: Le plateau de jeu sur lesquels les joueurs vont pouvoir
 se déplacer lors de la partie
 """
@@ -115,8 +116,8 @@ class Plateau(Entity):
             # connection a la db
             db = mysql.connector.connect(
             host="localhost",
-            user="root",
-            password="root",
+            user="builderADMIN",
+            password="p@sW0rDssss",
             database="builder"
             )
 

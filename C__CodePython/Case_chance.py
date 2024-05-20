@@ -8,6 +8,7 @@ Quand:
 - 02/04/2024 Nathan
 - 10/05/2024 Nathan
 - 18/05/2024 Nathan
+- 20/05/2024 Nathan
 Description: Case qui permet de tirer une carte
 chance et faire l'action inscrite dessus via chance()
 
@@ -52,9 +53,9 @@ class Case_chance(Case):
 
         db = mysql.connector.connect(
             host="localhost",
-            user="root",
+            user="builderADMIN",
             password="root",
-            database="builder"
+            database="p@sW0rDssss"
             )
         
         curseur = db.cursor()

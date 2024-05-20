@@ -3,12 +3,13 @@ qui: Nathan
 quoi: gestionnaire d'envoie  a la db les cartes chances
 quand: 
 - 17/05/2024 Nathan
+- 20/05/2024 Nathan
 -->
 <?php
 // Connexion à la base de données
 $servername = "localhost";
-$username = "root";
-$password = "root";
+$username = "builderADMIN";
+$password = "p@sW0rDssss";
 $database = "Builder";
 
 $conn = new mysqli($servername, $username, $password, $database);

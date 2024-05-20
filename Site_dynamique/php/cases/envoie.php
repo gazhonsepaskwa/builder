@@ -4,6 +4,7 @@ quoi: gestionnaire d'envoie  a la db les cases
 quand: 
 - 17/05/2024 Nathan
 - 19/05/2024 Nathan
+- 20/05/2024 Nathan
 -->
 <html lang="en">
 <head>
@@ -15,8 +16,8 @@ quand:
 <?php
 // Connexion à la db
 $servername = "localhost";
-$username = "root";
-$password = "root";
+$username = "builderADMIN";
+$password = "p@sW0rDssss";
 $dbname = "builder";
 
 try {
