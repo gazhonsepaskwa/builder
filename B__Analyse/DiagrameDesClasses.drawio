@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-05-21T16:40:09.991Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="No7URp2iU3GRdv2XGgUC" version="23.1.5" type="device" pages="5">
+<mxfile host="Electron" modified="2024-05-21T16:55:53.900Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="4cgq7YqYcRSwgIYIklfm" version="23.1.5" type="device" pages="5">
   <diagram name="Classes du Monopoly Builder" id="qhSKeDJ2xM4pkHktN6ml">
     <mxGraphModel dx="1434" dy="836" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1047,7 +1047,7 @@
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-1" vertex="1">
           <mxGeometry y="130" width="370" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="cuxR2tFWYrxJDSZeBXdW-4" value="&lt;div&gt;&lt;b&gt;+ donnerRessource()&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Donne le type de ressource que la case propose quand on tombe dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-1" vertex="1">
+        <mxCell id="cuxR2tFWYrxJDSZeBXdW-4" value="&lt;div&gt;&lt;b&gt;+ donnerRessource(joueur): None&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Donne le type de ressource que la case propose quand on tombe dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="cuxR2tFWYrxJDSZeBXdW-1" vertex="1">
           <mxGeometry y="138" width="370" height="62" as="geometry" />
         </mxCell>
         <mxCell id="cuxR2tFWYrxJDSZeBXdW-5" value="&lt;div&gt;Case_vol&lt;/div&gt;&lt;br&gt;La case vol, est une case qui permet à un joueur de voler&lt;br&gt;l&#39;une des ressources d&#39;un autre joueur." style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=80;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
@@ -1211,7 +1211,7 @@
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-12" vertex="1">
           <mxGeometry y="70" width="380" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HI2nkk8JbpxF9vzqCVUE-14" value="&lt;div&gt;&lt;b&gt;+ chance(): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-12" vertex="1">
+        <mxCell id="HI2nkk8JbpxF9vzqCVUE-14" value="&lt;div&gt;&lt;b&gt;+ chance(jeu): None&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Permet de tirer une carte chance et faire l&#39;action inscrite dessus&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="HI2nkk8JbpxF9vzqCVUE-12" vertex="1">
           <mxGeometry y="78" width="380" height="62" as="geometry" />
         </mxCell>
         <mxCell id="HI2nkk8JbpxF9vzqCVUE-15" value="&lt;div&gt;Case_police&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Case sur laquelle se trouve la police,&lt;br&gt;quand on tombe dessus on est envoyé en prison&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=70;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
@@ -1229,7 +1229,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Données a stocker dans la DB" id="S1xwx9GiWRM3yE_LCNBu">
-    <mxGraphModel dx="920" dy="-284" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="-264" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
