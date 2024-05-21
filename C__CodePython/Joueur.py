@@ -64,16 +64,6 @@ class Joueur(Entity):
     @property
     def ID(self):
         return self.__ID
-    @ID.setter
-    def ID(self, leID:int) -> None:
-
-        #Test de la valeur reçue.
-
-        if not(isinstance(leID, int) and leID >= 0):
-
-            raise TypeError("")
-
-        self.__ID = leID
 
     #Argent qui permet d'acheter les diverses propriétés du jeu
 
@@ -96,64 +86,24 @@ class Joueur(Entity):
     @property
     def jetonsTractopelle(self):
         return self.__jetonsTractopelle
-    @jetonsTractopelle.setter
-    def jetonsTractopelle(self, leJetonsTractopelle:int):
-
-        #Test de la valeur reçue.
-
-        if not(isinstance(leJetonsTractopelle, int) and leJetonsTractopelle >= 0):
-
-            raise TypeError("")
-
-        self.__jetonsTractopelle = leJetonsTractopelle
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
     @property
     def jetonsBateau(self):
         return self.__jetonsBateau
-    @jetonsBateau.setter
-    def jetonsBateau(self, leJetonsBateau:int):
-        
-        #Test de la valeur reçue.
-
-        if not(isinstance(leJetonsBateau, int) and leJetonsBateau >= 0):
-
-            raise TypeError("")
-
-        self.__jetonsBateau = leJetonsBateau
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
     @property
     def jetonsCamion(self):
         return self.__jetonsCamion
-    @jetonsCamion.setter
-    def jetonsCamion(self, leJetonsCamion:int):
-        
-        #Test de la valeur reçue.
-
-        if not(isinstance(leJetonsCamion, int) and leJetonsCamion >= 0):
-
-            raise TypeError("")
-
-        self.__jetonsCamion = leJetonsCamion
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
     @property
     def jetonsGrue(self):
         return self.__jetonsGrue
-    @jetonsGrue.setter
-    def jetonsGrue(self, leJetonsGrue:int):
-        
-        #Test de la valeur reçue.
-
-        if not(isinstance(leJetonsGrue, int) and leJetonsGrue >= 0):
-
-            raise TypeError("")
-
-        self.__jetonsGrue = leJetonsGrue
 
     #Propriétés obtenues par le/les joueur(s)
 
@@ -165,59 +115,24 @@ class Joueur(Entity):
 
         self.__proprietes = leProprietes
 
-    #La valeur du premier lancé ?
-
-    @property
-    def valeurPremierLance(self):
-        return self.__valeurPremierLance
-    @valeurPremierLance.setter
-    def valeurPremierLance(self, leValeurPremierLance:int):
-    
-        #Test de la valeur reçue.
-
-        if not(isinstance(leValeurPremierLance, int) and leValeurPremierLance > 1 and leValeurPremierLance < 13):
-
-            raise TypeError("")
-
-        self.__valeurPremierLance = leValeurPremierLance
 
     #Case sur laquelle le joueur est actuellement
 
     @property
     def numCaseActuelle(self):
         return self.__numCaseActuelle
-    @numCaseActuelle.setter
-    def numCaseActuelle(self, leCaseActuelle):
-
-        self.__numCaseActuelle = leCaseActuelle
-
 
     #Dernière somme retenu après le lancé de dé
 
     @property
     def derniereSommeDE(self):
-        return self.__derniereSommeDE
-    @derniereSommeDE.setter
-    def derniereSommeDE(self, leDerniereSomme:int):
-    
-        #Test de la valeur reçue.
-
-        if (isinstance(leDerniereSomme, int) and leDerniereSomme > 1 and leDerniereSomme < 13):
-
-            self.__derniereSommeDE = leDerniereSomme
-        else: 
-
-            raise TypeError("")
-        
+        return self.__derniereSommeDE        
 
     #Envoi le joueur en prison
 
     @property
     def enPrison(self):
         return self.__enPrison
-    @enPrison.setter
-    def enPrison(self, leEnPrison:bool):
-        self.__enPrison = leEnPrison
 
     #fin du tour de construction
 
@@ -227,7 +142,6 @@ class Joueur(Entity):
     @tourEditionFini.setter
     def tourEditionFini(self, val):
         self.__tourEditionFini = val
-
 
     ############
     # methodes #

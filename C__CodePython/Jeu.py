@@ -90,40 +90,18 @@ class Jeu():
     ###########################
     # accesseurs et mutateurs #
     ###########################
-        
-    #Le nombre joueur dans la partie
-    
-    @property
-    def nbrDeJoueurs(self):
-        return self.__nbrDeJoueurs
-    @nbrDeJoueurs.setter
-    def nbrDeJoueurs(self, val):
-        self.__nbrDeJoueurs = val 
 
     #La liste des joueurs qui sont dans la partie
 
     @property
     def listeJoueurs(self):
         return self.__listeJoueurs
-    @listeJoueurs.setter
-    def listeJoueurs(self, val):
-        self.__listeJoueurs = val
-
-    
-    #Liste de cases disponible sur le plateau
-
-    @property
-    def caseListe(self):
-        return self.__caseListe
 
     #Le joueur qui joue son tour sur le moment
 
     @property
     def joueurActif(self):
         return self.__joueurActif
-    @joueurActif.setter
-    def joueurActif(self, val):
-        self.__joueurActif = val
 
     #La fin de la partie quand l'une des conditions est faite
 
@@ -133,16 +111,6 @@ class Jeu():
     @fini.setter
     def fini(self, val):
         self.__fini = val
-
-    
-    #Liste qui stoque tout les batiments du jeu
-    
-    @property
-    def nbrDeJoueurs(self):
-        return self.__nbrDeJoueurs
-    
-
-
 
 
     ############
