@@ -108,10 +108,6 @@ class Jeu():
     @property
     def fini(self):
         return self.__fini
-    @fini.setter
-    def fini(self, val):
-        self.__fini = val
-
 
     ############
     # methodes #
