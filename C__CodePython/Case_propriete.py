@@ -88,7 +88,7 @@ class Case_propriete(Case):
             banque.envoyeur = joueur
             banque.receveur = self.__appartenu
 
-            if banque.envoyer.argent > self.__loyer:
+            if banque.envoyeur.argent > self.__loyer:
 
                 banque.transferer(self.__loyer)
 

@@ -77,40 +77,40 @@ class Plateau(Entity):
     def genererCases(self):
         
         if ouiOuNon("Taper 1 pour utiliser les données en dure pour la génération des cases ou 0 pour les données via l'acces à la base de donnée"): 
-
-            c0 = Case           (0, (4, 0, -4),     couleur=color.green             )
-            c1 = Case_propriete (1, (3, 0, -4),     "Nom a.1", 60, 10,  (2,0,0), 1  )
-            c2 = Case_ressource (2, (2, 0, -4),     "camion" ,                      )
-            c3 = Case_propriete (3, (1, 0, -4),     "Nom a.2", 60, 10,  (1,0,1), 1  )
-            c4 = Case_vol       (4, (0, 0, -4)                                      )
-            c5 = Case_propriete (5, (-1, 0, -4),    "Nom b.1", 100, 10, (1,0,0), 2  )
-            c6 = Case_chance    (6, (-2, 0, -4)                                     )
-            c7 = Case_propriete (7, (-3, 0, -4),    "Nom b.2", 100, 10, (0,0,1), 2  )
-            c8 = Case           (8, (-4, 0, -4)                                     )
-            c9 = Case_propriete (9, (-4, 0, -3),    "Nom c.1", 140, 10, (0,0,0), 3  )
-            c10= Case_ressource (10,(-4, 0, -2),    "bateau"                        )
-            c11= Case_propriete (11,(-4, 0, -1),    "Nom c.2", 140, 10, (1,0,-1), 3 )
-            c12= Case_vol       (12,(-4, 0, 0),                                     )
-            c13= Case_propriete (13,(-4, 0, 1),     "Nom d.1", 180, 10, (-1,0,0), 4 )
-            c14= Case_chance    (14,(-4, 0, 2)                                      )
-            c15= Case_propriete (15,(-4, 0, 3),     "Nom d.2", 180, 10, (0,0,-1), 4 )
-            c16= Case           (16,(-4, 0, 4),                                     )
-            c17= Case_propriete (17,(-3, 0, 4),     "Nom e.1", 220, 10, (-2,0,1), 5 )
-            c18= Case_ressource (18,(-2, 0, 4),     "tractopelle"                   )
-            c19= Case_propriete (19,(-1, 0, 4),     "Nom e.2", 220, 10, (-1,0,2), 5 )
-            c20= Case_vol       (20,(0, 0, 4),                                      )
-            c21= Case_propriete (21,(1, 0, 4),      "Nom f.1", 260, 10, (0,0,2), 6  )
-            c22= Case_chance    (22,(2, 0, 4)                                       )
-            c23= Case_propriete (23,(3, 0, 4),      "Nom f.2", 260, 10, (-1,0,1), 6 )
-            c24= Case_police    (24,(4, 0, 4)                                       )
-            c25= Case_propriete (25,(4, 0, 3),      "Nom g.1", 300, 10, (-2,0,-1), 7)
-            c26= Case_ressource (26,(4, 0, 2),      "grue"                          )
-            c27= Case_propriete (27,(4, 0, 1),      "Nom g.2", 300, 10, (-1,0,-2), 7)
-            c28= Case_vol       (28,(4, 0, 0)                                       )
-            c29= Case_propriete (29,(4, 0, -1),     "Nom h.1", 400, 10, (-1,0,-1), 8)
-            c30= Case_chance    (30,(4, 0, -2)                                      )
-            c31= Case_propriete (31,(4, 0, -3),     "Nom h.2", 400, 10, (0,0,-2), 8 )
-
+            self.caseListe.extend([
+                Case           (0, (4, 0, -4),     couleur=color.green             ),
+                Case_propriete (1, (3, 0, -4),     "Nom a.1", 60, 10,  (2,0,0), 1  ),
+                Case_ressource (2, (2, 0, -4),     "camion" ,                      ),
+                Case_propriete (3, (1, 0, -4),     "Nom a.2", 60, 10,  (1,0,1), 1  ),
+                Case_vol       (4, (0, 0, -4)                                      ),
+                Case_propriete (5, (-1, 0, -4),    "Nom b.1", 100, 10, (1,0,0), 2  ),
+                Case_chance    (6, (-2, 0, -4)                                     ),
+                Case_propriete (7, (-3, 0, -4),    "Nom b.2", 100, 10, (0,0,1), 2  ),
+                Case           (8, (-4, 0, -4)                                     ),
+                Case_propriete (9, (-4, 0, -3),    "Nom c.1", 140, 10, (0,0,0), 3  ),
+                Case_ressource (10,(-4, 0, -2),    "bateau"                        ),
+                Case_propriete (11,(-4, 0, -1),    "Nom c.2", 140, 10, (1,0,-1), 3 ),
+                Case_vol       (12,(-4, 0, 0),                                     ),
+                Case_propriete (13,(-4, 0, 1),     "Nom d.1", 180, 10, (-1,0,0), 4 ),
+                Case_chance    (14,(-4, 0, 2)                                      ),
+                Case_propriete (15,(-4, 0, 3),     "Nom d.2", 180, 10, (0,0,-1), 4 ),
+                Case           (16,(-4, 0, 4),                                     ),
+                Case_propriete (17,(-3, 0, 4),     "Nom e.1", 220, 10, (-2,0,1), 5 ),
+                Case_ressource (18,(-2, 0, 4),     "tractopelle"                   ),
+                Case_propriete (19,(-1, 0, 4),     "Nom e.2", 220, 10, (-1,0,2), 5 ),
+                Case_vol       (20,(0, 0, 4),                                      ),
+                Case_propriete (21,(1, 0, 4),      "Nom f.1", 260, 10, (0,0,2), 6  ),
+                Case_chance    (22,(2, 0, 4)                                       ),
+                Case_propriete (23,(3, 0, 4),      "Nom f.2", 260, 10, (-1,0,1), 6 ),
+                Case_police    (24,(4, 0, 4)                                       ),
+                Case_propriete (25,(4, 0, 3),      "Nom g.1", 300, 10, (-2,0,-1), 7),
+                Case_ressource (26,(4, 0, 2),      "grue"                          ),
+                Case_propriete (27,(4, 0, 1),      "Nom g.2", 300, 10, (-1,0,-2), 7),
+                Case_vol       (28,(4, 0, 0)                                       ),
+                Case_propriete (29,(4, 0, -1),     "Nom h.1", 400, 10, (-1,0,-1), 8),
+                Case_chance    (30,(4, 0, -2)                                      ),
+                Case_propriete (31,(4, 0, -3),     "Nom h.2", 400, 10, (0,0,-2), 8 ),
+            ])
         else: 
 
             # connection a la db

@@ -43,5 +43,5 @@ class Case_police(Case):
     
     def emprisonner(self, joueurActif):
 
-        joueurActif.caseActuelle = 8
-        JoueurActif.enPrison = True
+        joueurActif.numCaseActuelle = 8
+        joueurActif.enPrison = True

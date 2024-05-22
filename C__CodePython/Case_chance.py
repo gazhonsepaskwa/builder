@@ -20,6 +20,7 @@ chance et faire l'action inscrite dessus via chance()
 
 from Case import *
 from random import *
+import mysql
 
 class Case_chance(Case):
 
@@ -50,7 +51,7 @@ class Case_chance(Case):
     # Permet de tirer une carte chance et faire l'action inscrite dessus
 
     def chance(self, jeu):
-
+        return
         db = mysql.connector.connect(
             host="localhost",
             user="builderADMIN",

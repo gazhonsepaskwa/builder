@@ -36,7 +36,7 @@ class Joueur(Entity):
                 position=(4,0.25,-4),
             )
 
-        self.__ID:int = 0
+        self.__id:int = 0
         self.__argent:int = 0
         self.__jetonsTractopelle:int = 0
         self.__jetonsBateau:int = 0
@@ -61,15 +61,19 @@ class Joueur(Entity):
         
     #Permet au joueur de s'identifier avec un pseudonyme
 
-    @property
-    def ID(self):
+    def id_getter(self):
         return self.__ID
 
+    def id_setter(self, val: int) -> None:
+        self.__ID = val
+
+    ID = property(id_getter, id_setter)
     #Argent qui permet d'acheter les diverses propriétés du jeu
 
     @property
     def argent(self):
         return self.__argent
+
     @argent.setter
     def argent(self, leArgent:int) -> None:
 
@@ -83,21 +87,33 @@ class Joueur(Entity):
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
-    @property
-    def jetonsTractopelle(self):
+    def jetonsTractopelle_getter(self):
         return self.__jetonsTractopelle
+    
+    def jetonsTractopelle_setter(self, val: int):
+        self.__jetonsTractopelle = val
+
+    jetonsTractopelle = property(jetonsTractopelle_getter, jetonsTractopelle_setter)
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
-    @property
-    def jetonsBateau(self):
+    def jetonsBateau_getter(self):
         return self.__jetonsBateau
 
+    def jetonsBateau_setter(self, val: int):
+        self.__jetonsBateau = val
+    
+    jetonsBateau = property(jetonsBateau_getter, jetonsBateau_setter)
+
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
-    @property
-    def jetonsCamion(self):
+    def jetonsCamion_getter(self):
         return self.__jetonsCamion
+
+    def jetonsCamion_setter(self, val: int):
+        self.__jetonsCamion = val
+    
+    jetonsCamion = property(jetonsCamion_getter, jetonsCamion_setter)
 
     #Jetons qui pertmet de construire des étages sur les immeubles avec certaines combinaisons
 
@@ -118,15 +134,22 @@ class Joueur(Entity):
 
     #Case sur laquelle le joueur est actuellement
 
-    @property
-    def numCaseActuelle(self):
+    def numCaseActuelle_getter(self):
         return self.__numCaseActuelle
-
+    
+    def numCaseActuelle_setter(self, val: int):
+        self.__numCaseActuelle = val
+    
+    numCaseActuelle = property(numCaseActuelle_getter, numCaseActuelle_setter)
     #Dernière somme retenu après le lancé de dé
 
-    @property
-    def derniereSommeDE(self):
+    def derniereSommeDE_getter(self):
         return self.__derniereSommeDE        
+    
+    def derniereSommeDe_setter(self, val: int):
+        self.__derniereSommeDE = val
+    
+    derniereSommeDE =  property(derniereSommeDE_getter, derniereSommeDe_setter)
 
     #Envoi le joueur en prison
 

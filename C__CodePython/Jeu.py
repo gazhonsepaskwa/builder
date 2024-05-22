@@ -38,6 +38,7 @@ from Plateau import *
 from Banque import *
 
 from ursina import *
+import mysql
 
 import outils as outils
 
@@ -173,12 +174,13 @@ class Jeu():
         self.deterQuiCommence()
     
     def modeConstruction(self):
-        hamaux = self.__jouerActif.caseActuelle.hamaux
-        caseDansHamaux = []
+        pass
+        #hamaux = self.__plateau.caseListe[self.joueurActif.numCaseActuelle].numHamaux
+        #caseDansHamaux = []
 
-        for case in self.__plateau.caseListe:
-            if isinstance(case, Case_propriete) :
-                pass
+        #for case in self.__plateau.caseListe:
+        #    if isinstance(case, Case_propriete) :
+        #        pass
 
         # le mode construction n'a pas été terminer et ne le serra pas par manque de temps
 
