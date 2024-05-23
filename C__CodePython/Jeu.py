@@ -176,16 +176,27 @@ class Jeu():
         self.deterQuiCommence()
     
     def modeConstruction(self):
-        pass
-        #hamaux = self.__plateau.caseListe[self.joueurActif.numCaseActuelle].numHamaux
-        #caseDansHamaux = []
+        hamaux = self.__jouerActif.caseActuelle.hamaux
+        caseDansHamaux = []
 
-        #for case in self.__plateau.caseListe:
-        #    if isinstance(case, Case_propriete) :
-        #        pass
-
-        # le mode construction n'a pas été terminer et ne le serra pas par manque de temps
-
+        # récupérer les cases appartenant au même hamaux
+        for case in self.__plateau.caseListe:
+            if isinstance(case, Case_propriete):
+                if case.hamaux == hamaux:
+                    if case.appartenu == self.joueurActif:
+                        caseDansHamaux.append(case)
+        
+        if len(caseDansHamaux) != 2:
+            print("Vous n'avez pas la possibilitée de construire")
+            return()
+        else: 
+            if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
+                for case in caseDansHamaux:
+                    case.batiment.construisible = True
+                    case.batiment.color = color.red
+                    self.joueurActif.tourEditionFini = False
+                    return()
+            else: return()
 
     #Permet de jouer un tour
 
@@ -208,8 +219,8 @@ class Jeu():
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler(self.__joueurActif, self.__listeJoueurs) 
         else: pass
         
-        if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
-            self.modeConstruction()
+        
+        self.modeConstruction()
 
         if self.__joueurActif.argent == 0 or self.__joueurActif.argent < 0:
 
