@@ -72,8 +72,6 @@ class Case_vol(Case):
             
                 break
 
-        victimePotentiel = int(input(""))
-
         # Demande le type de ressource à voler 
         tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
         if tmp == "1": choix = "tractopelle"
