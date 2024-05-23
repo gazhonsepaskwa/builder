@@ -43,10 +43,34 @@ class Case_vol(Case):
     ############
         
     def voler(self, voleur_, listeJoueurs):
+        
+        listeDesJoueursVictime = []
 
         # attribution de voleur et victime
         voleur = voleur_
-        victime = listeJoueurs[int(input(print(f"Choisissez le joueur victime parmis: {listeJoueurs} (via son numéro dans la liste) "))) -1]
+
+        for i in listeJoueurs:
+
+            if Joueur.nom != Jeu.joueurActif.nom:
+                listeDesJoueursVictime.append(Joueur.nom)
+        
+        while True:
+        
+            print("Choisissez une victime parmis ces joueurs (Pour choisir un joueur que vous voulez voler, il faut écrire le nombre qui lui est associé) :")
+
+            for i in listeDesJoueursVictime:
+
+                print(f"{i} + {listeDesJoueursVictime[i]}")
+
+            victime = int(input(""))
+
+            if not(isinstance(victime, int)):
+
+                print("Veuillez recommencer en encodant le nombre associé à la personne que vous désirez voler")
+            
+            else :
+            
+                break
 
         # Demande le type de ressource à voler 
         tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
