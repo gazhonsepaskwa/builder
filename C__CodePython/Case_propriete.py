@@ -27,14 +27,14 @@ class Case_propriete(Case):
     # constructeur #
     ################
 
-    def __init__(self, num, pos, nom, prix, loyer, posBatiment, numHamaux):
-        super().__init__(num, pos, couleur=color.blue)
+    def __init__(self, num, pos, nom, prix, loyer, posBatiment, numHamaux, jeu):
+        super().__init__(num, pos, texture="img/prop.png")
         self.__appartenu:Joueur = None
-        self.__nom = nom
-        self.__prix = prix
-        self.__loyer = loyer
-        self.__batiment = Batiment(posBatiment)
-        self.numHamaux = numHamaux
+        self.__nom:str = nom
+        self.__prix:int = prix
+        self.__loyer: int = loyer
+        self.__batiment:Batiment = Batiment(posBatiment, jeu) # passage de jeu pour éviter l'import circulaire
+        self.__numHamaux:int = numHamaux
 
 
 
@@ -61,6 +61,9 @@ class Case_propriete(Case):
     def appartenu(self, val):
         self.__appartenu = val
 
+    @property
+    def numHamaux(self):
+        return self.__numHamaux
 
 
     ############
@@ -73,7 +76,7 @@ class Case_propriete(Case):
             
             #a modif pour mettre des boutons
 
-            if outils.ouiOuNon("Voulez-vous acheter la propriété " + self.__nom + "?"):
+            if outils.ouiOuNon("Voulez-vous acheter la propriété --" + self.__nom + "-- au prix de " + str(self.__prix) + " ? >>> "):
 
                 if joueur.argent > self.__prix :
             
@@ -81,7 +84,7 @@ class Case_propriete(Case):
                     self.__appartenu = joueur
 
                 else:
-                    print("Désolé, vous n'êtes pas capable de payer, vous êtes trop pauvre lol")
+                    print("Désolé, vous n'êtes pas capable de payer.")
 
         else:
 

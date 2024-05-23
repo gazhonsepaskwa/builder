@@ -41,6 +41,8 @@ from Banque import *
 from ursina import *
 import mysql
 
+from outils import *
+
 import outils as outils
 
 class Jeu():
@@ -126,6 +128,8 @@ class Jeu():
     #Choix qui permet de déterminer le nombre de joueur au début de la partie (maximum 4)
 
     def choixNbrJoueur(self):
+
+        clear_terminal()
         
         while True:
         
@@ -139,6 +143,7 @@ class Jeu():
 
                 break
 
+        clear_terminal()
 
         for i in range(self.__nbrDeJoueurs):
             self.__listeJoueurs.append(Joueur())
@@ -150,7 +155,7 @@ class Jeu():
 
     def genererObjects(self):
         self.__plateau = Plateau()
-        self.__plateau.genererCases()
+        self.__plateau.genererCases(self)
         self.__banque = Banque()
 
 
@@ -176,39 +181,47 @@ class Jeu():
         self.deterQuiCommence()
     
     def modeConstruction(self):
-        hamaux = self.__jouerActif.caseActuelle.hamaux
+        hamaux = self.__plateau.caseListe[self.__joueurActif.numCaseActuelle].numHamaux
         caseDansHamaux = []
 
         # récupérer les cases appartenant au même hamaux
         for case in self.__plateau.caseListe:
             if isinstance(case, Case_propriete):
-                if case.hamaux == hamaux:
+                if case.numHamaux == hamaux:
                     if case.appartenu == self.joueurActif:
                         caseDansHamaux.append(case)
         
-        if len(caseDansHamaux) != 2:
-            print("Vous n'avez pas la possibilitée de construire")
-            return()
-        else: 
+        if len(caseDansHamaux) >= 1: # a changer je garde pour test
             if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
                 for case in caseDansHamaux:
                     case.batiment.construisible = True
                     case.batiment.color = color.red
-                    self.joueurActif.tourEditionFini = False
                     return()
             else: return()
+        else: 
+            print("Vous n'avez pas la possibilitée de construire")
+            return()
 
     #Permet de jouer un tour
 
     def jouerUnTour(self):
+        clear_terminal()
         print("")
-        print("Le joueur " + str(self.__joueurActif.ID) + " joue son tour")
-        print(f"Il a {self.__joueurActif.argent} d'argent | {self.__joueurActif.jetonsTractopelle} jetons tractopelle | {self.__joueurActif.jetonsBateau} jetons bateau | {self.__joueurActif.jetonsCamion} jetons camion | {self.__joueurActif.jetonsGrue} jetons grue")
+        separator()
+        colored_print( f"{str(self.__joueurActif.nom)}, à vous de jouer !", "red")
+        separator()
+        colored_print("Vos ressources: ", "cyan")
+        print(f"argent: {self.__joueurActif.argent} | {self.__joueurActif.jetonsTractopelle} jetons tractopelle | {self.__joueurActif.jetonsBateau} jetons bateau | {self.__joueurActif.jetonsCamion} jetons camion | {self.__joueurActif.jetonsGrue} jetons grue")
+        separator()
         print("")
 
+        input("Lancer les dés [ENTER] ")
+        delete_last_line()
         self.__joueurActif.avancer(self.__plateau)
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
+            self.modeConstruction()
+
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
@@ -219,8 +232,6 @@ class Jeu():
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler(self.__joueurActif, self.__listeJoueurs) 
         else: pass
         
-        
-        self.modeConstruction()
 
         if self.__joueurActif.argent == 0 or self.__joueurActif.argent < 0:
 
@@ -231,6 +242,8 @@ class Jeu():
             #if len(set(self.listeJoueurs)) == 1:
 
            #     print("C'est la fin ! le joueur ")
+
+        input("Terminer le tour [ENTER] ")
 
 
 

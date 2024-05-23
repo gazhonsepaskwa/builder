@@ -29,7 +29,7 @@ class Case_chance(Case):
     ################
 
     def __init__(self,num ,pos):
-        super().__init__(num, pos, couleur=color.gold)
+        super().__init__(num, pos, texture="img/chance.png")
 
 
 
@@ -51,7 +51,6 @@ class Case_chance(Case):
     # Permet de tirer une carte chance et faire l'action inscrite dessus
 
     def chance(self, jeu):
-        return
         db = mysql.connector.connect(
             host="localhost",
             user="builderADMIN",

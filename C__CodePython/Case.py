@@ -22,11 +22,11 @@ class Case(Entity):
     # constructeur #
     ################
 
-    def __init__(self, num, pos, couleur = color.gray):
+    def __init__(self, num, pos, couleur = color.white, texture = "white_cube"):
         super().__init__(
                 model="cube",
                 color=couleur,
-                texture= "white_cube",
+                texture= texture,
                 scale=(1,0.2,1),
                 position=pos,
             )

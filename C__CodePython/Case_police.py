@@ -24,7 +24,7 @@ class Case_police(Case):
     ################
 
     def __init__(self, num, pos):
-        super().__init__(num, pos)
+        super().__init__(num, pos, texture="img/police.png")
 
 
 

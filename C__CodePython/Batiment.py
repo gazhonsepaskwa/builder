@@ -23,7 +23,7 @@ class Batiment(Button):
     # constructeur #
     ################
 
-    def __init__(self, pos):
+    def __init__(self, pos, jeu):
         super().__init__(
                 model="cube",
                 color=color.gray,
@@ -35,6 +35,9 @@ class Batiment(Button):
         
         self.__construisible: bool = False
         self.__nombreEtage: int = 0
+
+        # import de l'instace de jeu pour éviter l'iport circulaire lol
+        self.__jeu = jeu
 
 
     #############

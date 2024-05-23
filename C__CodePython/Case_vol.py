@@ -28,7 +28,7 @@ class Case_vol(Case):
     ################
 
     def __init__(self, num, pos):
-        super().__init__(num, pos, couleur=color.red)
+        super().__init__(num, pos, texture="img/vol.png")
 
     #############
     # affichage #

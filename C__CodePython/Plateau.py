@@ -42,8 +42,8 @@ class Plateau(Entity):
         super().__init__(
                 model="cube",
                 color=color.gray,
-                scale=(8.5,0.1,8.5),
-                position=(0,0,0),
+                scale=(10.5,0.2,10.5),
+                position=(0,-0.05,0),
             )
 
         self.__caseListe:list = []
@@ -74,42 +74,42 @@ class Plateau(Entity):
     ############
         
     # permet de genere les cases du jeu
-    def genererCases(self):
+    def genererCases(self, jeu):
         
         if ouiOuNon("Taper 1 pour utiliser les données en dure pour la génération des cases ou 0 pour les données via l'acces à la base de donnée"): 
             self.caseListe.extend([
-                Case           (0, (4, 0, -4),     couleur=color.green             ),
-                Case_propriete (1, (3, 0, -4),     "Nom a.1", 60, 10,  (2,0,0), 1  ),
+                Case           (0, (4, 0, -4),     texture="img/depart.png"           ),
+                Case_propriete (1, (3, 0, -4),     "Nether", 60, 10,  (2,0,0), 1  ,jeu ),
                 Case_ressource (2, (2, 0, -4),     "camion" ,                      ),
-                Case_propriete (3, (1, 0, -4),     "Nom a.2", 60, 10,  (1,0,1), 1  ),
+                Case_propriete (3, (1, 0, -4),     "End", 60, 10,  (1,0,1), 1  ,jeu),
                 Case_vol       (4, (0, 0, -4)                                      ),
-                Case_propriete (5, (-1, 0, -4),    "Nom b.1", 100, 10, (1,0,0), 2  ),
+                Case_propriete (5, (-1, 0, -4),    "Dust 2", 100, 10, (1,0,0), 2  ,jeu),
                 Case_chance    (6, (-2, 0, -4)                                     ),
-                Case_propriete (7, (-3, 0, -4),    "Nom b.2", 100, 10, (0,0,1), 2  ),
-                Case           (8, (-4, 0, -4)                                     ),
-                Case_propriete (9, (-4, 0, -3),    "Nom c.1", 140, 10, (0,0,0), 3  ),
+                Case_propriete (7, (-3, 0, -4),    "Mirage", 100, 10, (0,0,1), 2  ,jeu),
+                Case           (8, (-4, 0, -4),     texture="prison.png"                 ),
+                Case_propriete (9, (-4, 0, -3),    "Minas Tirith", 140, 10, (0,0,0), 3  ,jeu),
                 Case_ressource (10,(-4, 0, -2),    "bateau"                        ),
-                Case_propriete (11,(-4, 0, -1),    "Nom c.2", 140, 10, (1,0,-1), 3 ),
+                Case_propriete (11,(-4, 0, -1),    "Minas Morgul", 140, 10, (1,0,-1), 3 ,jeu),
                 Case_vol       (12,(-4, 0, 0),                                     ),
-                Case_propriete (13,(-4, 0, 1),     "Nom d.1", 180, 10, (-1,0,0), 4 ),
+                Case_propriete (13,(-4, 0, 1),     "Tatooine", 180, 10, (-1,0,0), 4 ,jeu),
                 Case_chance    (14,(-4, 0, 2)                                      ),
-                Case_propriete (15,(-4, 0, 3),     "Nom d.2", 180, 10, (0,0,-1), 4 ),
-                Case           (16,(-4, 0, 4),                                     ),
-                Case_propriete (17,(-3, 0, 4),     "Nom e.1", 220, 10, (-2,0,1), 5 ),
+                Case_propriete (15,(-4, 0, 3),     "Coruscante", 180, 10, (0,0,-1), 4 ,jeu),
+                Case           (16,(-4, 0, 4),     texture="wifi_gratuit.png"                      ),
+                Case_propriete (17,(-3, 0, 4),     "Rue du Flop", 220, 10, (-2,0,1), 5 ,jeu),
                 Case_ressource (18,(-2, 0, 4),     "tractopelle"                   ),
-                Case_propriete (19,(-1, 0, 4),     "Nom e.2", 220, 10, (-1,0,2), 5 ),
+                Case_propriete (19,(-1, 0, 4),     "Avenue de Ratio", 220, 10, (-1,0,2), 5 ,jeu),
                 Case_vol       (20,(0, 0, 4),                                      ),
-                Case_propriete (21,(1, 0, 4),      "Nom f.1", 260, 10, (0,0,2), 6  ),
+                Case_propriete (21,(1, 0, 4),      "Farland", 260, 10, (0,0,2), 6  ,jeu),
                 Case_chance    (22,(2, 0, 4)                                       ),
-                Case_propriete (23,(3, 0, 4),      "Nom f.2", 260, 10, (-1,0,1), 6 ),
+                Case_propriete (23,(3, 0, 4),      "Aether", 260, 10, (-1,0,1), 6 ,jeu),
                 Case_police    (24,(4, 0, 4)                                       ),
-                Case_propriete (25,(4, 0, 3),      "Nom g.1", 300, 10, (-2,0,-1), 7),
+                Case_propriete (25,(4, 0, 3),      "Internat Fille", 300, 10, (-2,0,-1), 7,jeu),
                 Case_ressource (26,(4, 0, 2),      "grue"                          ),
-                Case_propriete (27,(4, 0, 1),      "Nom g.2", 300, 10, (-1,0,-2), 7),
+                Case_propriete (27,(4, 0, 1),      "Internat Garçon", 300, 10, (-1,0,-2), 7,jeu),
                 Case_vol       (28,(4, 0, 0)                                       ),
-                Case_propriete (29,(4, 0, -1),     "Nom h.1", 400, 10, (-1,0,-1), 8),
+                Case_propriete (29,(4, 0, -1),     "Tilted Tower", 400, 10, (-1,0,-1), 8,jeu),
                 Case_chance    (30,(4, 0, -2)                                      ),
-                Case_propriete (31,(4, 0, -3),     "Nom h.2", 400, 10, (0,0,-2), 8 ),
+                Case_propriete (31,(4, 0, -3),     "Salty Spring", 400, 10, (0,0,-2), 8 ,jeu),
             ])
         else: 
 

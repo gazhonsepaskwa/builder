@@ -32,7 +32,7 @@ class Joueur(Entity):
     def __init__(self):
         super().__init__(
                 model="cube",
-                color=color.red,
+                color= color.rgba(0, 0, 0, 0.5),
                 scale=(0.3,0.5,0.3),
                 position=(4,0.25,-4),
             )
@@ -197,8 +197,6 @@ class Joueur(Entity):
         if self.__enPrison == False:
             self.lancerDE()
             self.__numCaseActuelle = self.__numCaseActuelle - 1 + self.__derniereSommeDE
-            print(self.__derniereSommeDE)
-            print(self.__numCaseActuelle)
         
             if self.__numCaseActuelle >= 32:
 
