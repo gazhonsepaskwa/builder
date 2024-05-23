@@ -9,6 +9,7 @@ Quand:
 - 28/02/2024 Nathan
 - 17/05/2024 Nathan
 - 20/05/2024 Nathan
+- 23/05/2024 Amory
 Description: Les joueurs/adversaires qui disputent une partie
 (matérialisés par des pions.)
 """
@@ -36,7 +37,7 @@ class Joueur(Entity):
                 position=(4,0.25,-4),
             )
 
-        self.__id:int = 0
+        self.__ID:int = 0
         self.__argent:int = 0
         self.__jetonsTractopelle:int = 0
         self.__jetonsBateau:int = 0
@@ -47,6 +48,7 @@ class Joueur(Entity):
         self.__numCaseActuelle:int = 0
         self.__derniereSommeDE: int = 0
         self.__enPrison: bool = False
+        self.__nom:str = ""
 
     #############
     # affichage #
@@ -166,6 +168,20 @@ class Joueur(Entity):
     def tourEditionFini(self, val):
         self.__tourEditionFini = val
 
+
+    @property
+    def nom(self):
+        return self.__nom
+    
+    @nom.setter
+    def nom(self, leNom:str) -> None:
+        
+        if not(isinstance(leNom, str)):
+
+            raise TypeError("")
+        
+        self.__nom = leNom
+
     ############
     # methodes #
     ############
@@ -187,7 +203,7 @@ class Joueur(Entity):
             if self.__numCaseActuelle >= 32:
 
                 self.__argent  += 200
-                print("Vous avez gagné 200 d'argent")
+                print(f"{self.__nom} a gagné 200 d'argent")
                 self.__numCaseActuelle -= 32
             
             # bouger le pion visuellement
