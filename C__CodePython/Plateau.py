@@ -12,6 +12,7 @@ Quand:
 - 17/05/2024 Nathan
 - 18/05/2024 Nathan
 - 20/05/2024 Nathan
+- 25/05/2024 Nathan
 Description: Le plateau de jeu sur lesquels les joueurs vont pouvoir
 se déplacer lors de la partie
 """
