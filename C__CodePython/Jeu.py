@@ -19,6 +19,8 @@ Quand:
 - 18/05/2024 Nathan
 - 20/05/2024 Nathan
 - 23/05/2024 Amory
+- 24/05/2024 Nathan
+- 25/05/2024 Nathan
 Description: Le jeu Monopoly en lui même qui va pouvoir
 être joué par les joueurs
 """
@@ -243,7 +245,7 @@ class Jeu():
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_police):
-            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner(self.__joueurActif)
+            self.__plateau.caseListe[self.joueurActif.numCaseActuelle].emprisonner(self.__joueurActif, self.__plateau)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_ressource):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].donnerResource(self.__joueurActif)
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_vol):

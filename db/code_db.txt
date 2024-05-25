@@ -1,9 +1,9 @@
 -- Qui:Nathan Et Amory 
 -- Quand: - 17/05/2024 Nathan
 --        - 18/05/2024 Nathan
+--        - 25/05/2024 Nathan
 
 -- Création de L'utilisateur
-DROP USER 'builderADMIN'@'localhost';
 CREATE USER 'builderADMIN'@'localhost' IDENTIFIED BY 'p@sW0rDssss';
 GRANT ALL PRIVILEGES ON *.* TO 'builderADMIN'@'localhost';
 FLUSH PRIVILEGES;

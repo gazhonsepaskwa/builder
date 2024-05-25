@@ -102,7 +102,7 @@ class Plateau(Entity):
                 Case_propriete (21,(1, 0, 4),      "Farland", 260, 10, (0,0,2), 6  ,jeu),
                 Case_chance    (22,(2, 0, 4)                                       ),
                 Case_propriete (23,(3, 0, 4),      "Aether", 260, 10, (-1,0,1), 6 ,jeu),
-                Case_police    (24,(4, 0, 4)                                       ),
+                Case_police    (24,(4, 0, 4),                                       ),
                 Case_propriete (25,(4, 0, 3),      "Internat Fille", 300, 10, (-2,0,-1), 7,jeu),
                 Case_ressource (26,(4, 0, 2),      "grue"                          ),
                 Case_propriete (27,(4, 0, 1),      "Internat Garçon", 300, 10, (-1,0,-2), 7,jeu),

@@ -41,7 +41,14 @@ class Case_police(Case):
 
     #Envoie le joueur se situant sur la case, en prison
     
-    def emprisonner(self, joueurActif):
+    def emprisonner(self, joueurActif, plateau):
 
         joueurActif.numCaseActuelle = 8
+
+        print("Vous êtes mis en prison.")
+
+        # bouger dans l'interface
+        (x,y,z) = plateau.caseListe[joueurActif.numCaseActuelle].position
+        joueurActif.position = (x,y+0.25,z)
+
         joueurActif.enPrison = True

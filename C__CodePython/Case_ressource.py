@@ -5,6 +5,9 @@ Quand:
 - 27/02/2024 Nathan
 - 28/02/2024 Nathan
 - 29/02/2024 Nathan
+- 24/05/2024 Nathan
+- 25/05/2024 Nathan
+
 Description: La case ressource est une case qui permet de donner au
 joueur qui tombe dessus, de choisir entre l'une des 4 ressources pour
 en recevoir une

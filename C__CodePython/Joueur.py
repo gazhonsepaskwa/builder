@@ -10,6 +10,8 @@ Quand:
 - 17/05/2024 Nathan
 - 20/05/2024 Nathan
 - 23/05/2024 Amory
+- 24/05/2024 Nathan
+- 25/05/2024 Nathan
 Description: Les joueurs/adversaires qui disputent une partie
 (matérialisés par des pions.)
 """
@@ -161,6 +163,9 @@ class Joueur(Entity):
     @property
     def enPrison(self):
         return self.__enPrison
+    @enPrison.setter
+    def enPrison(self, val):
+        self.__enPrison = val
 
     #fin du tour de construction
 
