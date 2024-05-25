@@ -41,7 +41,6 @@ from Plateau import *
 from Banque import *
 
 from ursina import *
-import mysql
 
 from outils import *
 
@@ -203,7 +202,7 @@ class Jeu():
                         caseDansHamaux.append(case)
         
         
-        if len(caseDansHamaux) >= 1: # a changer je garde pour test
+        if len(caseDansHamaux) >= 2:
             if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
                 for case in caseDansHamaux:
                     case.batiment.construisible = True
@@ -236,10 +235,7 @@ class Jeu():
         self.__joueurActif.avancer(self.__plateau)
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
-            fini = self.modeConstruction()
-            if fini: 
-                print("partie finie")
-                return()
+            self.modeConstruction()
 
 
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):

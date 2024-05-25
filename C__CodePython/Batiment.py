@@ -88,34 +88,34 @@ class Batiment(Button):
          
         if self.construisible:
             if self.__nombreEtage == 0:
-                tract = 0
+                tract = 1
                 bat = 0
-                cam = 0
+                cam = 1
                 grue = 0
 
             elif self.__nombreEtage == 1:
                 tract = 0
-                bat = 0
+                bat = 1
                 cam = 0
-                grue = 0
+                grue = 1
         
             elif self.__nombreEtage == 2:
                 tract = 0
-                bat = 0
+                bat = 2
                 cam = 0
-                grue = 0
+                grue = 1
         
             elif self.__nombreEtage == 3:
-                tract = 0
-                bat = 0
-                cam = 0
-                grue = 0
+                tract = 1
+                bat = 1
+                cam = 1
+                grue = 1
         
             elif self.__nombreEtage == 4:
-                tract = 0
-                bat = 0
-                cam = 0
-                grue = 0
+                tract = 2
+                bat = 2
+                cam = 2
+                grue = 2
         
             if self.__jeu.joueurActif.jetonsTractopelle >= tract and self.__jeu.joueurActif.jetonsBateau >= bat and self.__jeu.joueurActif.jetonsCamion >= cam and self.__jeu.joueurActif.jetonsGrue >= grue:
                 print("Le prix est de : " + str(tract) + " tractopelle, " +  str(bat) + " bateau, " +  str(cam) + " camion, " +  str(grue) + " grue.")
@@ -128,7 +128,8 @@ class Batiment(Button):
                         self.scale = (x, self.__nombreEtage,z)
                 
                     if self.__nombreEtage == 5:
-                        return(True) 
+                        outils.colored_print("Vous Avez gagné !!","red")
+                        return()
 
                 self.__jeu.joueurActif.jetonsTractopelle -= tract
                 self.__jeu.joueurActif.jetonsBateau -= bat
@@ -143,4 +144,3 @@ class Batiment(Button):
                 self.color = color.gray
 
             self.__jeu.tourEdition = False
-            return(False)

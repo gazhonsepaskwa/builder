@@ -77,8 +77,6 @@ class Case_propriete(Case):
     def achat(self, joueur, banque):
 
         if self.__appartenu == None:
-            
-            #a modif pour mettre des boutons
 
             if outils.ouiOuNon("Voulez-vous acheter la propriété --" + self.__nom + "-- au prix de " + str(self.__prix) + " ? >>> "):
 
