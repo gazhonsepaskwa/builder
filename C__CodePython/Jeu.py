@@ -21,6 +21,7 @@ Quand:
 - 23/05/2024 Amory
 - 24/05/2024 Nathan
 - 25/05/2024 Nathan
+- 26/05/2024 Amory
 Description: Le jeu Monopoly en lui même qui va pouvoir
 être joué par les joueurs
 """
@@ -156,9 +157,13 @@ class Jeu():
         clear_terminal()
 
         for i in range(self.__nbrDeJoueurs):
+
             self.__listeJoueurs.append(Joueur())
             self.__listeJoueurs[i].ID = i
-            self.__listeJoueurs[i].nom = input("Veuillez encoder votre pseudonyme : ")
+            
+            joueurNom = input("Veuillez encoder votre pseudonyme : ")
+
+            self.__listeJoueurs[i].nom = str(joueurNom)
 
 
     #Permet de générer les objets du jeu
@@ -178,13 +183,13 @@ class Jeu():
             # self.__listeJoueurs[i].pion = GestionnaireDePion.choisir()
             self.__listeJoueurs[i].argent = 2000
             
-            if i == 1:
+            if i == 0:
                 self.__listeJoueurs[i].jetonsTractopelle +=2
-            elif i == 2:
+            elif i == 1:
                 self.__listeJoueurs[i].jetonsBateau +=2
-            elif i == 3:
+            elif i == 2:
                 self.__listeJoueurs[i].jetonsCamion +=2
-            elif i == 4:
+            elif i == 3:
                 self.__listeJoueurs[i].jetonsGrue +=2
  
         self.genererObjects()

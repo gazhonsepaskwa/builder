@@ -8,7 +8,10 @@ Quand:
 - 29/02/2024 Nathan
 - 01/03/2024 Nathan
 - 20/05/2024 Nathan
+- 23/05/2024 Amory
+- 24/05/2024 Amory
 - 25/05/2024 Nathan
+- 26/05/2024 Amory
 
 Description: La case vol, est une case qui permet à un joueur de voler
 l'une des ressources d'un autre joueur.
@@ -45,63 +48,77 @@ class Case_vol(Case):
     ############
         
     def voler(self, voleur_, listeJoueurs):
-        
+
         listeDesJoueursVictime = []
 
-        # attribution de voleur et victime
         voleur = voleur_
 
-        for i in listeJoueurs:
+        for joueur in listeJoueurs:
 
-            if Joueur.nom != Jeu.joueurActif.nom:
-                listeDesJoueursVictime.append(Joueur.nom)
+            listeDesJoueursVictime.append(joueur)
         
         while True:
         
             print("Choisissez une victime parmis ces joueurs (Pour choisir un joueur que vous voulez voler, il faut écrire le nombre qui lui est associé) :")
 
-            for i in listeDesJoueursVictime:
+            for i, potentielleVictime in enumerate(listeDesJoueursVictime):
 
-                print(f"{i} + {listeDesJoueursVictime[i]}")
+                print(f"{i} {potentielleVictime.nom} {potentielleVictime.jetonsTractopelle} {potentielleVictime.jetonsBateau} {potentielleVictime.jetonsCamion} {potentielleVictime.jetonsGrue}")
 
-            victime = int(input(""))
+            try :
 
-            if not(isinstance(victime, int)):
+                victimeEncodage = int(input(""))
 
-                print("Veuillez recommencer en encodant le nombre associé à la personne que vous désirez voler")
-            
-            else :
-            
-                break
+                if 0 <= victimeEncodage < len(listeDesJoueursVictime) and isinstance(victimeEncodage, int):
+                    
+                    victime = listeDesJoueursVictime[victimeEncodage]
+                    
+                    break
+
+                else:
+                    print("Veuillez recommencer en encodant un entier compris dans la liste des joueurs")
+
+            except:
+                pass
 
         # Demande le type de ressource à voler 
-        tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
-        if tmp == "1": choix = "tractopelle"
-        elif tmp == "2": choix = "bateau"
-        elif tmp == "3": choix = "camion"
-        elif tmp == "4": choix = "grue"
-        else: 
-            print("Choix invalide")
-            choix = ""
+        while True:
+            tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
+            if tmp == "1": choix = "tractopelle"
+            elif tmp == "2": choix = "bateau"
+            elif tmp == "3": choix = "camion"
+            elif tmp == "4": choix = "grue"
+            else: 
+                print("Choix invalide")
+                choix = ""
 
-        
+            
 
-        if choix == "tractopelle":
+            if choix == "tractopelle":
 
-            voleur.jetonsTractopelle += 1 
-            victime.jetonsTractopelle -= 1 
+                voleur.jetonsTractopelle += 1 
+                victime.jetonsTractopelle -= 1
 
-        elif choix == "bateau":
+                break 
 
-            voleur.jetonsBateau += 1 
-            victime.jetonsBateau -= 1
+            elif choix == "bateau":
+                    
+                voleur.jetonsBateau += 1 
+                victime.jetonsBateau -= 1
 
-        elif choix == "camion":
+                break
 
-            voleur.jetonsCamion += 1 
-            victime.jetonsCamion -= 1
 
-        elif choix == "grue":
+            elif choix == "camion":
 
-            voleur.jetonsGrue += 1 
-            victime.jetonsGrue -= 1 
+                voleur.jetonsCamion += 1 
+                victime.jetonsCamion -= 1
+
+                break
+
+            elif choix == "grue":
+
+                voleur.jetonsGrue += 1 
+                victime.jetonsGrue -= 1
+
+                break
