@@ -93,7 +93,7 @@ class Plateau(Entity):
                 Case_vol       (12,(-4, 0, 0),                                     ),
                 Case_propriete (13,(-4, 0, 1),     "Tatooine", 180, 10, (-1,0,0), 4 ,jeu),
                 Case_chance    (14,(-4, 0, 2)                                      ),
-                Case_propriete (15,(-4, 0, 3),     "Coruscante", 180, 10, (0,0,-1), 4 ,jeu),
+                Case_propriete (15,(-4, 0, 3),     "Corusante", 180, 10, (0,0,-1), 4 ,jeu),
                 Case           (16,(-4, 0, 4),     texture="wifi_gratuit.png"                      ),
                 Case_propriete (17,(-3, 0, 4),     "Rue du Flop", 220, 10, (-2,0,1), 5 ,jeu),
                 Case_ressource (18,(-2, 0, 4),     "tractopelle"                   ),

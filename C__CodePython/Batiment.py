@@ -36,7 +36,7 @@ class Batiment(Button):
         self.__construisible: bool = False
         self.__nombreEtage: int = 0
 
-        # import de l'instace de jeu pour éviter l'iport circulaire lol
+        # import de l'instace de jeu pour éviter l'iport circulaire
         self.__jeu = jeu
 
 
@@ -83,45 +83,64 @@ class Batiment(Button):
     """
     Verifie si le joueur a assez de pions pour construir un etage
     """
-    def VerifQuantiteePion():
-        pass
 
     def on_click(self):
          
         if self.construisible:
             if self.__nombreEtage == 0:
-                tract = 1
+                tract = 0
                 bat = 0
-                cam = 1
+                cam = 0
                 grue = 0
 
             elif self.__nombreEtage == 1:
                 tract = 0
-                bat = 1
+                bat = 0
                 cam = 0
-                grue = 1
+                grue = 0
         
             elif self.__nombreEtage == 2:
                 tract = 0
-                bat = 2
+                bat = 0
                 cam = 0
-                grue = 1
+                grue = 0
         
             elif self.__nombreEtage == 3:
-                tract = 1
-                bat = 1
-                cam = 1
-                grue = 1
+                tract = 0
+                bat = 0
+                cam = 0
+                grue = 0
         
             elif self.__nombreEtage == 4:
-                tract = 2
-                bat = 2
-                cam = 2
-                grue = 2
+                tract = 0
+                bat = 0
+                cam = 0
+                grue = 0
         
-            if self.verifQuantiteePion():
-                print("Le prix est de : " + tract + " tractopelle, " +  bat + " bateau, " +  cam + " camion, " +  grue + " grue.")
+            if self.__jeu.joueurActif.jetonsTractopelle >= tract and self.__jeu.joueurActif.jetonsBateau >= bat and self.__jeu.joueurActif.jetonsCamion >= cam and self.__jeu.joueurActif.jetonsGrue >= grue:
+                print("Le prix est de : " + str(tract) + " tractopelle, " +  str(bat) + " bateau, " +  str(cam) + " camion, " +  str(grue) + " grue.")
                 if outils.ouiOuNon("Voulez-vous construire un etage sur ce batiment? Oui/Non"):
                     self.__nombreEtage += 1
+                    
+                    # update visuelle
+                    (x,y,z) = self.scale
+                    if self.__nombreEtage > 0:
+                        self.scale = (x, self.__nombreEtage,z)
+                
+                    if self.__nombreEtage == 5:
+                        return(True) 
+
+                self.__jeu.joueurActif.jetonsTractopelle -= tract
+                self.__jeu.joueurActif.jetonsBateau -= bat
+                self.__jeu.joueurActif.jetonsCamion -= cam
+                self.__jeu.joueurActif.jetonsGrue_setter(self.__jeu.joueurActif.jetonsGrue - grue ) 
+
+                self.__construisible = False
+                self.color = color.gray
             else:
-                print("Vous n'avez pas la possiblilite de vous offrir un etage sur ce batiment, le prix est de : " + tract + " tractopelle, " + bat + " bateau, " + cam + " camion, " + grue + " grue.")
+                input("Vous n'avez pas la possiblilite de vous offrir un etage sur ce batiment, le prix est de : " + str(tract) + " tractopelle, " + str(bat) + " bateau, " + str(cam) + " camion, " + str(grue) + " grue. [ENTER] ")
+                self.__construisible = False
+                self.color = color.gray
+
+            self.__jeu.tourEdition = False
+            return(False)

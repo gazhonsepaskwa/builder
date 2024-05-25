@@ -123,6 +123,9 @@ class Joueur(Entity):
     def jetonsGrue(self):
         return self.__jetonsGrue
 
+    def jetonsGrue_setter(self, val: int):
+        self.__jetonsGrue = val
+
     #Propriétés obtenues par le/les joueur(s)
 
     @property

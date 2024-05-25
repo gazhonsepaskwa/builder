@@ -64,6 +64,7 @@ class Jeu():
         self.__listeJoueurs:list = []
         self.__joueurActif = None
         self.__fini = False
+        self.__tourEdition = False
 
         #Enfants
         self.__plateau = None
@@ -112,6 +113,14 @@ class Jeu():
     @property
     def fini(self):
         return self.__fini
+
+    @property
+    def tourEdition(self):
+        return self.__tourEdition
+    
+    @tourEdition.setter
+    def tourEdition(self, val):
+        self.__tourEdition = val
 
     ############
     # methodes #
@@ -191,15 +200,20 @@ class Jeu():
                     if case.appartenu == self.joueurActif:
                         caseDansHamaux.append(case)
         
+        
         if len(caseDansHamaux) >= 1: # a changer je garde pour test
             if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
                 for case in caseDansHamaux:
                     case.batiment.construisible = True
                     case.batiment.color = color.red
+                    self.__tourEdition = True
                     return()
-            else: return()
+            else: 
+                self.__tourEdition = False
+                return()
         else: 
             print("Vous n'avez pas la possibilitée de construire")
+            self.__tourEdition = False
             return()
 
     #Permet de jouer un tour
@@ -220,7 +234,11 @@ class Jeu():
         self.__joueurActif.avancer(self.__plateau)
         if isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_propriete):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
-            self.modeConstruction()
+            fini = self.modeConstruction()
+            if fini: 
+                print("partie finie")
+                return()
+
 
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self)
@@ -242,6 +260,10 @@ class Jeu():
             #if len(set(self.listeJoueurs)) == 1:
 
            #     print("C'est la fin ! le joueur ")
+
+        # attendre
+        while self.__tourEdition:
+            time.sleep(1)
 
         input("Terminer le tour [ENTER] ")
 

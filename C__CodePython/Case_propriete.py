@@ -65,6 +65,10 @@ class Case_propriete(Case):
     def numHamaux(self):
         return self.__numHamaux
 
+    @property
+    def batiment(self):
+        return self.__batiment
+
 
     ############
     # methodes #
