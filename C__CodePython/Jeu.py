@@ -268,9 +268,8 @@ class Jeu():
 
             del(self.listeJoueurs[joueurElimine])
 
-            #if len(set(self.listeJoueurs)) == 1:
-
-           #     print("C'est la fin ! le joueur ")
+            if len(self.__listeJoueurs) == 1:
+                print("C'est la fin ! le joueur ")
 
         # attendre
         while self.__tourEdition:
