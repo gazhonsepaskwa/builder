@@ -29,7 +29,7 @@ from Case_chance import *
 from Case_police import *
 from Case_ressource import *
 from Case_vol import *
-from outils import ouiOuNon
+from outils import *
 
 import mysql.connector
 
@@ -124,7 +124,7 @@ class Plateau(Entity):
 
             curseur = db.cursor()
 
-            for i in range(0, 31):
+            for i in range(0, 32):
 
                 parametre = ''
                 
@@ -134,6 +134,7 @@ class Plateau(Entity):
 
                 curseur.execute(sql, val)
                 retour = curseur.fetchone()
+                colored_print(retour, "red")
 
                 # Assigner le retour au variables de générations
                 if retour: type_case, nom_propriete, prix, loyer, resource_contenue = retour 
@@ -149,9 +150,9 @@ class Plateau(Entity):
                 elif i >= 9 and i <= 16:
                     pos_case = f"( -4, 0, {-4 + (i-9)})"
                 elif i >= 17 and i <= 24:
-                    pos_case = f"( {-4 + (i-16)}, 0, 4)"
-                elif i >= 25 and i <= 31:
-                    pos_case = f"( 4, 0, {4 - (i-24)})"
+                    pos_case = f"( {-4 + (i-17)}, 0, 4)"
+                elif i >= 25 and i <= 32:
+                    pos_case = f"( 4, 0, {4 - (i-25)})"
 
                 #génération des paramètres
                 if type_case == "Case": parametre = 'couleur=color.green'

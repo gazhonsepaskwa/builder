@@ -1,4 +1,4 @@
-<-- 
+<!-- 
 qui: Nathan
 quoi: gestionnaire des cases (interface)
 quand: 
@@ -54,12 +54,12 @@ quand:
                 <div>
                     <label for="type<?php echo $i; ?>">Type:</label>
                     <select class="case-type" id="type<?php echo $i; ?>" name="type<?php echo $i; ?>">
-                        <option value="case">Case</option>
-                        <option value="case_propriete">Case Propriete</option>
-                        <option value="case_ressource">Case Ressource</option>
-                        <option value="case_vol">Case Vol</option>
-                        <option value="case_chance">Case Chance</option>
-                        <option value="case_police">Case Police</option>
+                        <option value="Case">Case</option>
+                        <option value="Case_propriete">Case Propriete</option>
+                        <option value="Case_ressource">Case Ressource</option>
+                        <option value="Case_vol">Case Vol</option>
+                        <option value="Case_chance">Case Chance</option>
+                        <option value="Case_police">Case Police</option>
                     </select>
                 </div>
                 <div class="nom hidden">

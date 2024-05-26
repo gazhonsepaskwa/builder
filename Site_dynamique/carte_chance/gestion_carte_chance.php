@@ -1,4 +1,4 @@
-<-- 
+<!-- 
 qui: Nathan
 quoi: gestionnaire des cart chance (interface et lecture de la db)
 quand: 
@@ -49,13 +49,17 @@ $result = $conn->query($sql);
     <form method="post" action="envoie.php">
         Titre: <input type="text" name="titre"><br>
         contennu: <textarea name="contennu"></textarea><br>
-        Action (veuiller entrer du code python): <textarea type="text" name="action" 
-        placeholder='Ex: print("Vous avez mangé le joueur ayant jouer juste avant vous mouhahaha. Il ne peu donc plus jouer, dommage.")
+        Action (veuiller entrer du code python): 
+        
+        <textarea type="text" name="action">
+        Ex: print("Vous avez mangé le joueur ayant jouer juste avant vous mouhahaha. Il ne peu donc plus jouer, dommage.")
         precedent = listeJoueurs[listeJoueurs.index(jActif) - 1]
         listeJoueurs.pop(precedent);
         ---
         Ex2: print("Vous avez perdu 250")
-        jActif.argent -= 250'><br>
+        jActif.argent -= 250'
+        </textarea>
+        
         <input type="submit" value="Créer">
     </form>
 </body>

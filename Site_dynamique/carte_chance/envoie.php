@@ -1,4 +1,4 @@
-<-- 
+<!-- 
 qui: Nathan
 quoi: gestionnaire d'envoie  a la db les cartes chances
 quand: 
