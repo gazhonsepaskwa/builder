@@ -85,7 +85,8 @@ class Batiment(Button):
     """
 
     def on_click(self):
-         
+
+        # mettre le prix en fonction de l'étage en cours  
         if self.construisible:
             if self.__nombreEtage == 0:
                 tract = 1
@@ -117,9 +118,12 @@ class Batiment(Button):
                 cam = 2
                 grue = 2
         
+
+            # Si le joueurs à les ressources, proposer de construire.
             if self.__jeu.joueurActif.jetonsTractopelle >= tract and self.__jeu.joueurActif.jetonsBateau >= bat and self.__jeu.joueurActif.jetonsCamion >= cam and self.__jeu.joueurActif.jetonsGrue >= grue:
                 print("Le prix est de : " + str(tract) + " tractopelle, " +  str(bat) + " bateau, " +  str(cam) + " camion, " +  str(grue) + " grue.")
                 if outils.ouiOuNon("Voulez-vous construire un etage sur ce batiment? Oui/Non"):
+
                     self.__nombreEtage += 1
                     
                     # update visuelle
@@ -127,18 +131,23 @@ class Batiment(Button):
                     if self.__nombreEtage > 0:
                         self.scale = (x, self.__nombreEtage,z)
                 
+                    # verifier la pause de l'étage final
                     if self.__nombreEtage == 5:
                         outils.colored_print("Vous Avez gagné !!","red")
                         return()
 
+                # Débiter les ressources au joueur
                 self.__jeu.joueurActif.jetonsTractopelle -= tract
                 self.__jeu.joueurActif.jetonsBateau -= bat
                 self.__jeu.joueurActif.jetonsCamion -= cam
                 self.__jeu.joueurActif.jetonsGrue_setter(self.__jeu.joueurActif.jetonsGrue - grue ) 
 
+                # fin
                 self.__construisible = False
                 self.color = color.gray
             else:
+
+                # afficher qu'il ne lui est pas possible d'achetter
                 input("Vous n'avez pas la possiblilite de vous offrir un etage sur ce batiment, le prix est de : " + str(tract) + " tractopelle, " + str(bat) + " bateau, " + str(cam) + " camion, " + str(grue) + " grue. [ENTER] ")
                 self.__construisible = False
                 self.color = color.gray

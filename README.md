@@ -1,33 +1,13 @@
-# Monopoly builder
+## Monopoly Builder
 
-# Echéancier TRES global
+### Instructions
 
+1. Installer les modules se trouvant dans `requirements.txt`.
 
-# Analyse (pour le stage de février max si non spécifié)
-- Trouver les référents pour le 20 nov  (et le faire verrifier le texte) (Mme Eloy ? ) -> ajouter dasn le word
-- Editer le pnaning avec les sous points dasn précédents jours (UseCase + Classes)
-- Transformer les règles humaines ne règles machines (organigrame) (subdiviser les tache jusqu'au taches élémentaires( méthode scientifique ))
-- diagram d'activitée
-- Ajouter les methodes et attributs (with the rules)
-- Partie Graphique 
-- tout indiquer en console
+2. Mettez en place la base de données en exécutant le SQL se trouvant dans `/db/code_db.txt` au niveau de votre console MySQL MariaDB ou d'une interface de gestion telle que phpMyAdmin.
 
+3. Préparer les cartes chance et les cases depuis les pages de gestion dédiées. À placer dans `../www/` pour les faire fonctionner.
 
-# Site (pour le stage de février) 
-- partie Statique
+4. Se renseigner sur le site statique.
 
-
-# DB (Pendant le Stage)
-- Analyse
-- Réalisation
-- Intégration
-
-# Coder l'application python 
-- code
-- tests
-
-# Finaniser et imprimer le Raport (24 mai) 
-
-# Oral
-- préparer
-- tester 
+5. Exécuter le code `main.py`.

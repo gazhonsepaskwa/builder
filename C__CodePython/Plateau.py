@@ -124,14 +124,17 @@ class Plateau(Entity):
 
             curseur = db.cursor()
 
+            # pour les 32 cases
             for i in range(0, 32):
 
                 parametre = ''
                 
+                # sélectionner les info dans la DB
                 sql = "SELECT type_case, nom, prix, loyer, resource_contenue FROM Cases WHERE id_Cases = %s"
                 id_ = i + 1
                 val = (id_,)
 
+                # exec la requette $
                 curseur.execute(sql, val)
                 retour = curseur.fetchone()
                 colored_print(retour, "red")

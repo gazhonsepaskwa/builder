@@ -34,6 +34,8 @@ $result = $conn->query($sql);
     <title>Cartes Chance</title>
 </head>
 <body>
+
+    <!-- Recupération dans la DB des cartes chances exitantes -->
     <h1>Cartes Chance</h1>
     <h2>Liste Carte chance existantes :</h2>
     <?php
@@ -45,6 +47,10 @@ $result = $conn->query($sql);
         echo "<p>Aucune carte chance trouvée.</p>";
     }
     ?>
+
+
+    <!-- Formulaire de création d'une nouvelle carte chance -->
+
     <h2>Nouvelle carte chance :</h2>
     <form method="post" action="envoie.php">
         Titre: <input type="text" name="titre"><br>

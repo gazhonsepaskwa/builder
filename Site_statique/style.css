@@ -111,7 +111,9 @@ footer {
     padding: 10px 0;
 }
 
-/* Responsive Design */
+
+/* Design Responsive */
+
 @media screen and (max-width: 600px) {
     header, section, footer {
         padding: 10px;

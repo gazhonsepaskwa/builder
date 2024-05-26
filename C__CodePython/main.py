@@ -29,6 +29,7 @@ from time import sleep
 
 jeu = Jeu()
 
+# code executé par le threader (code principal)
 def code():
 
     time.sleep(1)
@@ -44,6 +45,7 @@ def code():
         jeu.changerJoueurActif()
 
 
+# treading
 thread = threading.Thread(target=code)
 thread.start()
 jeu.ursinaStart()

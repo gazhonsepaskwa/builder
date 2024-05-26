@@ -206,7 +206,7 @@ class Jeu():
                     if case.appartenu == self.joueurActif:
                         caseDansHamaux.append(case)
         
-        
+        # permettre la constructions des batiments des cases du hamaux
         if len(caseDansHamaux) >= 2:
             if outils.ouiOuNon("Voulez vous construire (oui/non) ?"):
                 for case in caseDansHamaux:

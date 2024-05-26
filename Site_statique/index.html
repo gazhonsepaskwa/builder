@@ -1,9 +1,10 @@
-<!-- 
+<!--
 qui: Nathan
 quoi: site WEB de présentation du projet
 quand: 
 - 18/01/2024
 - 17/05/2024
+- 26/05/2024
 -->
 
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ quand:
 <body>
 
 <header>
+    <!-- bar de navigation pour allez directement au sections -->
     <div class="navbar">
         <div class="burger-menu" onclick="toggleMenu()">
             <div class="bar"></div>
@@ -31,15 +33,23 @@ quand:
         </div>
     </div>
 
+    <!-- Hero (Titre + image) -->
+
     <h1>Monopoly Builder </h1>
     <img src="img/accueil_image.jpg" alt="Image illustrative">
     <h6>&copy; https://toybook.com/hasbro-monopoly-builder-launch/</h6>
 </header>
 
+
+<!-- Présentation -->
+
 <section id="jeu">
     <h2>Le Jeu</h2>
     <p>Monopoly Builder est l'édition Monopoly dans laquelle les joueurs construiront les bâtiments sur Monopoly Island. Les joueurs utiliseront différents types de ressources pour construire de nombreux étages de bâtiments. Les joueurs rassembleront et échangeront des ressources de manière stratégique pour construire rapidement. Les joueurs construisent pour accumuler des points et gagner. Ce jeu peut être joué avec 2 à 4 joueurs.</p>
 </section>
+
+
+<!-- Présentaion du groupe -->
 
 <section id="groupe">
     <h2>Notre Groupe</h2>
@@ -49,16 +59,23 @@ quand:
     <img src="img/photo_groupe.jpg" alt="Photo de groupe">
 </section>
 
+
+<!-- Descrition de notre variante -->
+
 <section id="projet">
     <h2>Notre Projet</h2>
     <p>Notre projet est donc une variante numérique du Monopoly builder de base, il est codée en python, et se gère sur un site web php via une base de donnée SQL </p>
 </section>
 
 
+<!-- footer (signature et copyright) -->
+
 <footer>
     <p>&copy; 2024 Amory & Nathan. IPET - 6 TTR informatique 23/24</p>
 </footer>
 
+
+<!-- insertion du code JS -->
 <script src="script.js"></script>
 </body>
 </html>
