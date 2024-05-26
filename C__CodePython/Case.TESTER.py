@@ -22,6 +22,8 @@ class TestCase():
 
                 print(e)
 
+    #Tester les accesseurs/mutateurs
+
     def testAccesseursMutateurs(self):
 
         print(f"Tester : accesseurs/mutateurs")

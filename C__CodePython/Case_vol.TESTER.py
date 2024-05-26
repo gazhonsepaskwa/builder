@@ -8,6 +8,8 @@ QUOI: Le test de la case vol
 
 from Case_vol import *
 
+#Création d'un faux joueur
+
 class JoueurFake:
 
     def __init__(self, nom):
@@ -18,6 +20,8 @@ class JoueurFake:
         self.jetonsGrue = 5
 
 class TestVol():
+
+    #Tester les accesseurs/mutateurs
 
     def testAccesseurMutateurs(self):
 

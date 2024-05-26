@@ -14,12 +14,18 @@ class TestBanque():
     print(f"Test de la classe [Banque]")
     print(f"==================================================================================== \n")
 
+    #Tester la classe init
+
     def test_init(self, leObjetBanque):
+
+        #On créer des objet aléatoires de différents type
 
         unObjet1:int = 0
         unObjet2:float = 0.0
         unObjet3:str = "Oui, bonjour"
         unObjet4:bool = True
+
+        #Boucle qui permet de tester le init avec tout les objets
 
         for i in range(1, 5):
 
@@ -34,6 +40,8 @@ class TestBanque():
             finally:
 
                 print("Test init de la classe [Banque], fini")
+
+#Lancer le fichier
 
 if __name__ == '__main__':
 

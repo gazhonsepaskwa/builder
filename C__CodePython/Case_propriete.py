@@ -74,11 +74,19 @@ class Case_propriete(Case):
     # methodes #
     ############
     
+    #Permettre au joueur d'acheter une propriété
+
     def achat(self, joueur, banque):
+
+        #Vérifier si elle appartient à quelqu'un d'autre
 
         if self.__appartenu == None:
 
+            #Demander au joueur s'il veut acheter la propriété ou non
+
             if outils.ouiOuNon("Voulez-vous acheter la propriété --" + self.__nom + "-- au prix de " + str(self.__prix) + " ? >>> "):
+
+                #Vérifier si le joueur a assez d'argent
 
                 if joueur.argent > self.__prix :
             
@@ -87,6 +95,8 @@ class Case_propriete(Case):
 
                 else:
                     print("Désolé, vous n'êtes pas capable de payer.")
+
+        #Sinon payer le joueur a qui appartient la propriété
 
         else:
 

@@ -55,7 +55,7 @@ class Case_ressource(Case):
     # methodes #
     ############
     
-    #Donne le type de ressource que la case propose quand on tombe dessus
+    #Donner le type de ressource que la case propose quand on tombe dessus
 
     def donnerResource(self, joueur):
         if (self.__ressource_contenue == "tractopelle"):

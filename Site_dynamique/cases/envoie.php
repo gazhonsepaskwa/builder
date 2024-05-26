@@ -58,7 +58,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         echo "Toutes les cases ont été créées avec succès.";
     } else {
-        // Maj des elements 
+        // Maj des éléments 
         for ($i = 0; $i < 32; $i++) {
             $type_case = $_POST["type$i"];
             $nom = $_POST["nom$i"];

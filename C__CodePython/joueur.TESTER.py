@@ -20,6 +20,7 @@ class JoueurTEST():
         print(f"Test de la classe [Jeu]")
         print(f"==================================================================================== \n")
 
+        #Tester la classe init
 
         unObjet1:int = 0
         unObjet2:float = 0.0
@@ -39,6 +40,8 @@ class JoueurTEST():
     def testJoueur(self):
     
         objetJoueur = Joueur()
+
+        #Tester les accesseurs/mutateurs
 
         print(f"Tester : accesseurs/mutateurs")
         print(f"------------------------------------------------------------------------------------")   

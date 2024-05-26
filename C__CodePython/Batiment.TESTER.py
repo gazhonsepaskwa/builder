@@ -14,12 +14,18 @@ class TestBatiment():
     print(f"Test de la classe [Batiment]")
     print(f"==================================================================================== \n")
 
+    #Tester la classe init
+
     def test_init(self):
+
+        #On créer des objet aléatoires de différents type
 
         unObjet1:int = 0
         unObjet2:float = 0.0
         unObjet3:str = "Oui, bonjour"
         unObjet4:bool = True
+
+        #Boucle qui permet de tester le init avec tout les objets
 
         for i in range(1, 5):
 
@@ -54,6 +60,8 @@ class TestBatiment():
                     print(e)
         
         print("Fin du test init de la classe [Batiment]")
+
+    #Tester les accesseurs/mutateurs
 
     def testAccesseursMutateurs(self):
 
