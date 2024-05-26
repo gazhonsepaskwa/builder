@@ -82,43 +82,36 @@ class Case_vol(Case):
                 pass
 
         # Demande le type de ressource à voler 
-        while True:
-            tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
-            if tmp == "1": choix = "tractopelle"
-            elif tmp == "2": choix = "bateau"
-            elif tmp == "3": choix = "camion"
-            elif tmp == "4": choix = "grue"
-            else: 
-                print("Choix invalide")
-                choix = ""
+        tmp = input("Quelle ressource voulez-vous voler ? ( 1: tractopelle | 2: bateau | 3: camion | 4: grue ) >>")
+        if tmp == "1": choix = "tractopelle"
+        elif tmp == "2": choix = "bateau"
+        elif tmp == "3": choix = "camion"
+        elif tmp == "4": choix = "grue"
+        else: 
+            print("Choix invalide")
+            choix = ""
+
+        
+
+        if choix == "tractopelle":
+
+            voleur.jetonsTractopelle += 1 
+            victime.jetonsTractopelle -= 1
+
+
+        elif choix == "bateau":
+                
+            voleur.jetonsBateau += 1 
+            victime.jetonsBateau -= 1
+
+
+        elif choix == "camion":
+
+            voleur.jetonsCamion += 1 
+            victime.jetonsCamion -= 1
 
             
+        elif choix == "grue":
 
-            if choix == "tractopelle":
-
-                voleur.jetonsTractopelle += 1 
-                victime.jetonsTractopelle -= 1
-
-                break 
-
-            elif choix == "bateau":
-                    
-                voleur.jetonsBateau += 1 
-                victime.jetonsBateau -= 1
-
-                break
-
-
-            elif choix == "camion":
-
-                voleur.jetonsCamion += 1 
-                victime.jetonsCamion -= 1
-
-                break
-
-            elif choix == "grue":
-
-                voleur.jetonsGrue += 1 
-                victime.jetonsGrue -= 1
-
-                break
+            voleur.jetonsGrue += 1 
+            victime.jetonsGrue -= 1
