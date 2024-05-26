@@ -15,6 +15,8 @@ class TestPlateau():
 
     def test_init(self):
 
+        #Tester la classe init
+
         unObjet1:int = 0
         unObjet2:float = 0.0
         unObjet3:str = "Oui, bonjour"
@@ -29,6 +31,8 @@ class TestPlateau():
             except Exception as e:
 
                 print(e)
+
+    #Tester les accesseurs/mutateurs
 
     def testAccesseursMutateurs(self):
 

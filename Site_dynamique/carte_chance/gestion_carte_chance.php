@@ -26,6 +26,8 @@ $result = $conn->query($sql);
 
 ?>
 
+<!--Création du HTML-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

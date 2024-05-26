@@ -144,8 +144,12 @@ class Jeu():
         
         while True:
         
+            #Permettre aux utilisateurs de choisir le nombre de joueurs
+
             self.__nbrDeJoueurs = int(input("Entrez le nombre de joueurs (minimum2, maximum 4): "))
         
+            #Vérifier qu'ils choisissent un nombre en 2 et 4 pour les joueurs
+
             if self.__nbrDeJoueurs > 4 or self.__nbrDeJoueurs < 2:
 
                 print("Vous tenter de jouer à plus ou moins que le nombre de joueurs autorisé ! \n Veuillez recommencer.")
@@ -155,6 +159,8 @@ class Jeu():
                 break
 
         clear_terminal()
+
+        #Créer les joueurs
 
         for i in range(self.__nbrDeJoueurs):
 
@@ -238,6 +244,8 @@ class Jeu():
         separator()
         print("")
 
+        #Si le joueur est en prison, alors il ne peut pas jouer ce tour ci
+
         if self.__joueurActif.enPrison == True:
             input("Vous êtes en prison, passez votre tour [ENTER]")
             self.__joueurActif.enPrison = False 
@@ -250,6 +258,7 @@ class Jeu():
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].achat(self.__joueurActif, self.__banque)
             self.modeConstruction()
 
+        #Vérifier sur quel type de case le joueur est, et faire l'action qui lui est attitré
 
         elif isinstance(self.__plateau.caseListe[self.joueurActif.numCaseActuelle], Case_chance):
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].chance(self)
@@ -261,6 +270,7 @@ class Jeu():
             self.__plateau.caseListe[self.joueurActif.numCaseActuelle].voler(self.__joueurActif, self.__listeJoueurs) 
         else: pass
         
+        #Vérifier si le joueur a assez d'argent
 
         if self.__joueurActif.argent == 0 or self.__joueurActif.argent < 0:
 
@@ -268,9 +278,9 @@ class Jeu():
 
             del(self.listeJoueurs[joueurElimine])
 
-            #if len(set(self.listeJoueurs)) == 1:
+            if len(set(self.listeJoueurs)) == 1:
 
-           #     print("C'est la fin ! le joueur ")
+                print("C'est la fin ! le joueur ")
 
         # attendre
         while self.__tourEdition:

@@ -20,6 +20,8 @@ class TestJeu():
 
     def test_init(self):
 
+        #Tester la classe init
+
         unObjet1:int = 0
         unObjet2:float = 0.0
         unObjet3:str = "Oui, bonjour"
