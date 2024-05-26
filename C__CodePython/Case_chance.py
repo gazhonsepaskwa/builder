@@ -53,9 +53,9 @@ class Case_chance(Case):
     def chance(self, jeu):
         db = mysql.connector.connect(
             host="localhost",
-            user="builderADMIN",
+            user="root",
             password="root",
-            database="p@sW0rDssss"
+            database="builder"
             )
         
         curseur = db.cursor()

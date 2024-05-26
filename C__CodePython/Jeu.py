@@ -225,15 +225,23 @@ class Jeu():
     #Permet de jouer un tour
 
     def jouerUnTour(self):
+        
+        txt_formate = "Status: En Prison :(" if self.__joueurActif.enPrison == True else "à vous de jouer !"
+
         clear_terminal()
         print("")
         separator()
-        colored_print( f"{str(self.__joueurActif.nom)}, à vous de jouer !", "red")
+        colored_print( f"{str(self.__joueurActif.nom)}, {txt_formate}", "red")
         separator()
         colored_print("Vos ressources: ", "cyan")
         print(f"argent: {self.__joueurActif.argent} | {self.__joueurActif.jetonsTractopelle} jetons tractopelle | {self.__joueurActif.jetonsBateau} jetons bateau | {self.__joueurActif.jetonsCamion} jetons camion | {self.__joueurActif.jetonsGrue} jetons grue")
         separator()
         print("")
+
+        if self.__joueurActif.enPrison == True:
+            input("Vous êtes en prison, passez votre tour [ENTER]")
+            self.__joueurActif.enPrison = False 
+            return()
 
         input("Lancer les dés [ENTER] ")
         delete_last_line()
@@ -272,20 +280,9 @@ class Jeu():
 
 
 
-
-
     #À la fin du tour d'un joueur, on passe au joueur suivant
 
     def changerJoueurActif(self):
         indiceJoueurActif = self.__listeJoueurs.index(self.__joueurActif)
         indiceJoueurSuivant = (indiceJoueurActif + 1) % len(self.__listeJoueurs)
         self.__joueurActif = self.__listeJoueurs[indiceJoueurSuivant]
-
-
-
-    # Defini qui est le grand gagnant 
-    
-    def finDePartie():
-        pass
-
-        # la partie ne se finie pas, par manque de temps 

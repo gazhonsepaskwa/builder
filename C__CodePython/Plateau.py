@@ -117,8 +117,8 @@ class Plateau(Entity):
             # connection a la db
             db = mysql.connector.connect(
             host="localhost",
-            user="builderADMIN",
-            password="p@sW0rDssss",
+            user="root",
+            password="root",
             database="builder"
             )
 
