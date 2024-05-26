@@ -278,7 +278,7 @@ class Jeu():
 
             del(self.listeJoueurs[joueurElimine])
 
-            if len(set(self.listeJoueurs)) == 1:
+            if len(self.__listeJoueurs) == 1:
 
                 print("C'est la fin ! le joueur ")
 
