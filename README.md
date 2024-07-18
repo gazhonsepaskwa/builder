@@ -11,3 +11,7 @@
 4. Se renseigner sur le site statique.
 
 5. Exécuter le code `main.py`.
+
+6. Installer les dependance pytyon.
+
+Enjoy !
